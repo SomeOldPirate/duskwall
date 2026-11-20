@@ -1,0 +1,41 @@
+<section class="tab dw-crew-contacts {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <div class="dw-two">
+    <div class="dw-block">
+      <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Crew.contacts"}}</span>
+        {{#if editable}}<button type="button" class="dw-bar__btn" data-action="contactAdd"><i class="fa-solid fa-plus"></i></button>{{/if}}
+      </h3>
+      <p class="dw-hint">{{localize "DW.Crew.contactsHint"}}</p>
+      <ul class="dw-friends">
+        {{#each contacts}}
+        <li class="dw-friend dw-friend--{{relation}}">
+          <button type="button" class="dw-tri dw-tri--up{{#if (eq relation 'friend')}} is-on{{/if}}" data-action="relation" data-index="{{index}}" data-relation="friend" data-tooltip="{{localize 'DW.Crew.favorite'}}" {{#unless ../editable}}disabled{{/unless}}></button>
+          <input type="text" value="{{name}}" data-list="contacts" data-index="{{index}}" data-prop="name" {{#unless ../editable}}disabled{{/unless}}>
+          <input type="text" value="{{role}}" data-list="contacts" data-index="{{index}}" data-prop="role" {{#unless ../editable}}disabled{{/unless}}>
+          {{#if ../editable}}<a data-action="contactRemove" data-index="{{index}}"><i class="fa-solid fa-xmark"></i></a>{{/if}}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="dw-block">
+      <h3 class="dw-bar dw-bar--grey"><span>{{#if ct}}{{ct.huntingGroundsLabel}}{{else}}{{localize "DW.Crew.huntingGrounds"}}{{/if}}</span></h3>
+      <label class="dw-field"><span>{{localize "DW.Crew.huntingArea"}}</span><input type="text" name="system.huntingGrounds" value="{{system.huntingGrounds}}" {{#unless editable}}disabled{{/unless}}></label>
+      <ul class="dw-hunting">
+        {{#each huntingOps}}
+        <li><label><input type="radio" name="system.huntingOp" value="{{name}}" {{checked selected}} {{#unless @root.editable}}disabled{{/unless}}> <strong>{{name}}:</strong> {{description}}</label></li>
+        {{/each}}
+      </ul>
+      <p class="dw-hint">{{localize "DW.Crew.huntingHint"}}</p>
+      <label class="dw-field"><span>{{localize "DW.Crew.lairDistrict"}}</span><input type="text" name="system.lairDistrict" value="{{system.lairDistrict}}" {{#unless editable}}disabled{{/unless}}></label>
+      {{#if ct.deity}}
+      <label class="dw-field"><span>{{localize "DW.Crew.deity"}}</span><input type="text" name="system.deity" value="{{system.deity}}" {{#unless editable}}disabled{{/unless}}></label>
+      <label class="dw-field"><span>{{localize "DW.Crew.deityFeatures"}}</span><input type="text" name="system.deityFeatures" value="{{system.deityFeatures}}" placeholder="{{localize 'DW.Crew.deityHint'}}" {{#unless editable}}disabled{{/unless}}></label>
+      {{/if}}
+      {{#if ct.vehicle}}
+      <h4>{{localize "DW.Crew.vehicle"}}</h4>
+      <label class="dw-field"><span>{{localize "DW.Sheet.name"}}</span><input type="text" name="system.vehicle.name" value="{{system.vehicle.name}}" {{#unless editable}}disabled{{/unless}}></label>
+      <label class="dw-field"><span>{{localize "DW.Cohort.edges"}}</span><input type="text" name="system.vehicle.edges" value="{{system.vehicle.edges}}" placeholder="Nimble, Simple, Sturdy" {{#unless editable}}disabled{{/unless}}></label>
+      <label class="dw-field"><span>{{localize "DW.Cohort.flaws"}}</span><input type="text" name="system.vehicle.flaws" value="{{system.vehicle.flaws}}" placeholder="Costly, Distinct, Finicky" {{#unless editable}}disabled{{/unless}}></label>
+      {{/if}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+<section class="tab dw-people {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <div class="dw-block">
+    <h3 class="dw-bar dw-bar--grey"><span>{{friendsLabel}}</span>
+      {{#if editable}}<button type="button" class="dw-bar__btn" data-action="friendAdd"><i class="fa-solid fa-plus"></i></button>{{/if}}
+    </h3>
+    <p class="dw-hint">{{localize "DW.Friends.hint"}}</p>
+    <ul class="dw-friends">
+      {{#each friends}}
+      <li class="dw-friend dw-friend--{{relation}}">
+        <button type="button" class="dw-tri dw-tri--up{{#if (eq relation 'friend')}} is-on{{/if}}" data-action="relation" data-index="{{index}}" data-relation="friend" data-tooltip="{{localize 'DW.Friends.friend'}}" {{#unless ../editable}}disabled{{/unless}}></button>
+        <button type="button" class="dw-tri dw-tri--down{{#if (eq relation 'rival')}} is-on{{/if}}" data-action="relation" data-index="{{index}}" data-relation="rival" data-tooltip="{{localize 'DW.Friends.rival'}}" {{#unless ../editable}}disabled{{/unless}}></button>
+        <input type="text" value="{{name}}" data-list="friends" data-index="{{index}}" data-prop="name" placeholder="{{localize 'DW.Sheet.name'}}" {{#unless ../editable}}disabled{{/unless}}>
+        <input type="text" value="{{role}}" data-list="friends" data-index="{{index}}" data-prop="role" placeholder="{{localize 'DW.Friends.role'}}" {{#unless ../editable}}disabled{{/unless}}>
+        {{#if ../editable}}<a data-action="friendRemove" data-index="{{index}}"><i class="fa-solid fa-xmark"></i></a>{{/if}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  {{#each extras}}
+  <div class="dw-block dw-extras">
+    <h3 class="dw-bar dw-bar--grey"><span>{{label}}</span></h3>
+    <div class="dw-extras__opts">
+      {{#each options}}
+      <button type="button" class="dw-chip{{#if on}} is-on{{/if}}" data-action="toggleExtra" data-key="{{../key}}" data-value="{{value}}" {{#unless @root.editable}}disabled{{/unless}}>{{value}}</button>
+      {{/each}}
+    </div>
+  </div>
+  {{/each}}
+
+  <div class="dw-block dw-adjust">
+    <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Sheet.adjustments"}}</span></h3>
+    <div class="dw-adjust__grid">
+      <label class="dw-field"><span>{{localize "DW.Sheet.stressBonus" label=labels.stress}}</span><input type="number" name="system.stress.bonus" value="{{system.stress.bonus}}" {{#unless editable}}disabled{{/unless}}></label>
+      <label class="dw-field"><span>{{localize "DW.Sheet.traumaBonus" label=labels.trauma}}</span><input type="number" name="system.trauma.bonus" value="{{system.trauma.bonus}}" {{#unless editable}}disabled{{/unless}}></label>
+      <label class="dw-check-field"><input type="checkbox" name="system.retired" {{checked system.retired}} {{#unless editable}}disabled{{/unless}}> {{localize "DW.Sheet.retired"}}</label>
+    </div>
+  </div>
+</section>

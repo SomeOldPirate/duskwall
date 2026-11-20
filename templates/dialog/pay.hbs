@@ -1,0 +1,7 @@
+<div class="dw-form">
+  <p>{{localize "DW.Downtime.extraExplain"}}</p>
+  <fieldset class="dw-radios dw-radios--stack">
+    <label class="dw-radio"><input type="radio" name="with" value="coin" checked> {{localize "DW.Downtime.payCoin" n=coin}}</label>
+    {{#if canRep}}<label class="dw-radio"><input type="radio" name="with" value="rep"> {{localize "DW.Downtime.payRep" n=rep}}</label>{{/if}}
+  </fieldset>
+</div>

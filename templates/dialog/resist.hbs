@@ -1,0 +1,11 @@
+<div class="dw-form">
+  <label class="dw-field"><span>{{localize "DW.Resist.consequence"}}</span><input type="text" name="consequence" value="{{consequence}}" placeholder="{{localize 'DW.Resist.consequenceHint'}}"></label>
+  <fieldset class="dw-radios">
+    <legend>{{localize "DW.Resist.attribute"}}</legend>
+    {{#each attributes}}<label class="dw-radio"><input type="radio" name="attribute" value="{{key}}" {{checked checked}}> {{label}} ({{rating}})</label>{{/each}}
+  </fieldset>
+  <p class="dw-hint">{{localize "DW.Resist.attrHint"}}</p>
+  <label class="dw-field dw-field--inline"><span>{{localize "DW.Roll.otherDice"}}</span><input type="number" name="bonus" value="0" min="-4" max="4"></label>
+  <p class="dw-hint">{{localize "DW.Resist.explain" label=stressLabel}}</p>
+  <p class="dw-summary" data-summary></p>
+</div>

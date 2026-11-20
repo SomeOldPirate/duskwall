@@ -1,0 +1,24 @@
+<section class="dw-clock-body dw-clock-body--{{system.kind}}">
+  <input class="dw-head__name" type="text" name="name" value="{{actor.name}}" {{#unless editable}}disabled{{/unless}}>
+  <div class="dw-clock-big">
+    <svg viewBox="0 0 100 100" class="dw-clock">
+      {{#each segments}}<path d="{{d}}" class="dw-clock__seg{{#if on}} is-on{{/if}}" {{#if @root.editable}}data-action="tick" data-n="{{n}}"{{/if}}></path>{{/each}}
+      <circle cx="50" cy="50" r="44" class="dw-clock__rim"></circle>
+    </svg>
+    <div class="dw-clock-big__ctl">
+      <button type="button" data-action="step" data-step="-1" {{#unless editable}}disabled{{/unless}}><i class="fa-solid fa-minus"></i></button>
+      <strong>{{system.value}}/{{system.size}}</strong>
+      <button type="button" data-action="step" data-step="1" {{#unless editable}}disabled{{/unless}}><i class="fa-solid fa-plus"></i></button>
+    </div>
+  </div>
+  <div class="dw-row">
+    <label class="dw-field"><span>{{localize "DW.Clock.size"}}</span>
+      <select name="system.size" data-dtype="Number" {{#unless editable}}disabled{{/unless}}>{{#each sizes}}<option value="{{s}}" {{#if selected}}selected{{/if}}>{{s}}</option>{{/each}}</select>
+    </label>
+    <label class="dw-field"><span>{{localize "DW.Clock.kind"}}</span>
+      <select name="system.kind" {{#unless editable}}disabled{{/unless}}>{{#each kinds}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+    </label>
+    <label class="dw-check-field"><input type="checkbox" name="system.pinned" {{checked system.pinned}} {{#unless editable}}disabled{{/unless}}> {{localize "DW.Clock.pinned"}}</label>
+  </div>
+  {{formInput fields.description value=system.description enriched=enrichedDescription toggled=true editable=editable name="system.description"}}
+</section>

@@ -1,0 +1,22 @@
+<div class="dw-form">
+  <p class="dw-hint">{{localize "DW.Xp.sessionHint"}}</p>
+  <ol class="dw-xp-rows">
+    {{#each triggers}}
+    <li>
+      <span>{{text}}</span>
+      <span class="dw-seg">
+        <label><input type="radio" name="t{{i}}" value="0" checked> 0</label>
+        <label><input type="radio" name="t{{i}}" value="1"> 1</label>
+        <label><input type="radio" name="t{{i}}" value="2"> 2</label>
+      </span>
+    </li>
+    {{/each}}
+  </ol>
+  {{#if tracks.length}}
+  <fieldset class="dw-radios">
+    <legend>{{localize "DW.Xp.trackLegend"}}</legend>
+    {{#each tracks}}<label class="dw-radio"><input type="radio" name="track" value="{{key}}" {{checked checked}}> {{label}}</label>{{/each}}
+  </fieldset>
+  {{/if}}
+  <p class="dw-summary" data-summary></p>
+</div>

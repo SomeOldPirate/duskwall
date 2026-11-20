@@ -1,0 +1,15 @@
+<div class="dw-form">
+  <label class="dw-field"><span>{{localize "DW.Score.target"}}</span><input type="text" name="target" value="{{target}}"></label>
+  <label class="dw-field"><span>{{localize "DW.Plan.heading"}}</span>
+    <select name="plan">{{#each plans}}<option value="{{key}}" {{#if checked}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+  </label>
+  <label class="dw-field"><span>{{localize "DW.Plan.detail"}}</span><input type="text" name="detail" value="{{detail}}" placeholder="{{localize 'DW.Plan.detailHint'}}"></label>
+  <p class="dw-hint">{{localize "DW.Engagement.hint"}}</p>
+  <div class="dw-row">
+    <label class="dw-field"><span>{{localize "DW.Engagement.advantages"}}</span><input type="number" name="advantages" value="0" min="0" max="4"></label>
+    <label class="dw-field"><span>{{localize "DW.Engagement.disadvantages"}}</span><input type="number" name="disadvantages" value="0" min="0" max="4"></label>
+    <label class="dw-field"><span>{{localize "DW.Roll.otherDice"}}</span><input type="number" name="bonus" value="0" min="-4" max="4"></label>
+  </div>
+  <p class="dw-hint">{{localize "DW.Engagement.abilitiesHint"}}</p>
+  <p class="dw-summary" data-summary></p>
+</div>

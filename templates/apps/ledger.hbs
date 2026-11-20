@@ -1,0 +1,30 @@
+<section class="dw-ledger-body">
+  {{#if empty}}
+  <div class="dw-empty-state">
+    <p>{{localize "DW.Faction.empty"}}</p>
+    {{#if isGM}}<button type="button" class="dw-btn dw-btn--accent" data-action="import"><i class="fa-solid fa-file-import"></i> {{localize "DW.Faction.import"}}</button>{{/if}}
+  </div>
+  {{/if}}
+  {{#if atWar.length}}<p class="dw-warn"><i class="fa-solid fa-skull-crossbones"></i> {{localize "DW.Faction.warWith"}}: {{#each atWar}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}. {{localize "DW.Crew.warHint"}}</p>{{/if}}
+  <div class="dw-ledger__cols">
+    {{#each groups}}
+    <div class="dw-ledger__group">
+      <h3 class="dw-bar"><span>{{label}}</span><span class="dw-ledger__cols-head">{{localize "DW.Faction.tierHoldStatus"}}</span></h3>
+      <ul>
+        {{#each factions}}
+        <li class="dw-ledger__row dw-status-{{status}}{{#if war}} is-war{{/if}}" data-actor-id="{{id}}">
+          <a class="dw-ledger__name" data-action="open">{{name}}</a>
+          <span class="dw-ledger__tier">{{tier}}</span>
+          <span class="dw-ledger__hold">{{hold}}</span>
+          <span class="dw-ledger__status" data-tooltip="{{statusName}}">
+            {{#if owner}}<a data-action="status" data-step="-1"><i class="fa-solid fa-caret-left"></i></a>{{/if}}
+            <strong>{{statusLabel}}</strong>
+            {{#if owner}}<a data-action="status" data-step="1"><i class="fa-solid fa-caret-right"></i></a>{{/if}}
+          </span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/each}}
+  </div>
+</section>

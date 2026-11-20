@@ -1,0 +1,1352 @@
+[
+ {
+  "_id": "44LAYi0N1HH4jNzs",
+  "_key": "!folders!44LAYi0N1HH4jNzs",
+  "name": "Assassins",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 0,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "matAR3PbO7P09eqW",
+  "_key": "!folders!matAR3PbO7P09eqW",
+  "name": "Bravos",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 1,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "vH3Z50j19qHAY5Td",
+  "_key": "!folders!vH3Z50j19qHAY5Td",
+  "name": "Cult",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 2,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "ACU7HbaEnnTAq1Ol",
+  "_key": "!folders!ACU7HbaEnnTAq1Ol",
+  "name": "Hawkers",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 3,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "7t3sHt7ACQSX9QQs",
+  "_key": "!folders!7t3sHt7ACQSX9QQs",
+  "name": "Shadows",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 4,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "P6ArpDRN8KzSVAy0",
+  "_key": "!folders!P6ArpDRN8KzSVAy0",
+  "name": "Smugglers",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 5,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "T5YG6tS4dcQfFgo1",
+  "_key": "!items!T5YG6tS4dcQfFgo1",
+  "name": "Deadly",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "assassins",
+   "rules": "Each PC may add +1 action rating to Hunt, Prowl, or Skirmish (up to a max rating of 3).",
+   "description": "<p>Each player may choose the action they prefer (you don’t all have to choose the same one). If you take this ability during initial character and crew creation, it supersedes the normal starting limit for action ratings.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "44LAYi0N1HH4jNzs",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "CvrFdBXWO6QJqJsq",
+  "_key": "!items!CvrFdBXWO6QJqJsq",
+  "name": "Crow's Veil",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "assassins",
+   "rules": "Due to hard-won experience or occult ritual, your activities are hidden from the notice of the death-seeker crows. You don’t take extra heat when killing is involved on a score.",
+   "description": "<p>The bells don’t ring at the crematorium when a member of your crew kills someone. Do you have a “membership ritual” now that conveys this talent?</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "44LAYi0N1HH4jNzs",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "br7OOa871gnwSdnh",
+  "_key": "!items!br7OOa871gnwSdnh",
+  "name": "Emberdeath",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "assassins",
+   "rules": "Due to hard-won experience or occult ritual, you know the arcane method to destroy a living victim’s spirit at the moment you kill them. Take 3 stress to channel electroplasmic energy from the ghost field to disintegrate the spirit and dead body in a shower of sparking embers.",
+   "description": "<p>This ability activates at the moment of the target’s death (spend 3 stress then or lose the opportunity to use it). It can only be triggered by a killing blow. Some particularly powerful supernatural entities or specially protected targets may be resistant or immune to this ability.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "44LAYi0N1HH4jNzs",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "DtlPeONY3yImwOLx",
+  "_key": "!items!DtlPeONY3yImwOLx",
+  "name": "No Traces",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "assassins",
+   "rules": "When you keep an operation quiet or make it look like an accident, you get half the rep value of the target (round up) instead of zero. When you end downtime with zero heat, take +1 rep.",
+   "description": "<p>There are many clients who value quiet operations. This ability rewards you for keeping a low-profile.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "44LAYi0N1HH4jNzs",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "6fJyG8FDuNWzEvKl",
+  "_key": "!items!6fJyG8FDuNWzEvKl",
+  "name": "Patron",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "assassins",
+   "rules": "When you advance your Tier, it costs half the coin it normally would. Who is your patron? Why do they help you?",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "44LAYi0N1HH4jNzs",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "c3XeNMmMWDhRZfMB",
+  "_key": "!items!c3XeNMmMWDhRZfMB",
+  "name": "Predators",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "assassins",
+   "rules": "When you use stealth or subterfuge to commit murder, take +1d to the engagement roll.",
+   "description": "<p>This ability applies when the goal is murder. It doesn’t apply to other stealth or deception operations you attempt that happen to involve killing.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "44LAYi0N1HH4jNzs",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "hrh3QVs5kYmYkMmD",
+  "_key": "!items!hrh3QVs5kYmYkMmD",
+  "name": "Vipers",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "assassins",
+   "rules": "When you acquire or craft poisons, you get +1 result level to your roll. When you employ a poison, you are specially prepared to be immune to its effects.",
+   "description": "<p>The poison immunity lasts for the entire score, until you next have downtime.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "44LAYi0N1HH4jNzs",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "KhcSMGQtIoHcB2Di",
+  "_key": "!items!KhcSMGQtIoHcB2Di",
+  "name": "Veteran",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "assassins",
+   "rules": "Choose a special ability from another crew.",
+   "description": "",
+   "max": 3,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "44LAYi0N1HH4jNzs",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "4sKZZtphlehvpcqo",
+  "_key": "!items!4sKZZtphlehvpcqo",
+  "name": "Dangerous",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "bravos",
+   "rules": "Each PC may add +1 action rating to Hunt, Skirmish, or Wreck (up to a max rating of 3).",
+   "description": "<p>Each player may choose the action they prefer (you don’t all have to choose the same one). If you take this ability during initial character and crew creation, it supersedes the normal starting limit for action ratings.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "matAR3PbO7P09eqW",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "fbsq8CiTXCXqyjf8",
+  "_key": "!items!fbsq8CiTXCXqyjf8",
+  "name": "Blood Brothers",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "bravos",
+   "rules": "When you fight alongside your cohorts in combat, they get +1d for teamwork rolls (setup and group actions). All of your cohorts get the Thugs type for free (if they’re already Thugs, add another type).",
+   "description": "<p>If you have the Elite Thugs upgrade, it stacks with this ability. So, if you had an Adepts gang cohort, and the Elite Thugs upgrade, and then took Blood Brothers, your Adepts would add the Thugs type and also get +1d to rolls when they did Thug-type actions. This ability may result in a gang with three types, surpassing the normal limit of two.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "matAR3PbO7P09eqW",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "ENO7cCNXYXtvQoS8",
+  "_key": "!items!ENO7cCNXYXtvQoS8",
+  "name": "Door Kickers",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "bravos",
+   "rules": "When you execute an assault plan, take +1d to the engagement roll.",
+   "description": "<p>This ability applies when the goal is to attack an enemy. It doesn’t apply to other operations you attempt that happen to involve fighting.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "matAR3PbO7P09eqW",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "lYLYSgmD2i2YF7Vi",
+  "_key": "!items!lYLYSgmD2i2YF7Vi",
+  "name": "Fiends",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "bravos",
+   "rules": "Fear is as good as respect. You may count each wanted level as if it was turf.",
+   "description": "<p>The maximum wanted level is 4. Regardless of how much turf you hold (from this ability or otherwise) the minimum rep cost to advance your Tier is always 6.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "matAR3PbO7P09eqW",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "xcjNNu2lsCjnF2Ye",
+  "_key": "!items!xcjNNu2lsCjnF2Ye",
+  "name": "Forged in the Fire",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "bravos",
+   "rules": "Each PC has been toughened by cruel experience. You get +1d to resistance rolls.",
+   "description": "<p>This ability applies to PCs in the crew. It doesn’t confer any special toughness to your cohorts.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "matAR3PbO7P09eqW",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "GajwmOlvPyoRhcU4",
+  "_key": "!items!GajwmOlvPyoRhcU4",
+  "name": "Patron",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "bravos",
+   "rules": "When you advance your Tier, it costs half the coin it normally would. Who is your patron? Why do they help you?",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "matAR3PbO7P09eqW",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "aYQBN91OBSjfStcW",
+  "_key": "!items!aYQBN91OBSjfStcW",
+  "name": "War Dogs",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "bravos",
+   "rules": "When you’re at war (-3 faction status), your crew does not suffer -1 hold and PCs still get two downtime activities, instead of just one.",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "matAR3PbO7P09eqW",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "MQfZcWOqvhFQI6x3",
+  "_key": "!items!MQfZcWOqvhFQI6x3",
+  "name": "Veteran",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "bravos",
+   "rules": "Choose a special ability from another crew.",
+   "description": "",
+   "max": 2,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "matAR3PbO7P09eqW",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "md7VjIKQGuyek3yT",
+  "_key": "!items!md7VjIKQGuyek3yT",
+  "name": "Chosen",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "cult",
+   "rules": "Each PC may add +1 action rating to Attune, Study, or Sway (up to a max rating of 3).",
+   "description": "<p>Each player may choose the action they prefer (you don’t all have to choose the same one). If you take this ability during initial character and crew creation, it supersedes the normal starting limit for action ratings.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "vH3Z50j19qHAY5Td",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "Fr9wqs3UBvX0Yucm",
+  "_key": "!items!Fr9wqs3UBvX0Yucm",
+  "name": "Anointed",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "cult",
+   "rules": "You get +1d to resistance rolls against supernatural threats. You get +1d to healing rolls when you have supernatural harm.",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "vH3Z50j19qHAY5Td",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "EjIk9MILUdeesKZz",
+  "_key": "!items!EjIk9MILUdeesKZz",
+  "name": "Bound in Darkness",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "cult",
+   "rules": "You may use teamwork with any cult member, regardless of the distance separating you. By taking 1 stress, your whispered message is heard by every cultist.",
+   "description": "<p>By what occult means does your teamwork manifest over distance? How is it strange or disturbing? By what ritualistic method are cult members initiated into this ability?</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "vH3Z50j19qHAY5Td",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "HjZe9tm4rW8XvDWP",
+  "_key": "!items!HjZe9tm4rW8XvDWP",
+  "name": "Conviction",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "cult",
+   "rules": "Each PC gains an additional Vice: Worship. When you indulge this vice and bring a pleasing sacrifice, you don’t overindulge if you clear excess stress. In addition, your deity will assist any one action roll you make—from now until you indulge this vice again.",
+   "description": "<p>What sort of sacrifice does your deity find pleasing?</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "vH3Z50j19qHAY5Td",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "vHPm0rOxViRwbgS4",
+  "_key": "!items!vHPm0rOxViRwbgS4",
+  "name": "Glory Incarnate",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "cult",
+   "rules": "Your deity sometimes manifests in the physical world. This can be a great boon, but the priorities and values of a god are not those of mortals. You have been warned.",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "vH3Z50j19qHAY5Td",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "nQvydYr4v2x2Pjsc",
+  "_key": "!items!nQvydYr4v2x2Pjsc",
+  "name": "Sealed in Blood",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "cult",
+   "rules": "Each human sacrifice yields -3 stress cost for any ritual you perform.",
+   "description": "<p>For details on Rituals, see page 222.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "vH3Z50j19qHAY5Td",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "Ng2kkzsrEMXV654B",
+  "_key": "!items!Ng2kkzsrEMXV654B",
+  "name": "Zealotry",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "cult",
+   "rules": "Your cohorts have abandoned their reason to devote themselves to the cult. They will undertake any service, no matter how dangerous or strange. They gain +1d to rolls against enemies of the faith.",
+   "description": "<p>A student at Doskvol Academy publishes a treatise claiming your god is a corrupted translation of an even more ancient god.</p><p>It has become trendy for young people of high society to pretend to swoon and have visions, but not all of them are pretense.</p><p>Construction work has accidentally unearthed an ancient spirit well, and awakened the entities trapped there since the cataclysm.</p><p>A rival cult’s secret regalia have some connection with the Immortal Emperor: are they his agents or is it mere coincidence?</p><p>A noble performed a desperate ritual seeking assistance from your god. You have been chosen as the instrument of its aid.</p><p>A prominent collector of artifacts chokes to death in the streets, vomiting blackened blood and gasping the name of your god.</p><p>A rival cult is destroying any and all artifacts and sites sacred to other gods. They seem to be have some arcane means of discovery. You may be next.</p><p>CREW:</p><p>CULT</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "vH3Z50j19qHAY5Td",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "pHBBdYbIlPk7v2tp",
+  "_key": "!items!pHBBdYbIlPk7v2tp",
+  "name": "Veteran",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "cult",
+   "rules": "Choose a special ability from another crew.",
+   "description": "",
+   "max": 2,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "vH3Z50j19qHAY5Td",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "HfzAHxLFyC59muM1",
+  "_key": "!items!HfzAHxLFyC59muM1",
+  "name": "Accord",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "hawkers",
+   "rules": "Sometimes friends are as good as territory. You may count up to three +3 faction statuses you hold as if they are turf.",
+   "description": "<p>If your status changes, you lose the turf until it becomes +3 again. Regardless of how much turf you hold (from this ability or otherwise) the minimum rep cost to advance your Tier is always 6.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "ACU7HbaEnnTAq1Ol",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "NXSc4LksSBIC5292",
+  "_key": "!items!NXSc4LksSBIC5292",
+  "name": "The Good Stuff",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "hawkers",
+   "rules": "Your merchandise is exquisite. The product quality is equal to your Tier+2. When you deal with a crew or faction, the GM will tell you who among them is hooked on your product (one, a few, many, or all).",
+   "description": "<p>The product quality is equal to your Tier +2. When you deal with a crew or faction, the GM will tell you who among them is hooked on your product (one, a few, many, or all). The quality of your product might be used for a fortune roll to find out how impressed a potential client is, to find out how enthralled or incapacitated a user is in their indulgence of it, to discover if a strange variation has side-effects, etc.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "ACU7HbaEnnTAq1Ol",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "SjH06L9skGcBdVqA",
+  "_key": "!items!SjH06L9skGcBdVqA",
+  "name": "Ghost Market",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "hawkers",
+   "rules": "Through arcane ritual or hard-won experience, you have discovered how to prepare your product for sale to ghosts and/or demons. They do not pay in coin. What do they pay with?",
+   "description": "<p>The GM will certainly have an idea about how your strange new clients pay, but jump in with your own ideas, too! This ability is usually a big shift in the game, so talk it out and come up with something that everyone is excited about. If it’s a bit mysterious and uncertain, that’s good. You have more to explore that way.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "ACU7HbaEnnTAq1Ol",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "iqpo25n6zeoI9OJB",
+  "_key": "!items!iqpo25n6zeoI9OJB",
+  "name": "Silver Tongues",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "hawkers",
+   "rules": "Each PC may add +1 action rating to Command, Consort, or Sway (up to a max rating of 3).",
+   "description": "<p>Each player may choose the action they prefer (you don’t all have to choose the same one). If you take this ability during initial character and crew creation, it supersedes the normal starting limit for action ratings.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "ACU7HbaEnnTAq1Ol",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "GQsbChsyEW6GayOt",
+  "_key": "!items!GQsbChsyEW6GayOt",
+  "name": "High Society",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "hawkers",
+   "rules": "It’s all about who you know. Take -1 heat during downtime and +1d to gather info about the city’s elite.",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "ACU7HbaEnnTAq1Ol",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "JHvvvZc27ovnHVUe",
+  "_key": "!items!JHvvvZc27ovnHVUe",
+  "name": "Hooked",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "hawkers",
+   "rules": "Your gang members use your product. Add the savage, unreliable, or wild flaw to your gangs to give them +1 quality.",
+   "description": "<p>Add the savage, unreliable, or wild flaw to your gangs to give them +1 quality (max rating of 4).</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "ACU7HbaEnnTAq1Ol",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "bcQ2OsZDrp7b2yJl",
+  "_key": "!items!bcQ2OsZDrp7b2yJl",
+  "name": "Patron",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "hawkers",
+   "rules": "When you advance your Tier, it costs half the coin it normally would. Who is your patron? Why do they help you?",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "ACU7HbaEnnTAq1Ol",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "y7MVfE8UL85Ydi6E",
+  "_key": "!items!y7MVfE8UL85Ydi6E",
+  "name": "Veteran",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "hawkers",
+   "rules": "Choose a special ability from another crew.",
+   "description": "",
+   "max": 2,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "ACU7HbaEnnTAq1Ol",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "M6b4CTEdJnIJcxbt",
+  "_key": "!items!M6b4CTEdJnIJcxbt",
+  "name": "Ghost Echoes",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "shadows",
+   "rules": "From weird experience or occult ritual, all crew members gain the ability to see and interact with the ghostly structures, streets, and objects within the echo of Doskvol that exists in the ghost field.",
+   "description": "<p>You might explore the echo of an ancient building, crumbled to dust in the real world, but still present in the ghost field; or discern the electroplasmic glow of treasures lost in the depths of the canals; or use a sorcerous ghost door from the pre-cataclysm to infiltrate an otherwise secure location; etc. The GM will tell you what echoes persist nearby when you gather information about them. You might also undertake investigations to discover particular echoes you hope to find.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "7t3sHt7ACQSX9QQs",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "bFcKEiHU4iBHMhk0",
+  "_key": "!items!bFcKEiHU4iBHMhk0",
+  "name": "Pack Rats",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "shadows",
+   "rules": "Your lair is a jumble of stolen items. When you roll to acquire an asset, take +1d.",
+   "description": "<p>This ability might mean that you actually have the item you need in your pile of stuff, or it could mean you have extra odds and ends to barter with.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "7t3sHt7ACQSX9QQs",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "8S2wHwEtOrMPwt0A",
+  "_key": "!items!8S2wHwEtOrMPwt0A",
+  "name": "Everyone Steals",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "shadows",
+   "rules": "Each PC may add +1 action rating to Prowl, Finesse, or Tinker (up to a max rating of 3).",
+   "description": "<p>Each player may choose the action they prefer (you don’t all have to choose the same one). If you take this ability during initial character and crew creation, it supersedes the normal starting limit for action ratings.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "7t3sHt7ACQSX9QQs",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "blvsXR9WOX4cuEs6",
+  "_key": "!items!blvsXR9WOX4cuEs6",
+  "name": "Patron",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "shadows",
+   "rules": "When you advance your Tier, it costs half the coin it normally would. Who is your patron? Why do they help you?",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "7t3sHt7ACQSX9QQs",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "PD4ChyokJFI3vllU",
+  "_key": "!items!PD4ChyokJFI3vllU",
+  "name": "Second Story",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "shadows",
+   "rules": "When you execute a clandestine infiltration, you get +1d to the engagement roll.",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "7t3sHt7ACQSX9QQs",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "hCNCqcrquesznPtp",
+  "_key": "!items!hCNCqcrquesznPtp",
+  "name": "Slippery",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "shadows",
+   "rules": "When you roll entanglements, roll twice and keep the one you want. When you reduce heat on the crew, take +1d.",
+   "description": "<p>The GM might sometimes want to choose an entanglement instead of rolling. In that case, they’ll choose two and you can pick between them.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "7t3sHt7ACQSX9QQs",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "y9lEWseYbj1YUEeC",
+  "_key": "!items!y9lEWseYbj1YUEeC",
+  "name": "Synchronized",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "shadows",
+   "rules": "When you perform a group action, you may count multiple 6s from different rolls as a critical success.",
+   "description": "<p>For example, Lyric leads a group action to Attune to the ghost field to overcome a magical ward on the Dimmer Sisters’ door. Emily, Lyric’s player, rolls and gets a 6, and so does Matt! Because the crew has Synchronized, their two separate 6s count as a critical success on the roll.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "7t3sHt7ACQSX9QQs",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "7cw2N8oGvhubJhXx",
+  "_key": "!items!7cw2N8oGvhubJhXx",
+  "name": "Veteran",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "shadows",
+   "rules": "Choose a special ability from another crew.",
+   "description": "",
+   "max": 2,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "7t3sHt7ACQSX9QQs",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "1QpefBRoxOT5AhYC",
+  "_key": "!items!1QpefBRoxOT5AhYC",
+  "name": "Like Part of the Family",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "smugglers",
+   "rules": "Create one of your vehicles as a cohort (use the vehicle edges and flaws, below). Its quality is equal to your Tier +1.",
+   "description": "<p>The vehicle can use teamwork actions (using quality for rolls). A vehicle can’t lead a group action, but may participate.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "P6ArpDRN8KzSVAy0",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "6noC2TftFvasNJCs",
+  "_key": "!items!6noC2TftFvasNJCs",
+  "name": "All Hands",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "smugglers",
+   "rules": "During downtime, one of your cohorts may perform a downtime activity for the crew to acquire an asset, reduce heat, or work on a long-term project.",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "P6ArpDRN8KzSVAy0",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "MDgXTCfJeJUL0sCa",
+  "_key": "!items!MDgXTCfJeJUL0sCa",
+  "name": "Ghost Passage",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "smugglers",
+   "rules": "From harsh experience or occult ritual, all crew members become immune to possession by spirits, but may choose to \"carry\" a second ghost as a passenger within their body.",
+   "description": "<p>What do you do to “carry” a spirit? Must the spirit consent, or can you use this ability to trap an unwilling spirit within?</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "P6ArpDRN8KzSVAy0",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "ffZMFiTEZMNETkFA",
+  "_key": "!items!ffZMFiTEZMNETkFA",
+  "name": "Just Passing Through",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "smugglers",
+   "rules": "During downtime, take -1 heat. When your heat is 4 or less, you get +1d to deceive people when you pass yourselves off as ordinary citizens.",
+   "description": "",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "P6ArpDRN8KzSVAy0",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "LRHazw1z2gCy93Bd",
+  "_key": "!items!LRHazw1z2gCy93Bd",
+  "name": "Leverage",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "smugglers",
+   "rules": "Your crew supplies contraband for other factions. Your success is good for them. Whenever you gain rep, gain +1 rep.",
+   "description": "<p>Your crew supplies illicit goods for other factions. Your success is good for them. Whenever you gain rep, gain +1 rep.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "P6ArpDRN8KzSVAy0",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "uRGO5vbLgfZFM07d",
+  "_key": "!items!uRGO5vbLgfZFM07d",
+  "name": "Reavers",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "smugglers",
+   "rules": "When you go into conflict aboard a vehicle, you gain +1 effect for vehicle damage and speed. Your vehicle gains armor.",
+   "description": "<p>If your vehicle already has armor, this ability gives an additional armor box.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "P6ArpDRN8KzSVAy0",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "MUBLnRZIEyv38gxb",
+  "_key": "!items!MUBLnRZIEyv38gxb",
+  "name": "Renegades",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "smugglers",
+   "rules": "Each PC may add +1 action rating to Finesse, Prowl, or Skirmish (up to a max rating of 3).",
+   "description": "<p>Each player may choose the action they prefer (you don’t all have to choose the same one). If you take this ability during initial character and crew creation, it supersedes the normal starting limit for action ratings.</p><p>Skovlander insurrectionists need supplies for their campaign of terror attacks against city institutions.</p><p>Prisoners, Spies 1 Escaped (forbidden)</p><p>Union organizers want to arm factory workers in advance of a strike.</p><p>Fleeing 2 Workers Contracts (forbidden)</p><p>A massive gang war creates high demand for restricted military weapons and heavy ordnance.</p><p>Devil or Dangerous 3 A Artifact (forbidden)</p><p>Exiled nobility slumming it in Doskvol has a sudden and or 4 Insurrectionists Anarchists (forbidden) urgent need to go home that they won’t explain.</p><p>Leviathan hunter made undocumented stops. Meet them outside the city and bring some things in uninspected.</p><p>or Immigrants 5 Refugees (restricted access)</p><p>Heiress needs to leave the city to meet her forbidden love. If you make it look like a kidnapping she’ll split the ransom.</p><p>Noble or Official 6 A Seeking Secret Travel</p><p>1 The city council outlaws a formerly legal product.</p>",
+   "max": 1,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "P6ArpDRN8KzSVAy0",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "brpUIczBIxAYQ8Sx",
+  "_key": "!items!brpUIczBIxAYQ8Sx",
+  "name": "Veteran",
+  "type": "crewAbility",
+  "img": "systems/duskwall/assets/icons/ability.svg",
+  "system": {
+   "crewType": "smugglers",
+   "rules": "Choose a special ability from another crew.",
+   "description": "",
+   "max": 2,
+   "taken": 0
+  },
+  "effects": [],
+  "folder": "P6ArpDRN8KzSVAy0",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ }
+]

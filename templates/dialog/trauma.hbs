@@ -1,0 +1,8 @@
+<div class="dw-form">
+  <p class="dw-lede">{{localize "DW.Trauma.explain" name=name label=label}}</p>
+  {{#if reason}}<p class="dw-hint">{{reason}}</p>{{/if}}
+  <fieldset class="dw-radios dw-radios--grid">
+    {{#each conditions}}<label class="dw-radio"><input type="radio" name="condition" value="{{this}}" {{#if @first}}checked{{/if}}> {{this}}</label>{{/each}}
+  </fieldset>
+  {{#if custom}}<label class="dw-field"><span>{{localize "DW.Trauma.custom"}}</span><input type="text" name="custom"></label>{{/if}}
+</div>

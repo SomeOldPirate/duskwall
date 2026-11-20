@@ -1,0 +1,206 @@
+{
+  "id": "duskwall",
+  "title": "Blades in the Dark",
+  "description": "<p>Blades in the Dark for Foundry VTT V14: scoundrels, crews, claims, factions and clocks in the haunted industrial city of Doskvol. Action, resistance, fortune and engagement rolls with automated stress, trauma and xp; payoff, heat and entanglements; downtime; the full playbooks, crew types and Doskvol factions in compendia.</p><p>Blades in the Dark is © John Harper / One Seven Design and is used under the Creative Commons Attribution 3.0 Unported licence. Unofficial fan implementation.</p>",
+  "version": "0.9.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.367"
+  },
+  "authors": [
+    {
+      "name": "Mark",
+      "flags": {}
+    }
+  ],
+  "readme": "README.md",
+  "license": "LICENSE.md",
+  "esmodules": [
+    "module/duskwall.mjs"
+  ],
+  "styles": [
+    "styles/duskwall.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "scoundrel": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "crew": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "faction": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "clock": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    },
+    "Item": {
+      "playbook": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ability": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "crewType": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "crewAbility": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "cohort": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "playbooks",
+      "label": "Playbooks",
+      "path": "packs/playbooks",
+      "type": "Item",
+      "system": "duskwall",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "abilities",
+      "label": "Special Abilities",
+      "path": "packs/abilities",
+      "type": "Item",
+      "system": "duskwall",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gear",
+      "label": "Items",
+      "path": "packs/gear",
+      "type": "Item",
+      "system": "duskwall",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "crew-types",
+      "label": "Crew Types",
+      "path": "packs/crew-types",
+      "type": "Item",
+      "system": "duskwall",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "crew-abilities",
+      "label": "Crew Abilities",
+      "path": "packs/crew-abilities",
+      "type": "Item",
+      "system": "duskwall",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "factions",
+      "label": "Factions of Doskvol",
+      "path": "packs/factions",
+      "type": "Actor",
+      "system": "duskwall",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rules",
+      "label": "Rules Reference",
+      "path": "packs/rules",
+      "type": "JournalEntry",
+      "system": "duskwall",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Blades in the Dark",
+      "sorting": "m",
+      "color": "#1c1a18",
+      "packs": [
+        "playbooks",
+        "abilities",
+        "gear",
+        "crew-types",
+        "crew-abilities",
+        "factions",
+        "rules"
+      ]
+    }
+  ],
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "stress",
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "styles",
+        "templates",
+        "lang"
+      ]
+    }
+  },
+  "url": "https://github.com/SomeOldPirate/duskwall",
+  "manifest": "https://github.com/SomeOldPirate/duskwall/releases/latest/download/system.json",
+  "download": "https://github.com/SomeOldPirate/duskwall/releases/latest/download/duskwall.zip",
+  "bugs": "https://github.com/SomeOldPirate/duskwall/issues",
+  "changelog": "https://github.com/SomeOldPirate/duskwall/blob/main/CHANGELOG.md"
+}

@@ -1,0 +1,1062 @@
+[
+ {
+  "_id": "vy6MRNE5yFRp5Gmu",
+  "_key": "!folders!vy6MRNE5yFRp5Gmu",
+  "name": "Scoundrels",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 0,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "priRQiWP91dBLBm5",
+  "_key": "!folders!priRQiWP91dBLBm5",
+  "name": "Spirits",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 1,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "NB55ARXs02LT6aB1",
+  "_key": "!items!NB55ARXs02LT6aB1",
+  "name": "Cutter",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/cutter.svg",
+  "system": {
+   "key": "cutter",
+   "spirit": "",
+   "tagline": "A dangerous and intimidating fighter",
+   "description": "<p>In the underworld of the Dusk, there are scoundrels who take what they want at the bloody edge of a blade or with a threatening presence that can stop a man cold. They are the enforcers, the debt collectors, the killers, the leg-breakers, and the thugs, commonly known as Cutters. Where subtlety fails, swift brutality—and the threat of worse to come—can solve the problem. Or at least turn it into a different kind of problem. When you play a Cutter, you earn xp when you address a challenge with violence or coercion. Go ahead and get up in everyone’s smug faces and tell them who’s boss, then let your blades do the talking if they don’t get the message. Do you have a personal code or a line you won’t cross? Do you want to be the boss or do you want to be the enforcer for the boss? How did you acquire your taste for violence and coercion?</p>",
+   "xpTriggers": [
+    "You addressed a challenge with violence or coercion.",
+    "You expressed your beliefs, drives, heritage, or background.",
+    "You struggled with issues from your vice or traumas during the session."
+   ],
+   "startingActions": {
+    "skirmish": 2,
+    "command": 1
+   },
+   "friendsLabel": "Dangerous Friends",
+   "friends": [
+    {
+     "name": "Marlane",
+     "role": "a pugilist"
+    },
+    {
+     "name": "Chael",
+     "role": "a vicious thug"
+    },
+    {
+     "name": "Mercy",
+     "role": "a cold killer"
+    },
+    {
+     "name": "Grace",
+     "role": "an extortionist"
+    },
+    {
+     "name": "Sawtooth",
+     "role": "a physicker"
+    }
+   ],
+   "gatherInfo": [
+    "How can I hurt them?",
+    "Who’s most afraid of me?",
+    "Who’s most dangerous here?",
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "Are they telling the truth?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Battleborn",
+    "Bodyguard",
+    "Ghost Fighter",
+    "Leader",
+    "Mule",
+    "Not to be Trifled With",
+    "Savage",
+    "Vigorous",
+    "Veteran"
+   ],
+   "gear": [
+    "Fine hand weapon",
+    "Fine heavy weapon",
+    "Scary weapon or tool",
+    "Manacles & chain",
+    "Rage essence vial",
+    "Spiritbane charm"
+   ],
+   "standardGear": true,
+   "stress": 9,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 6
+   },
+   "healing": 4,
+   "hasCoin": true,
+   "hasVice": true,
+   "stressLabel": "stress",
+   "traumaLabel": "trauma",
+   "traumaConditions": "standard",
+   "extras": []
+  },
+  "effects": [],
+  "folder": "vy6MRNE5yFRp5Gmu",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "I9nYZFdSv3cFdI7K",
+  "_key": "!items!I9nYZFdSv3cFdI7K",
+  "name": "Hound",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/hound.svg",
+  "system": {
+   "key": "hound",
+   "spirit": "",
+   "tagline": "A deadly sharpshooter and tracker",
+   "description": "<p>There’s always a need for scoundrels who can find what others want to keep hidden. Whether that’s a deadbeat gambler trying to skip out on their debts, a treacherous informant or witness who’s going to squeal to the Bluecoats, or the trail to a treasure squirreled away in a secret vault—it’s the Hounds that ferret them out. Why have a fair fight, when you can stalk and ambush your prey on your terms? The underworld is your hunting ground. When you play a Hound, you earn xp when you address a challenge with tracking or violence. Take the initiative to hunt down opportunities and targets for a score and be willing to hurt whoever stands in your way. Do you see the whole world as potential prey, or do you still care about people? Which target in the past gave you the most trouble? Why?</p>",
+   "xpTriggers": [
+    "You addressed a challenge with tracking or violence.",
+    "You expressed your beliefs, drives, heritage, or background.",
+    "You struggled with issues from your vice or traumas during the session."
+   ],
+   "startingActions": {
+    "hunt": 2,
+    "survey": 1
+   },
+   "friendsLabel": "Deadly Friends",
+   "friends": [
+    {
+     "name": "Steiner",
+     "role": "an assassin"
+    },
+    {
+     "name": "Celene",
+     "role": "a sentinel"
+    },
+    {
+     "name": "Melvir",
+     "role": "a physicker"
+    },
+    {
+     "name": "Veleris",
+     "role": "a spy"
+    },
+    {
+     "name": "Casta",
+     "role": "a bounty hunter"
+    }
+   ],
+   "gatherInfo": [
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "What are they really feeling?",
+    "Where are they vulnerable?",
+    "Where did [X] go?",
+    "How can I find [X]?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Sharpshooter",
+    "Focused",
+    "Ghost Hunter",
+    "Scout",
+    "Survivor",
+    "Tough as Nails",
+    "Vengeful",
+    "Veteran"
+   ],
+   "gear": [
+    "Fine pair of pistols",
+    "Fine long rifle",
+    "Electroplasmic ammunition",
+    "A trained hunting pet",
+    "Spyglass",
+    "Spiritbane charm"
+   ],
+   "standardGear": true,
+   "stress": 9,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 6
+   },
+   "healing": 4,
+   "hasCoin": true,
+   "hasVice": true,
+   "stressLabel": "stress",
+   "traumaLabel": "trauma",
+   "traumaConditions": "standard",
+   "extras": []
+  },
+  "effects": [],
+  "folder": "vy6MRNE5yFRp5Gmu",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "mGuPbIgkTBDcEmtt",
+  "_key": "!items!mGuPbIgkTBDcEmtt",
+  "name": "Leech",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/leech.svg",
+  "system": {
+   "key": "leech",
+   "spirit": "",
+   "tagline": "A saboteur and technician",
+   "description": "<p>The world is built on industry, and the underworld is no different. Leeches are the scoundrels who distill the drugs, refine the arcane essences, build the bombs, bandage the wounds, and forge the tools of the criminal trades—and knowing how to make things also means knowing how to break them. When you play a Leech, you earn xp when you address a challenge with technical skill or mayhem. Duskwall is a city full of industrial machinery, spark-crafts, plumbing, and electrical systems for you to bend to your purposes or sabotage. Get out your tools and get your hands dirty. The extensive training that makes a Leech is rare and strange among the disenfranchised underworld class—how did you learn your arts? Which side of the coin do you prefer, the side of creation and restoration, or the side of mayhem and destruction?</p>",
+   "xpTriggers": [
+    "You addressed a challenge with technical skill or mayhem.",
+    "You expressed your beliefs, drives, heritage, or background.",
+    "You struggled with issues from your vice or traumas during the session."
+   ],
+   "startingActions": {
+    "tinker": 2,
+    "wreck": 1
+   },
+   "friendsLabel": "Clever Friends",
+   "friends": [
+    {
+     "name": "Stazia",
+     "role": "an apothecary"
+    },
+    {
+     "name": "Veldren",
+     "role": "a psychonaut"
+    },
+    {
+     "name": "Eckerd",
+     "role": "a corpse thief"
+    },
+    {
+     "name": "Jul",
+     "role": "a blood dealer"
+    },
+    {
+     "name": "Malista",
+     "role": "a priestess"
+    }
+   ],
+   "gatherInfo": [
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "Are they telling the truth?",
+    "What can I tinker with here?",
+    "What might happen if I [X]?",
+    "How can I find [X]?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Alchemist",
+    "Analyst",
+    "Artificer",
+    "Fortitude",
+    "Ghost Ward",
+    "Physicker",
+    "Saboteur",
+    "Venomous",
+    "Veteran"
+   ],
+   "gear": [
+    "Fine tinkering tools",
+    "Fine wrecking tools",
+    "Blowgun & darts, syringes",
+    "Bandolier 1",
+    "Bandolier 2",
+    "Gadgets"
+   ],
+   "standardGear": true,
+   "stress": 9,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 6
+   },
+   "healing": 4,
+   "hasCoin": true,
+   "hasVice": true,
+   "stressLabel": "stress",
+   "traumaLabel": "trauma",
+   "traumaConditions": "standard",
+   "extras": []
+  },
+  "effects": [],
+  "folder": "vy6MRNE5yFRp5Gmu",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "xGI1HybsDZzPFPik",
+  "_key": "!items!xGI1HybsDZzPFPik",
+  "name": "Lurk",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/lurk.svg",
+  "system": {
+   "key": "lurk",
+   "spirit": "",
+   "tagline": "A stealthy infiltrator and burglar",
+   "description": "<p>There is no longer any sunlight—the world is plunged into eternal night. There are scoundrels who live in the darkness, who prowl the underworld unseen, trespassing where they will. They are the burglars, the spies, the infiltrators, the cut-throats—commonly called Lurks. When you play a Lurk, you earn xp when you address a challenge with stealth or evasion. Stay out of sight, sneak past your enemies, and strike from the shadows. If things go wrong, there’s no shame in disappearing into the darkness... for now. Your greatest ally is the dark and twisting city, its ink-dark streets, its rooftop pathways. How did you learn the stealthy arts of the Lurk? Which aspect are you drawn to most? The invisible watcher, spying on the unwary? The adroit acrobat, racing across rooftops? The deadly ambush predator, waiting for a victim in the darkness?</p>",
+   "xpTriggers": [
+    "You addressed a challenge with stealth or evasion.",
+    "You expressed your beliefs, drives, heritage, or background.",
+    "You struggled with issues from your vice or traumas during the session."
+   ],
+   "startingActions": {
+    "prowl": 2,
+    "finesse": 1
+   },
+   "friendsLabel": "Shady Friends",
+   "friends": [
+    {
+     "name": "Telda",
+     "role": "a beggar"
+    },
+    {
+     "name": "Darmot",
+     "role": "a bluecoat"
+    },
+    {
+     "name": "Frake",
+     "role": "a locksmith"
+    },
+    {
+     "name": "Roslyn Kellis",
+     "role": "a noble"
+    },
+    {
+     "name": "Petra",
+     "role": "a city clerk"
+    }
+   ],
+   "gatherInfo": [
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "What should I look out for?",
+    "What’s the best way in?",
+    "Where can I hide here?",
+    "How can I find [X]?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Infiltrator",
+    "Ambush",
+    "Daredevil",
+    "The Devil's Footsteps",
+    "Expertise",
+    "Ghost Veil",
+    "Reflexes",
+    "Shadow",
+    "Veteran"
+   ],
+   "gear": [
+    "Fine lockpicks",
+    "Fine shadow cloak",
+    "Light climbing gear",
+    "Silence potion vial",
+    "Dark-sight goggles",
+    "Spiritbane charm"
+   ],
+   "standardGear": true,
+   "stress": 9,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 6
+   },
+   "healing": 4,
+   "hasCoin": true,
+   "hasVice": true,
+   "stressLabel": "stress",
+   "traumaLabel": "trauma",
+   "traumaConditions": "standard",
+   "extras": []
+  },
+  "effects": [],
+  "folder": "vy6MRNE5yFRp5Gmu",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "BfSZ1fyp29ix5HTJ",
+  "_key": "!items!BfSZ1fyp29ix5HTJ",
+  "name": "Slide",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/slide.svg",
+  "system": {
+   "key": "slide",
+   "spirit": "",
+   "tagline": "A subtle manipulator and spy",
+   "description": "<p>It’s said that the primal substance of the world is not mere matter or strange plasms, it’s lies. Everything we do, everything we care about, everything we value—all lies we tell each other and ourselves. The world is a fabrication, a convenient fiction, a story—and the storytellers are Slides. When you play a Slide, you earn xp when you address a challenge with deception or influence. Talk your way into trouble, then talk your way out again. Pretend to be someone you’re not. Bluff, lie, and manipulate to get your way. Every problem is ultimately a problem because of people—and people are the instrument upon which you play your music. Is there anything true about you, at your core? Or are you whatever you need to be, day to day? Are all of your relationships merely gambits that you play for your advantage?</p>",
+   "xpTriggers": [
+    "You addressed a challenge with deception or influence.",
+    "You expressed your beliefs, drives, heritage, or background.",
+    "You struggled with issues from your vice or traumas during the session."
+   ],
+   "startingActions": {
+    "sway": 2,
+    "consort": 1
+   },
+   "friendsLabel": "Sly Friends",
+   "friends": [
+    {
+     "name": "Bryl",
+     "role": "a drug dealer"
+    },
+    {
+     "name": "Bazso Baz",
+     "role": "a gang leader"
+    },
+    {
+     "name": "Klyra",
+     "role": "a tavern owner"
+    },
+    {
+     "name": "Nyryx",
+     "role": "a prostitute"
+    },
+    {
+     "name": "Harker",
+     "role": "a jail-bird"
+    }
+   ],
+   "gatherInfo": [
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "Are they telling the truth?",
+    "What are they really feeling?",
+    "What do they really care about?",
+    "How can I blend in here?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Rook's Gambit",
+    "Cloak & Dagger",
+    "Ghost Voice",
+    "Like Looking into a Mirror",
+    "A Little Something on the Side",
+    "Mesmerism",
+    "Subterfuge",
+    "Trust in Me",
+    "Veteran"
+   ],
+   "gear": [
+    "Fine clothes & jewelry",
+    "Fine disguise kit",
+    "Fine loaded dice, trick cards",
+    "Trance powder",
+    "A cane-sword",
+    "Spiritbane charm"
+   ],
+   "standardGear": true,
+   "stress": 9,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 6
+   },
+   "healing": 4,
+   "hasCoin": true,
+   "hasVice": true,
+   "stressLabel": "stress",
+   "traumaLabel": "trauma",
+   "traumaConditions": "standard",
+   "extras": []
+  },
+  "effects": [],
+  "folder": "vy6MRNE5yFRp5Gmu",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "7xAyuBi2x7Cz1hOw",
+  "_key": "!items!7xAyuBi2x7Cz1hOw",
+  "name": "Spider",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/spider.svg",
+  "system": {
+   "key": "spider",
+   "spirit": "",
+   "tagline": "A devious mastermind",
+   "description": "<p>The underworld may appear on the surface to be a chaotic array of warring factions and bloody deeds, but it has a beautiful order to those who are able to see it. This pattern is the web of connections, favors, vendettas, and secrets that bind the criminal world together. The scoundrels who pluck the strands of this web are known as Spiders. When you play a Spider, you earn xp when you address a challenge with calculation or conspiracy. Reach out to your contacts, friends, and associates to set your crew up for success. Use your downtime activities and flashbacks wisely to prepare for trouble and to calculate the angles of success. When things go wrong, don’t panic, and remember: you planned for this. Are you enmeshed in the network of favors and debts that you exploit as a Spider, or do you scrupulously hold yourself apart, as a cold predator upon the web?</p>",
+   "xpTriggers": [
+    "You addressed a challenge with calculation or conspiracy.",
+    "You expressed your beliefs, drives, heritage, or background.",
+    "You struggled with issues from your vice or traumas during the session."
+   ],
+   "startingActions": {
+    "consort": 2,
+    "study": 1
+   },
+   "friendsLabel": "Shrewd Friends",
+   "friends": [
+    {
+     "name": "Salia",
+     "role": "an information broker"
+    },
+    {
+     "name": "Augus",
+     "role": "a master architect"
+    },
+    {
+     "name": "Jennah",
+     "role": "a servant"
+    },
+    {
+     "name": "Riven",
+     "role": "a chemist"
+    },
+    {
+     "name": "Jeren",
+     "role": "a bluecoat archivist"
+    }
+   ],
+   "gatherInfo": [
+    "What do they want most?",
+    "What should I look out for?",
+    "Where’s the leverage here?",
+    "How can I discover [X]?",
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Foresight",
+    "Calculating",
+    "Connected",
+    "Functioning Vice",
+    "Ghost Contract",
+    "Jail Bird",
+    "Mastermind",
+    "Weaving the Web",
+    "Veteran"
+   ],
+   "gear": [
+    "Fine cover identity",
+    "Fine bottle of whiskey",
+    "Blueprints",
+    "Vial of slumber essence",
+    "Concealed palm pistol",
+    "Spiritbane charm"
+   ],
+   "standardGear": true,
+   "stress": 9,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 6
+   },
+   "healing": 4,
+   "hasCoin": true,
+   "hasVice": true,
+   "stressLabel": "stress",
+   "traumaLabel": "trauma",
+   "traumaConditions": "standard",
+   "extras": []
+  },
+  "effects": [],
+  "folder": "vy6MRNE5yFRp5Gmu",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "Hg024JRBkvf3gRxh",
+  "_key": "!items!Hg024JRBkvf3gRxh",
+  "name": "Whisper",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/whisper.svg",
+  "system": {
+   "key": "whisper",
+   "spirit": "",
+   "tagline": "An arcane adept and channeler",
+   "description": "<p>Duskwall is a haunted place—plagued by rogue spirits consumed by vengeance, by cunning demons manipulating humans for their own inscrutable purposes, and by even stranger horrors lurking in the space just beyond sight and reason. To go into this shadowy world without knowledge of the arcane and the occult is to walk unarmed into the lair of the enemy. The Whispers are the sentinels who watch the greater darkness—staring into the void so others don’t have to. When you play a Whisper, you earn xp when you address a challenge with knowledge or arcane power. Seek out the strange and dark forces and bend them to your will. By being willing to face the trauma from the stress-intensive abilities of the arcane, you’ll slowly remove parts of yourself, and replace them with power. Why did you pursue the path of the Whisper? How did you develop your abilities? Are you a natural, did you study and practice on your own, or did you have a mentor?</p>",
+   "xpTriggers": [
+    "You addressed a challenge with knowledge or arcane power.",
+    "You expressed your beliefs, drives, heritage, or background.",
+    "You struggled with issues from your vice or traumas during the session."
+   ],
+   "startingActions": {
+    "attune": 2,
+    "study": 1
+   },
+   "friendsLabel": "Strange Friends",
+   "friends": [
+    {
+     "name": "Nyryx",
+     "role": "a possessor ghost"
+    },
+    {
+     "name": "Scurlock",
+     "role": "a vampire"
+    },
+    {
+     "name": "Setarra",
+     "role": "a demon"
+    },
+    {
+     "name": "Quellyn",
+     "role": "a witch"
+    },
+    {
+     "name": "Flint",
+     "role": "a spirit trafficker"
+    }
+   ],
+   "gatherInfo": [
+    "What is arcane or weird here?",
+    "What echoes in the ghost field?",
+    "What is hidden or lost here?",
+    "What do they intend to do?",
+    "What drives them to do this?",
+    "How can I reveal [X]?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Compel",
+    "Ghost Mind",
+    "Iron Will",
+    "Occultist",
+    "Ritual",
+    "Strange Methods",
+    "Tempest",
+    "Warded",
+    "Veteran"
+   ],
+   "gear": [
+    "Fine lightning hook",
+    "Fine spirit mask",
+    "Electroplasm vials",
+    "Spirit bottles (2)",
+    "Ghost key",
+    "Demonbane charm"
+   ],
+   "standardGear": true,
+   "stress": 9,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 6
+   },
+   "healing": 4,
+   "hasCoin": true,
+   "hasVice": true,
+   "stressLabel": "stress",
+   "traumaLabel": "trauma",
+   "traumaConditions": "standard",
+   "extras": []
+  },
+  "effects": [],
+  "folder": "vy6MRNE5yFRp5Gmu",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "SX2VpA8TXmyA0tJI",
+  "_key": "!items!SX2VpA8TXmyA0tJI",
+  "name": "Ghost",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/ghost.svg",
+  "system": {
+   "key": "ghost",
+   "spirit": "ghost",
+   "tagline": "A disembodied spirit, craving vengeance",
+   "description": "<p>A rogue spirit is a scourge upon Duskwall, hunted by Spirit Wardens and sought out as a servant by Whispers and cultists. But your righteous vengeance burns so bright and pure—you must not allow yourself to be thwarted by anyone.</p><p><strong>You have an intense need: life essence. To satisfy this need, possess a living victim and consume their spirit energy (this may be a downtime activity). When you do so, clear half your drain (round down).</strong></p>",
+   "xpTriggers": [
+    "You exacted vengeance upon those whom you deem deserving.",
+    "You expressed your outrage or anger, or settled scores from your heritage or background.",
+    "You struggled with issues from your need or glooms during the session."
+   ],
+   "startingActions": {
+    "hunt": 1,
+    "prowl": 1,
+    "attune": 1
+   },
+   "friendsLabel": "Enemies & Rivals",
+   "friends": [],
+   "gatherInfo": [
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "What are they really feeling?",
+    "What should I lookout for?",
+    "Where’s the weakness here?",
+    "How can I find [X]?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Ghost Form",
+    "Dissipate",
+    "Manifest",
+    "Poltergeist",
+    "Possess",
+    "Veteran"
+   ],
+   "gear": [],
+   "standardGear": false,
+   "stress": 9,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 0,
+    "normal": 0,
+    "heavy": 0
+   },
+   "healing": 4,
+   "hasCoin": false,
+   "hasVice": false,
+   "stressLabel": "drain",
+   "traumaLabel": "gloom",
+   "traumaConditions": "gloom",
+   "need": "You have an intense need: life essence. To satisfy this need, possess a living victim and consume their spirit energy (this may be a downtime activity). When you do so, clear half your drain (round down).",
+   "extras": []
+  },
+  "effects": [],
+  "folder": "priRQiWP91dBLBm5",
+  "sort": 10,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "QQJYyc1F4wwLxB7R",
+  "_key": "!items!QQJYyc1F4wwLxB7R",
+  "name": "Hull",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/hull.svg",
+  "system": {
+   "key": "hull",
+   "spirit": "hull",
+   "tagline": "A spirit animating a spark-craft frame",
+   "description": "<p>You have become a pale echo of your living self, trapped in a metal body, forced into servitude. Is this all that remains of you?</p><p><strong>Your spark-craft body runs on electroplasm. Recharge your capacitors by connecting to an industrial-grade generator (downtime activity). When you do this, clear 5 drain.</strong></p>",
+   "xpTriggers": [
+    "You fulfilled your functions despite difficulty or danger.",
+    "You suppressed or ignored your former human beliefs, drives, heritage, or background.",
+    "You struggled with issues from your wear during the session."
+   ],
+   "startingActions": {
+    "skirmish": 1,
+    "attune": 1
+   },
+   "friendsLabel": "Master & Allies",
+   "friends": [],
+   "gatherInfo": [
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "What are they really feeling?",
+    "What should I lookout for?",
+    "Where’s the weakness here?",
+    "How can I find [X]?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Automaton",
+    "Overcharge",
+    "Compartments",
+    "Electroplasmic Projectors",
+    "Interface",
+    "Secondary Hull",
+    "Frame Upgrade"
+   ],
+   "gear": [],
+   "standardGear": true,
+   "stress": 10,
+   "trauma": 4,
+   "playbookXp": 8,
+   "attributeXp": 6,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 7
+   },
+   "healing": 4,
+   "hasCoin": false,
+   "hasVice": false,
+   "stressLabel": "drain",
+   "traumaLabel": "wear",
+   "traumaConditions": "wear",
+   "need": "Your spark-craft body runs on electroplasm. Recharge your capacitors by connecting to an industrial-grade generator (downtime activity). When you do this, clear 5 drain.",
+   "extras": [
+    {
+     "key": "functions",
+     "label": "Functions (choose three)",
+     "max": 3,
+     "options": [
+      "to guard",
+      "to destroy",
+      "to discover",
+      "to acquire",
+      "to labor at"
+     ]
+    },
+    {
+     "key": "frame",
+     "label": "Frame",
+     "max": 2,
+     "options": [
+      "Small (cat size, -1 scale)",
+      "Medium (human size)",
+      "Heavy (wagon size, +1 scale)"
+     ]
+    },
+    {
+     "key": "features",
+     "label": "Frame Features",
+     "max": 10,
+     "options": [
+      "Levitation",
+      "Reflexes",
+      "Life-Like Appearance",
+      "Spider Climb",
+      "Interior Chamber",
+      "Plating",
+      "Phonograph",
+      "Sensors",
+      "Smoke Projectors",
+      "Spring-Leap Pistons"
+     ]
+    }
+   ]
+  },
+  "effects": [],
+  "folder": "priRQiWP91dBLBm5",
+  "sort": 11,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "y6he3pq20GLnb2Du",
+  "_key": "!items!y6he3pq20GLnb2Du",
+  "name": "Vampire",
+  "type": "playbook",
+  "img": "systems/duskwall/assets/icons/vampire.svg",
+  "system": {
+   "key": "vampire",
+   "spirit": "vampire",
+   "tagline": "A spirit animating an undead body",
+   "description": "<p>The apex of human existence is the vampire—the sublime, immortal union of spirit and flesh. Mortals are merely flawed reflections of this perfection, suitable only for recruitment into the ranks of the eternal, or fed upon as chattel.</p><p><strong>Your vice is life essence, consumed from a living human. Use 1 downtime activity to hunt prey and indulge your vice. Also, when you feed, erase all level 1 harm and mark 4 ticks on your healing clock. This is the only way you can heal.</strong></p>",
+   "xpTriggers": [
+    "You displayed your dominance or slayed without mercy.",
+    "You expressed your beliefs, drives, heritage, or background.",
+    "You struggled with issues from your vice, traumas, or strictures during the session."
+   ],
+   "startingActions": {
+    "hunt": 1,
+    "prowl": 1,
+    "skirmish": 1,
+    "attune": 1,
+    "command": 1,
+    "sway": 1
+   },
+   "friendsLabel": "Dark Servants",
+   "friends": [
+    {
+     "name": "Rutherford",
+     "role": "a butler"
+    },
+    {
+     "name": "Lylandra",
+     "role": "a consort"
+    },
+    {
+     "name": "Kira",
+     "role": "a bodyguard"
+    },
+    {
+     "name": "Otto",
+     "role": "a coachman"
+    },
+    {
+     "name": "Edrik",
+     "role": "an envoy"
+    }
+   ],
+   "gatherInfo": [
+    "What do they intend to do?",
+    "How can I get them to [X]?",
+    "What are they really feeling?",
+    "What should I lookout for?",
+    "Where’s the weakness here?",
+    "How can I find [X]?",
+    "What’s really going on here?"
+   ],
+   "abilities": [
+    "Undead",
+    "Terrible Power",
+    "Arcane Sight",
+    "A Void in the Echo",
+    "Dark Talent",
+    "Sinister Guile",
+    "Veteran"
+   ],
+   "gear": [
+    "Fine clothes and accoutrements",
+    "Fine personal weapon",
+    "Fine shadow cloak",
+    "Demonbane charm",
+    "Spiritbane charm"
+   ],
+   "standardGear": true,
+   "stress": 12,
+   "trauma": 4,
+   "playbookXp": 10,
+   "attributeXp": 8,
+   "maxRating": 4,
+   "load": {
+    "light": 3,
+    "normal": 5,
+    "heavy": 6
+   },
+   "healing": 4,
+   "hasCoin": true,
+   "hasVice": false,
+   "stressLabel": "stress",
+   "traumaLabel": "trauma",
+   "traumaConditions": "vampire",
+   "need": "Your vice is life essence, consumed from a living human. Use 1 downtime activity to hunt prey and indulge your vice. Also, when you feed, erase all level 1 harm and mark 4 ticks on your healing clock. This is the only way you can heal.",
+   "extras": [
+    {
+     "key": "strictures",
+     "label": "Strictures",
+     "max": 5,
+     "options": [
+      "Slumber: In downtime, you must spend one activity resting in a dark, silent place (or else suffer 3 stress).",
+      "Forbidden: You cannot enter a private residence without permission from the owner.",
+      "Repelled: Spiritbane charms can hold you at bay. (Take 2 stress to resist the repulsion.)",
+      "Bestial: When you suffer physical harm or overindulge your vice, your body twists into a horrific bestial form until you next feed without overindulging.",
+      "Bound: Your spirit must remain in this body, or be destroyed."
+     ]
+    }
+   ]
+  },
+  "effects": [],
+  "folder": "priRQiWP91dBLBm5",
+  "sort": 12,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ }
+]

@@ -1,0 +1,98 @@
+<section class="dw-item-body dw-item-body--{{type}}">
+  <header class="dw-item-head">
+    <img src="{{item.img}}" alt="" {{#if editable}}data-action="editImage" data-edit="img"{{/if}}>
+    <div>
+      <span class="dw-kicker">{{typeLabel}}</span>
+      <input class="dw-head__name" type="text" name="name" value="{{item.name}}" {{#unless editable}}disabled{{/unless}}>
+    </div>
+  </header>
+
+  {{#if is_ability}}
+  <div class="dw-row">
+    <label class="dw-field"><span>{{localize "DW.Item.playbook"}}</span>
+      <select name="system.playbook" {{#unless editable}}disabled{{/unless}}><option value="">—</option>{{#each playbooks}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+    </label>
+    <label class="dw-field"><span>{{localize "DW.Item.max"}}</span><input type="number" name="system.max" value="{{system.max}}" min="1" max="6" {{#unless editable}}disabled{{/unless}}></label>
+    <label class="dw-field"><span>{{localize "DW.Item.taken"}}</span><input type="number" name="system.taken" value="{{system.taken}}" min="0" max="{{system.max}}" {{#unless editable}}disabled{{/unless}}></label>
+  </div>
+  <label class="dw-field"><span>{{localize "DW.Item.rules"}}</span><textarea name="system.rules" rows="3" {{#unless editable}}disabled{{/unless}}>{{system.rules}}</textarea></label>
+  {{/if}}
+
+  {{#if is_crewAbility}}
+  <div class="dw-row">
+    <label class="dw-field"><span>{{localize "DW.Item.max"}}</span><input type="number" name="system.max" value="{{system.max}}" min="1" max="6" {{#unless editable}}disabled{{/unless}}></label>
+    <label class="dw-field"><span>{{localize "DW.Item.taken"}}</span><input type="number" name="system.taken" value="{{system.taken}}" min="0" max="{{system.max}}" {{#unless editable}}disabled{{/unless}}></label>
+  </div>
+  <label class="dw-field"><span>{{localize "DW.Item.rules"}}</span><textarea name="system.rules" rows="3" {{#unless editable}}disabled{{/unless}}>{{system.rules}}</textarea></label>
+  {{/if}}
+
+  {{#if is_gear}}
+  <div class="dw-row">
+    <label class="dw-field"><span>{{localize "DW.Load.label"}}</span><input type="number" name="system.load" value="{{system.load}}" min="0" max="6" {{#unless editable}}disabled{{/unless}}></label>
+    <label class="dw-field"><span>{{localize "DW.Item.category"}}</span>
+      <select name="system.category" {{#unless editable}}disabled{{/unless}}><option value="">—</option>{{#each categories}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+    </label>
+    <label class="dw-field"><span>{{localize "DW.Item.maxUses"}}</span><input type="number" name="system.maxUses" value="{{system.maxUses}}" min="0" max="10" {{#unless editable}}disabled{{/unless}}></label>
+  </div>
+  <div class="dw-row">
+    <label class="dw-check-field"><input type="checkbox" name="system.standard" {{checked system.standard}} {{#unless editable}}disabled{{/unless}}> {{localize "DW.Item.standard"}}</label>
+    <label class="dw-check-field"><input type="checkbox" name="system.used" {{checked system.used}} {{#unless editable}}disabled{{/unless}}> {{localize "DW.Item.used"}}</label>
+  </div>
+  {{/if}}
+
+  {{#if is_playbook}}
+  <p class="dw-tagline">{{system.tagline}}</p>
+  <dl class="dw-facts">
+    <dt>{{localize "DW.Item.startingActions"}}</dt><dd>{{startingActions}}</dd>
+    <dt>{{localize "DW.Ability.label"}}</dt><dd>{{#each system.abilities}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</dd>
+    {{#if system.gear.length}}<dt>{{localize "DW.Gear.playbook"}}</dt><dd>{{#each system.gear}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</dd>{{/if}}
+    <dt>{{system.friendsLabel}}</dt><dd>{{#each system.friends}}{{name}}, {{role}}{{#unless @last}}; {{/unless}}{{/each}}</dd>
+    <dt>{{localize "DW.Xp.label"}}</dt><dd>{{#each system.xpTriggers}}{{this}} {{/each}}</dd>
+    {{#if system.need}}<dt>{{localize "DW.Item.need"}}</dt><dd>{{system.need}}</dd>{{/if}}
+  </dl>
+  <p class="dw-hint">{{localize "DW.Playbook.dragHint"}}</p>
+  {{/if}}
+
+  {{#if is_crewType}}
+  <p class="dw-tagline">{{system.tagline}}</p>
+  <dl class="dw-facts">
+    <dt>{{localize "DW.Ability.label"}}</dt><dd>{{#each system.abilities}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</dd>
+    <dt>{{localize "DW.Upgrade.special"}}</dt><dd>{{upgradesList}}</dd>
+    <dt>{{localize "DW.Claims.label"}}</dt><dd>{{claimsList}}</dd>
+    <dt>{{system.huntingGroundsLabel}}</dt><dd>{{#each system.huntingGrounds}}{{name}}{{#unless @last}}, {{/unless}}{{/each}}</dd>
+    <dt>{{localize "DW.Item.startingUpgrades"}}</dt><dd>{{system.startingUpgrades.text}}</dd>
+    <dt>{{localize "DW.Xp.label"}}</dt><dd>{{#each system.xpTriggers}}{{this}} {{/each}}</dd>
+  </dl>
+  <p class="dw-hint">{{localize "DW.CrewType.dragHint"}}</p>
+  {{/if}}
+
+  {{#if is_cohort}}
+  <div class="dw-row">
+    <label class="dw-field"><span>{{localize "DW.Cohort.kind"}}</span>
+      <select name="system.kind" {{#unless editable}}disabled{{/unless}}>{{#each kinds}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}<option value="vehicle" {{#if (eq system.kind "vehicle")}}selected{{/if}}>{{localize "DW.Cohort.vehicle"}}</option></select>
+    </label>
+    <label class="dw-check-field"><input type="checkbox" name="system.armor" {{checked system.armor}} {{#unless editable}}disabled{{/unless}}> {{localize "DW.Cohort.hasArmor"}}</label>
+  </div>
+  {{#if gangTypes.length}}
+  <div class="dw-field"><span>{{localize "DW.Cohort.types"}}</span>
+    <div class="dw-chips">{{#each gangTypes}}<button type="button" class="dw-chip{{#if on}} is-on{{/if}}" data-action="toggleList" data-list="types" data-value="{{key}}" {{#unless @root.editable}}disabled{{/unless}}>{{label}}</button>{{/each}}</div>
+  </div>
+  {{else}}
+  <label class="dw-field"><span>{{localize "DW.Cohort.expertType"}}</span><input type="text" name="system.expertType" value="{{expertType}}" placeholder="{{localize 'DW.Cohort.expertHint'}}" {{#unless editable}}disabled{{/unless}}></label>
+  {{/if}}
+  <div class="dw-field"><span>{{localize "DW.Cohort.edges"}}</span>
+    <div class="dw-chips">{{#each edgeList}}<button type="button" class="dw-chip{{#if on}} is-on{{/if}}" data-action="toggleList" data-list="edges" data-value="{{key}}" {{#unless @root.editable}}disabled{{/unless}}>{{key}}</button>{{/each}}</div>
+  </div>
+  <div class="dw-field"><span>{{localize "DW.Cohort.flaws"}}</span>
+    <div class="dw-chips">{{#each flawList}}<button type="button" class="dw-chip{{#if on}} is-on{{/if}}" data-action="toggleList" data-list="flaws" data-value="{{key}}" {{#unless @root.editable}}disabled{{/unless}}>{{key}}</button>{{/each}}</div>
+  </div>
+  <div class="dw-field"><span>{{localize "DW.Harm.label"}}</span>
+    <div class="dw-chips">{{#each harm}}<button type="button" class="dw-check{{#if on}} is-on{{/if}}" data-action="setHarm" data-n="{{n}}" {{#unless @root.editable}}disabled{{/unless}}>{{label}}</button>{{/each}}</div>
+  </div>
+  {{#if item.parent}}<p class="dw-hint">{{localize "DW.Cohort.derived" quality=system.quality pool=system.pool}}</p>{{/if}}
+  {{/if}}
+
+  <div class="dw-item-desc">
+    {{formInput fields.description value=system.description enriched=enrichedDescription toggled=true editable=editable name="system.description"}}
+  </div>
+</section>

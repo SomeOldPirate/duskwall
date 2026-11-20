@@ -1,0 +1,2607 @@
+[
+ {
+  "_id": "Q2wsG4zKVpA65mwO",
+  "_key": "!folders!Q2wsG4zKVpA65mwO",
+  "name": "Underworld",
+  "type": "Actor",
+  "folder": null,
+  "sorting": "m",
+  "sort": 0,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "Elx1qh36vES6oqQ3",
+  "_key": "!actors!Elx1qh36vES6oqQ3",
+  "name": "The Unseen",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Unseen",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "zPZmasDbgjArzP4T",
+  "_key": "!actors!zPZmasDbgjArzP4T",
+  "name": "The Hive",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Hive",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "PyIawfZFrfCOLIgF",
+  "_key": "!actors!PyIawfZFrfCOLIgF",
+  "name": "The Circle of Flame",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Circle of Flame",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "yAm3NVbt0O5PFRSZ",
+  "_key": "!actors!yAm3NVbt0O5PFRSZ",
+  "name": "The Silver Nails",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Silver Nails",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "Vt5TvGaZFeluyFSZ",
+  "_key": "!actors!Vt5TvGaZFeluyFSZ",
+  "name": "Lord Scurlock",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Lord Scurlock",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "dmauUNAi6IH4IoqT",
+  "_key": "!actors!dmauUNAi6IH4IoqT",
+  "name": "The Crows",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Crows",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "Eg7M6q7CqS9H6mh5",
+  "_key": "!actors!Eg7M6q7CqS9H6mh5",
+  "name": "The Lampblacks",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Lampblacks",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "rAe1bi62nwWDyCcM",
+  "_key": "!actors!rAe1bi62nwWDyCcM",
+  "name": "The Red Sashes",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Red Sashes",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "dvEJHG8dQCJJqCIc",
+  "_key": "!actors!dvEJHG8dQCJJqCIc",
+  "name": "The Dimmer Sisters",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 8,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Dimmer Sisters",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "stlF7s9OHNht9T51",
+  "_key": "!actors!stlF7s9OHNht9T51",
+  "name": "The Grinders",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 9,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Grinders",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "1qhwYnt3cGf3CDZJ",
+  "_key": "!actors!1qhwYnt3cGf3CDZJ",
+  "name": "The Billhooks",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 10,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Billhooks",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "zTtuYbqG0RolXozM",
+  "_key": "!actors!zTtuYbqG0RolXozM",
+  "name": "The Wraiths",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 11,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Wraiths",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "KnCf4EDfqKnHAVPj",
+  "_key": "!actors!KnCf4EDfqKnHAVPj",
+  "name": "The Gray Cloaks",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 12,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Gray Cloaks",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "H9oqEHH9CQabrCF4",
+  "_key": "!actors!H9oqEHH9CQabrCF4",
+  "name": "Ulf Ironborn",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 1,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 13,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Ulf Ironborn",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "0i28H5rsKgiqzDaO",
+  "_key": "!actors!0i28H5rsKgiqzDaO",
+  "name": "The Fog Hounds",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 1,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 14,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Fog Hounds",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "4bS2VnhlFEn1aY6F",
+  "_key": "!actors!4bS2VnhlFEn1aY6F",
+  "name": "The Lost",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "underworld",
+   "tier": 1,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "Q2wsG4zKVpA65mwO",
+  "sort": 15,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Lost",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "2vy0QHUJkibzuV8s",
+  "_key": "!folders!2vy0QHUJkibzuV8s",
+  "name": "Institutions",
+  "type": "Actor",
+  "folder": null,
+  "sorting": "m",
+  "sort": 1,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "XdqWxc4dgp8e9H7n",
+  "_key": "!actors!XdqWxc4dgp8e9H7n",
+  "name": "Imperial Military",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 6,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Imperial Military",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "2IfPUqcKzi0tjJBu",
+  "_key": "!actors!2IfPUqcKzi0tjJBu",
+  "name": "City Council",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 5,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "City Council",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "JZwK5wkhDh7Fqygg",
+  "_key": "!actors!JZwK5wkhDh7Fqygg",
+  "name": "Ministry of Preservation",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 5,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Ministry of Preservation",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "62AIOqSgjZRzPQFT",
+  "_key": "!actors!62AIOqSgjZRzPQFT",
+  "name": "Leviathan Hunters",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 5,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Leviathan Hunters",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "Wse8r19dAAXbWU0O",
+  "_key": "!actors!Wse8r19dAAXbWU0O",
+  "name": "Ironhook Prison",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Ironhook Prison",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "tjSGIriQit6Sbo9w",
+  "_key": "!actors!tjSGIriQit6Sbo9w",
+  "name": "Sparkwrights",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Sparkwrights",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "6cKUFCaZ3fuiLJvO",
+  "_key": "!actors!6cKUFCaZ3fuiLJvO",
+  "name": "Spirit Wardens",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Spirit Wardens",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "Qp57gu8TfYKtCwcq",
+  "_key": "!actors!Qp57gu8TfYKtCwcq",
+  "name": "Bluecoats",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Bluecoats",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "xgiQ8z0nKSPzg9uF",
+  "_key": "!actors!xgiQ8z0nKSPzg9uF",
+  "name": "Inspectors",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 8,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Inspectors",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "btp8Pi5FPBPxvKwu",
+  "_key": "!actors!btp8Pi5FPBPxvKwu",
+  "name": "Iruvian Consulate",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 9,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Iruvian Consulate",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "g0ZTSbcjNUUOB8Gq",
+  "_key": "!actors!g0ZTSbcjNUUOB8Gq",
+  "name": "Skovlan Consulate",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 3,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 10,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Skovlan Consulate",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "rJO9Nbsv5mrHqdzD",
+  "_key": "!actors!rJO9Nbsv5mrHqdzD",
+  "name": "The Brigade",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 11,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Brigade",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "7nx9ZfO2WNkFRNIn",
+  "_key": "!actors!7nx9ZfO2WNkFRNIn",
+  "name": "Severosi Consulate",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 1,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 12,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Severosi Consulate",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "QnbCJVvluY8dcELP",
+  "_key": "!actors!QnbCJVvluY8dcELP",
+  "name": "Dagger Isles Consulate",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "institutions",
+   "tier": 1,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "2vy0QHUJkibzuV8s",
+  "sort": 13,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Dagger Isles Consulate",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "gHOrEJZkaLH8CKhA",
+  "_key": "!folders!gHOrEJZkaLH8CKhA",
+  "name": "Labor & Trade",
+  "type": "Actor",
+  "folder": null,
+  "sorting": "m",
+  "sort": 2,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "FGaeLiZ0XOyEsh8Z",
+  "_key": "!actors!FGaeLiZ0XOyEsh8Z",
+  "name": "The Foundation",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Foundation",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "xjxS0OgW7HC6pBsy",
+  "_key": "!actors!xjxS0OgW7HC6pBsy",
+  "name": "Dockers",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Dockers",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "XwonKiijWm5HMbmU",
+  "_key": "!actors!XwonKiijWm5HMbmU",
+  "name": "Gondoliers",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Gondoliers",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "BwC7c5IrVJd48kjZ",
+  "_key": "!actors!BwC7c5IrVJd48kjZ",
+  "name": "Sailors",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 3,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Sailors",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "bwoc89haAjc6cDaA",
+  "_key": "!actors!bwoc89haAjc6cDaA",
+  "name": "Laborers",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 3,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Laborers",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "KLhLamLtdVCFILGu",
+  "_key": "!actors!KLhLamLtdVCFILGu",
+  "name": "Cabbies",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Cabbies",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "ij4ANmVwzEyxKE4G",
+  "_key": "!actors!ij4ANmVwzEyxKE4G",
+  "name": "Cyphers",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Cyphers",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "4Ass4H6iZNSfA6sH",
+  "_key": "!actors!4Ass4H6iZNSfA6sH",
+  "name": "Ink Rakes",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Ink Rakes",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "DfvDipoERojbEPA4",
+  "_key": "!actors!DfvDipoERojbEPA4",
+  "name": "Rail Jacks",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 8,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Rail Jacks",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "pPqbAYUHxg1G9tVe",
+  "_key": "!actors!pPqbAYUHxg1G9tVe",
+  "name": "Servants",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "labor",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "gHOrEJZkaLH8CKhA",
+  "sort": 9,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Servants",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "hz7esmhMcnxz6t15",
+  "_key": "!folders!hz7esmhMcnxz6t15",
+  "name": "Citizenry",
+  "type": "Actor",
+  "folder": null,
+  "sorting": "m",
+  "sort": 3,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "kEKmM60FPmpTcrv7",
+  "_key": "!actors!kEKmM60FPmpTcrv7",
+  "name": "Whitecrown",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 5,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Whitecrown",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "dgaULOIefzV5TVrh",
+  "_key": "!actors!dgaULOIefzV5TVrh",
+  "name": "Brightstone",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Brightstone",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "cd4nnUaXbJoHP5V2",
+  "_key": "!actors!cd4nnUaXbJoHP5V2",
+  "name": "Charterhall",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Charterhall",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "AjK7H2cqElploeLh",
+  "_key": "!actors!AjK7H2cqElploeLh",
+  "name": "Six Towers",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 3,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Six Towers",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "R01uQD0MqVjo4Pd1",
+  "_key": "!actors!R01uQD0MqVjo4Pd1",
+  "name": "Silkshore",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Silkshore",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "ILEcxo0hJv9mbXLl",
+  "_key": "!actors!ILEcxo0hJv9mbXLl",
+  "name": "Nightmarket",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Nightmarket",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "8jH7ftIzSjTOrSJo",
+  "_key": "!actors!8jH7ftIzSjTOrSJo",
+  "name": "Crow’s Foot",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Crow’s Foot",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "oYg4hKmTrcTy63N9",
+  "_key": "!actors!oYg4hKmTrcTy63N9",
+  "name": "The Docks",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Docks",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "JlwFfqgarSK6xSI8",
+  "_key": "!actors!JlwFfqgarSK6xSI8",
+  "name": "Barrowcleft",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 8,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Barrowcleft",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "9CO4iOue6NdkiSsG",
+  "_key": "!actors!9CO4iOue6NdkiSsG",
+  "name": "Coalridge",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 9,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Coalridge",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "iFsOdti6dWdBDP3o",
+  "_key": "!actors!iFsOdti6dWdBDP3o",
+  "name": "Charhollow",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 1,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 10,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Charhollow",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "UCvqQlehMLxzyrVN",
+  "_key": "!actors!UCvqQlehMLxzyrVN",
+  "name": "Dunslough",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "citizenry",
+   "tier": 1,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "hz7esmhMcnxz6t15",
+  "sort": 11,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Dunslough",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "H5R278feyYYF9CQv",
+  "_key": "!folders!H5R278feyYYF9CQv",
+  "name": "The Fringe",
+  "type": "Actor",
+  "folder": null,
+  "sorting": "m",
+  "sort": 4,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "Qsgn0Y5rwTAq7t6w",
+  "_key": "!actors!Qsgn0Y5rwTAq7t6w",
+  "name": "The Church of Ecstasy",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "fringe",
+   "tier": 4,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "H5R278feyYYF9CQv",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Church of Ecstasy",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "sblgGvHH4Vb4tuo3",
+  "_key": "!actors!sblgGvHH4Vb4tuo3",
+  "name": "The Horde",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "fringe",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "H5R278feyYYF9CQv",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Horde",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "JjJHa5RDidVBEV7B",
+  "_key": "!actors!JjJHa5RDidVBEV7B",
+  "name": "The Path of Echoes",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "fringe",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "H5R278feyYYF9CQv",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Path of Echoes",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "9W6vWipZ9Mb6FZca",
+  "_key": "!actors!9W6vWipZ9Mb6FZca",
+  "name": "The Forgotten Gods",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "fringe",
+   "tier": 3,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "H5R278feyYYF9CQv",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Forgotten Gods",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "mG7lD0Xsdyud6iNZ",
+  "_key": "!actors!mG7lD0Xsdyud6iNZ",
+  "name": "The Reconciled",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "fringe",
+   "tier": 3,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "H5R278feyYYF9CQv",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Reconciled",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "vKlgvrUQXGuCu1Ad",
+  "_key": "!actors!vKlgvrUQXGuCu1Ad",
+  "name": "Skovlander Refugees",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "fringe",
+   "tier": 3,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "H5R278feyYYF9CQv",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Skovlander Refugees",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "xPYv4tBbsBhaMczO",
+  "_key": "!actors!xPYv4tBbsBhaMczO",
+  "name": "The Weeping Lady",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "fringe",
+   "tier": 2,
+   "hold": "strong",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "H5R278feyYYF9CQv",
+  "sort": 6,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "The Weeping Lady",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ },
+ {
+  "_id": "WdLXMZXeuvHyqvrF",
+  "_key": "!actors!WdLXMZXeuvHyqvrF",
+  "name": "Deathlands Scavengers",
+  "type": "faction",
+  "img": "systems/duskwall/assets/icons/faction.svg",
+  "system": {
+   "category": "fringe",
+   "tier": 2,
+   "hold": "weak",
+   "status": 0,
+   "turf": "",
+   "notables": "",
+   "assets": "",
+   "allies": "",
+   "enemies": "",
+   "situation": "",
+   "notes": "",
+   "clocks": [],
+   "atWar": false
+  },
+  "items": [],
+  "effects": [],
+  "folder": "H5R278feyYYF9CQv",
+  "sort": 7,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  },
+  "prototypeToken": {
+   "name": "Deathlands Scavengers",
+   "actorLink": true,
+   "texture": {
+    "src": "systems/duskwall/assets/icons/faction.svg"
+   }
+  }
+ }
+]

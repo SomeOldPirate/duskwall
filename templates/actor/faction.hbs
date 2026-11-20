@@ -1,0 +1,65 @@
+<section class="dw-faction-body">
+  <header class="dw-head dw-head--faction">
+    <div class="dw-head__portrait"><img src="{{actor.img}}" alt="" {{#if editable}}data-action="editImage" data-edit="img"{{/if}}></div>
+    <div class="dw-head__main">
+      <input class="dw-head__name" type="text" name="name" value="{{actor.name}}" {{#unless editable}}disabled{{/unless}}>
+      <label class="dw-field"><span>{{localize "DW.Faction.category"}}</span>
+        <select name="system.category" {{#unless editable}}disabled{{/unless}}>{{#each categories}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+      </label>
+    </div>
+  </header>
+
+  <div class="dw-faction-ladder">
+    <div class="dw-tier">
+      <span class="dw-label">{{localize "DW.Crew.tier"}}</span>
+      {{#each tiers}}<button type="button" class="dw-toggle{{#if on}} is-on{{/if}}" data-action="setTier" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}}>{{label}}</button>{{/each}}
+    </div>
+    <div class="dw-hold">
+      <span class="dw-label">{{localize "DW.Crew.hold"}}</span>
+      <button type="button" class="dw-toggle{{#if (eq system.hold 'weak')}} is-on{{/if}}" data-action="setHold" {{#unless editable}}disabled{{/unless}}>{{localize "DW.Hold.weak"}}</button>
+      <button type="button" class="dw-toggle{{#if (eq system.hold 'strong')}} is-on{{/if}}" data-action="setHold" {{#unless editable}}disabled{{/unless}}>{{localize "DW.Hold.strong"}}</button>
+    </div>
+    <div class="dw-status">
+      <span class="dw-label">{{localize "DW.Faction.status"}} — <strong>{{statusName}}</strong></span>
+      <div class="dw-status__scale">
+        {{#each statuses}}<button type="button" class="dw-status__step dw-status__step--{{n}}{{#if on}} is-on{{/if}}" data-action="setStatus" data-n="{{n}}" data-tooltip="{{name}}" {{#unless ../editable}}disabled{{/unless}}>{{label}}</button>{{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="dw-faction-fields">
+    <label class="dw-field"><span>{{localize "DW.Faction.turf"}}</span><input type="text" name="system.turf" value="{{system.turf}}" {{#unless editable}}disabled{{/unless}}></label>
+    <label class="dw-field"><span>{{localize "DW.Faction.notables"}}</span><input type="text" name="system.notables" value="{{system.notables}}" {{#unless editable}}disabled{{/unless}}></label>
+    <label class="dw-field"><span>{{localize "DW.Faction.assets"}}</span><input type="text" name="system.assets" value="{{system.assets}}" {{#unless editable}}disabled{{/unless}}></label>
+    <div class="dw-row">
+      <label class="dw-field dw-field--grow"><span>{{localize "DW.Faction.allies"}}</span><input type="text" name="system.allies" value="{{system.allies}}" {{#unless editable}}disabled{{/unless}}></label>
+      <label class="dw-field dw-field--grow"><span>{{localize "DW.Faction.enemies"}}</span><input type="text" name="system.enemies" value="{{system.enemies}}" {{#unless editable}}disabled{{/unless}}></label>
+    </div>
+    <label class="dw-field"><span>{{localize "DW.Faction.situation"}}</span><input type="text" name="system.situation" value="{{system.situation}}" {{#unless editable}}disabled{{/unless}}></label>
+  </div>
+
+  <div class="dw-block">
+    <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Clock.plural"}}</span>
+      {{#if editable}}<button type="button" class="dw-bar__btn" data-action="clockAdd"><i class="fa-solid fa-plus"></i></button>{{/if}}
+    </h3>
+    <div class="dw-mini-clocks">
+      {{#each clocks}}
+      <div class="dw-mini-clock">
+        <svg viewBox="0 0 100 100" class="dw-clock">
+          {{#each segments}}<path d="{{d}}" class="dw-clock__seg{{#if on}} is-on{{/if}}" {{#if @root.editable}}data-action="clockTick" data-index="{{../index}}" data-n="{{n}}"{{/if}}></path>{{/each}}
+          <circle cx="50" cy="50" r="44" class="dw-clock__rim"></circle>
+        </svg>
+        <input type="text" value="{{name}}" data-list="clocks" data-index="{{index}}" data-prop="name" {{#unless @root.editable}}disabled{{/unless}}>
+        <select data-list="clocks" data-index="{{index}}" data-prop="size" {{#unless @root.editable}}disabled{{/unless}}>
+          {{#each @root.clockSizes}}<option value="{{this}}" {{#if (eq this ../size)}}selected{{/if}}>{{this}}</option>{{/each}}
+        </select>
+        {{#if @root.editable}}<a data-action="clockRemove" data-index="{{index}}"><i class="fa-solid fa-xmark"></i></a>{{/if}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="dw-block dw-faction-notes">
+    {{formInput fields.notes value=system.notes enriched=enrichedNotes toggled=true editable=editable name="system.notes"}}
+  </div>
+</section>

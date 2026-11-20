@@ -1,0 +1,227 @@
+<section class="tab dw-play {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+
+  {{!-- ============ LEFT: who you are, and what has been done to you ============ --}}
+  <div class="dw-col dw-col--left">
+
+    <div class="dw-bio">
+      <label class="dw-field">
+        <span>{{localize "DW.Sheet.heritage"}}</span>
+        <select name="system.heritage" {{#unless editable}}disabled{{/unless}}>
+          <option value="">—</option>
+          {{#each heritages}}<option value="{{this}}" {{#if (eq this ../system.heritage)}}selected{{/if}}>{{this}}</option>{{/each}}
+        </select>
+        <input type="text" name="system.heritageDetail" value="{{system.heritageDetail}}" placeholder="{{localize 'DW.Sheet.heritageHint'}}" {{#unless editable}}disabled{{/unless}}>
+      </label>
+      <label class="dw-field">
+        <span>{{localize "DW.Sheet.background"}}</span>
+        <select name="system.background" {{#unless editable}}disabled{{/unless}}>
+          <option value="">—</option>
+          {{#each backgrounds}}<option value="{{this}}" {{#if (eq this ../system.background)}}selected{{/if}}>{{this}}</option>{{/each}}
+        </select>
+        <input type="text" name="system.backgroundDetail" value="{{system.backgroundDetail}}" placeholder="{{localize 'DW.Sheet.backgroundHint'}}" {{#unless editable}}disabled{{/unless}}>
+      </label>
+      {{#if system.hasVice}}
+      <label class="dw-field">
+        <span>{{localize "DW.Sheet.vice"}}</span>
+        <select name="system.vice" {{#unless editable}}disabled{{/unless}}>
+          <option value="">—</option>
+          {{#each vices}}<option value="{{this}}" {{#if (eq this ../system.vice)}}selected{{/if}}>{{this}}</option>{{/each}}
+        </select>
+        <input type="text" name="system.purveyor" value="{{system.purveyor}}" placeholder="{{localize 'DW.Sheet.purveyor'}}" {{#unless editable}}disabled{{/unless}}>
+      </label>
+      {{/if}}
+      {{#if need}}<p class="dw-need">{{need}}</p>{{/if}}
+    </div>
+
+    {{!-- Stress & trauma --}}
+    <div class="dw-block dw-stress">
+      <h3 class="dw-bar"><span>{{labels.stress}}</span><span class="dw-bar__count">{{system.stress.value}}/{{system.stress.max}}</span></h3>
+      <div class="dw-teeth" role="group" aria-label="{{labels.stress}}">
+        {{#each stressTrack}}
+        <button type="button" class="dw-tooth{{#if on}} is-on{{/if}}" data-action="setTrack" data-path="stress.value" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}} aria-label="{{n}}"></button>
+        {{/each}}
+      </div>
+      <h3 class="dw-bar dw-bar--sub"><span>{{labels.trauma}}</span>
+        <span class="dw-pips">{{#each traumaPips}}<i class="dw-pip{{#if this}} is-on{{/if}}"></i>{{/each}}</span>
+      </h3>
+      <div class="dw-trauma">
+        {{#each traumaList}}
+        <button type="button" class="dw-chip{{#if on}} is-on{{/if}}" data-action="toggleTrauma" data-name="{{name}}" {{#unless ../editable}}disabled{{/unless}}>{{name}}</button>
+        {{/each}}
+        {{#each extraTrauma}}
+        <button type="button" class="dw-chip is-on" data-action="toggleTrauma" data-name="{{this}}" {{#unless ../editable}}disabled{{/unless}}>{{this}}</button>
+        {{/each}}
+      </div>
+    </div>
+
+    {{!-- Harm --}}
+    <div class="dw-block dw-harm">
+      <h3 class="dw-bar"><span>{{localize "DW.Harm.label"}}</span></h3>
+      <div class="dw-harm__grid">
+        <span class="dw-harm__lvl">3</span>
+        <input class="dw-harm__wide" type="text" name="system.harm.l3" value="{{system.harm.l3}}" {{#unless editable}}disabled{{/unless}}>
+        <span class="dw-harm__pen{{#if harm.needHelp}} is-on{{/if}}">{{localize "DW.Harm.needHelp"}}</span>
+        <span class="dw-harm__lvl">2</span>
+        <input type="text" name="system.harm.l2a" value="{{system.harm.l2a}}" {{#unless editable}}disabled{{/unless}}>
+        <input type="text" name="system.harm.l2b" value="{{system.harm.l2b}}" {{#unless editable}}disabled{{/unless}}>
+        <span class="dw-harm__pen{{#if harm.minusDie}} is-on{{/if}}">−1d</span>
+        <span class="dw-harm__lvl">1</span>
+        <input type="text" name="system.harm.l1a" value="{{system.harm.l1a}}" {{#unless editable}}disabled{{/unless}}>
+        <input type="text" name="system.harm.l1b" value="{{system.harm.l1b}}" {{#unless editable}}disabled{{/unless}}>
+        <span class="dw-harm__pen{{#if harm.lessEffect}} is-on{{/if}}">{{localize "DW.Harm.lessEffect"}}</span>
+        <span class="dw-harm__lvl">4</span>
+        <input class="dw-harm__wide" type="text" name="system.harm.l4" value="{{system.harm.l4}}" placeholder="{{localize 'DW.Harm.fatal'}}" {{#unless editable}}disabled{{/unless}}>
+        <span class="dw-harm__pen{{#if harm.dead}} is-on{{/if}}">{{localize "DW.Harm.fatalShort"}}</span>
+      </div>
+      <div class="dw-harm__foot">
+        <div class="dw-healing" data-tooltip="{{localize 'DW.Harm.healingHint'}}">
+          <svg viewBox="0 0 100 100" class="dw-clock dw-clock--small">
+            {{#each healingSegments}}
+            <path d="{{d}}" class="dw-clock__seg{{#if on}} is-on{{/if}}" {{#if ../editable}}data-action="setHealing" data-n="{{n}}"{{/if}}></path>
+            {{/each}}
+            <circle cx="50" cy="50" r="40" class="dw-clock__rim"></circle>
+          </svg>
+          <span>{{localize "DW.Harm.healing"}}</span>
+        </div>
+        <div class="dw-armor">
+          <span class="dw-armor__title">{{localize "DW.Armor.uses"}}</span>
+          <button type="button" class="dw-check{{#if system.armor.armor}} is-on{{/if}}" data-action="toggleArmor" data-kind="armor" {{#unless editable}}disabled{{/unless}}>{{localize "DW.Armor.armor"}}</button>
+          <button type="button" class="dw-check{{#if system.armor.heavy}} is-on{{/if}}" data-action="toggleArmor" data-kind="heavy" {{#unless editable}}disabled{{/unless}}>{{localize "DW.Armor.heavy"}}</button>
+          <button type="button" class="dw-check{{#if system.armor.special}} is-on{{/if}}" data-action="toggleArmor" data-kind="special" {{#unless editable}}disabled{{/unless}}>{{localize "DW.Armor.special"}}</button>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Coin & stash --}}
+    {{#if system.hasCoin}}
+    <div class="dw-block dw-money">
+      <div class="dw-money__coin">
+        <h4>{{localize "DW.Coin.label"}}</h4>
+        <div class="dw-coins">
+          {{#each coinTrack}}<button type="button" class="dw-coin{{#if on}} is-on{{/if}}" data-action="setTrack" data-path="coin" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}}></button>{{/each}}
+        </div>
+      </div>
+      <div class="dw-money__stash">
+        <h4>{{localize "DW.Stash.label"}} <small>{{system.stash}} · {{localize system.retirementLabel}}</small></h4>
+        {{#each stashRows}}
+        <div class="dw-stash-row">
+          {{#each this}}<button type="button" class="dw-stash{{#if on}} is-on{{/if}}" data-action="setTrack" data-path="stash" data-n="{{n}}" {{#unless ../../editable}}disabled{{/unless}}></button>{{/each}}
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    {{/if}}
+  </div>
+
+  {{!-- ============ MIDDLE: the playbook ============ --}}
+  <div class="dw-col dw-col--mid">
+    <div class="dw-block dw-abilities">
+      <h3 class="dw-bar dw-bar--grey"><span>{{#if spirit}}{{localize "DW.Ability.traits"}}{{else}}{{localize "DW.Ability.label"}}{{/if}}</span></h3>
+      {{#unless abilities.length}}<p class="dw-empty">{{localize "DW.Playbook.dropHint"}}</p>{{/unless}}
+      <ol class="dw-ability-list">
+        {{#each abilities}}
+        <li class="dw-ability{{#if taken}} is-taken{{/if}}{{#if foreign}} is-foreign{{/if}}" data-item-id="{{id}}">
+          <span class="dw-ability__boxes">
+            {{#each boxes}}<button type="button" class="dw-ring{{#if on}} is-on{{/if}}" data-action="takeAbility" data-n="{{n}}" {{#unless ../../editable}}disabled{{/unless}}></button>{{/each}}
+          </span>
+          <div class="dw-ability__text">
+            <strong class="dw-ability__name" data-action="itemPost" data-tooltip="{{localize 'DW.Sheet.postHint'}}">{{name}}:</strong>
+            <span>{{rules}}</span>
+            {{#if foreign}}<em class="dw-ability__src">— {{source}}</em>{{/if}}
+          </div>
+          <span class="dw-ability__ctl">
+            <a data-action="itemEdit" data-tooltip="{{localize 'DW.Sheet.more'}}"><i class="fa-solid fa-ellipsis"></i></a>
+            {{#if ../editable}}<a data-action="itemDelete"><i class="fa-solid fa-xmark"></i></a>{{/if}}
+          </span>
+        </li>
+        {{/each}}
+      </ol>
+      {{#if darkTalent}}
+      <label class="dw-field dw-field--inline">
+        <span>{{localize "DW.Vampire.darkTalent"}}</span>
+        <select name="system.darkTalent"><option value="">—</option>{{#each talentOptions}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+      </label>
+      {{/if}}
+    </div>
+
+    <div class="dw-block dw-xp-triggers">
+      <h3 class="dw-bar"><span>{{localize "DW.Xp.label"}}</span>
+        {{#if editable}}<button type="button" class="dw-bar__btn" data-action="sessionXp"><i class="fa-solid fa-star"></i> {{localize "DW.Xp.endSession"}}</button>{{/if}}
+      </h3>
+      <ul class="dw-diamonds">
+        <li class="dw-xp-desperate">{{localize "DW.Xp.desperate"}}</li>
+        <li class="dw-xp-note">{{localize "DW.Xp.endNote"}}</li>
+        {{#each triggers}}<li>{{this}}</li>{{/each}}
+      </ul>
+    </div>
+
+    <div class="dw-ref">
+      <div class="dw-ref__col">
+        <h4>{{localize "DW.Teamwork.label"}}</h4>
+        <ul>
+          <li><strong>{{localize "DW.Teamwork.assist"}}</strong> {{localize "DW.Teamwork.assistHint"}}</li>
+          <li><strong>{{localize "DW.Teamwork.lead"}}</strong> {{localize "DW.Teamwork.leadHint"}}</li>
+          <li><strong>{{localize "DW.Teamwork.protect"}}</strong> {{localize "DW.Teamwork.protectHint"}}</li>
+          <li><strong>{{localize "DW.Teamwork.setup"}}</strong> {{localize "DW.Teamwork.setupHint"}}</li>
+        </ul>
+      </div>
+      <div class="dw-ref__col">
+        <h4>{{localize "DW.Plan.heading"}}</h4>
+        <ul class="dw-plans">{{#each plans}}<li><strong>{{label}}:</strong> {{detail}}</li>{{/each}}</ul>
+      </div>
+    </div>
+
+    <div class="dw-block dw-moves">
+      {{#if editable}}
+      <button type="button" class="dw-btn" data-action="flashback"><i class="fa-solid fa-clock-rotate-left"></i> {{localize "DW.Flashback.button"}}</button>
+      {{/if}}
+      <div class="dw-downtime">
+        <h4>{{localize "DW.Downtime.label"}} <small>{{localize "DW.Downtime.left" n=downtimeLeft}}</small></h4>
+        <div class="dw-downtime__btns">
+          {{#each downtime}}{{#unless hidden}}
+          <button type="button" class="dw-btn dw-btn--small" data-action="downtime" data-key="{{key}}" {{#unless ../editable}}disabled{{/unless}}><i class="{{icon}}"></i> {{label}}</button>
+          {{/unless}}{{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- ============ RIGHT: actions ============ --}}
+  <div class="dw-col dw-col--right">
+    <div class="dw-block dw-pbxp">
+      <h3 class="dw-bar"><span>{{localize "DW.Xp.playbook"}}</span>
+        <span class="dw-xp">{{#each playbookXp}}<button type="button" class="dw-xpbox{{#if on}} is-on{{/if}}" data-action="setTrack" data-path="{{key}}" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}}></button>{{/each}}</span>
+      </h3>
+    </div>
+    {{#each attributes}}
+    <div class="dw-attr dw-attr--{{key}}">
+      <h3 class="dw-bar">
+        <a class="dw-attr__name" data-action="resist" data-key="{{key}}" data-tooltip="{{localize 'DW.Resist.hint' n=rating}}">{{label}} <span class="dw-attr__rating">{{rating}}</span></a>
+        <span class="dw-xp">{{#each xp}}<button type="button" class="dw-xpbox{{#if on}} is-on{{/if}}" data-action="setTrack" data-path="{{key}}" data-n="{{n}}" {{#unless ../../editable}}disabled{{/unless}}></button>{{/each}}</span>
+      </h3>
+      <ul class="dw-actions">
+        {{#each actions}}
+        <li class="dw-action">
+          <span class="dw-dots">
+            {{#each dots}}<button type="button" class="dw-dot{{#if on}} is-on{{/if}}{{#if locked}} is-locked{{/if}}" {{#if locked}}data-tooltip="{{localize 'DW.Sheet.lockedDot'}}"{{/if}} data-action="setAction" data-key="{{../key}}" data-n="{{n}}" {{#unless ../../../editable}}disabled{{/unless}}></button>{{/each}}
+          </span>
+          <a class="dw-action__name" data-action="roll" data-key="{{key}}" data-tooltip="{{hint}}">{{label}}</a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    {{/each}}
+    <div class="dw-bonus">
+      <h4>{{localize "DW.Roll.bonusDie"}}</h4>
+      <p>{{{localize "DW.Roll.bonusDieHint" label=labels.stress}}}</p>
+    </div>
+    {{#if gather.length}}
+    <div class="dw-block dw-gather">
+      <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Gather.label"}}</span></h3>
+      <ul class="dw-diamonds">
+        {{#each gather}}<li><a data-action="gather" data-question="{{this}}">{{this}}</a></li>{{/each}}
+      </ul>
+    </div>
+    {{/if}}
+  </div>
+</section>

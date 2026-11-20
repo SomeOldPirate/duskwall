@@ -1,0 +1,6 @@
+<div class="dw-form">
+  <label class="dw-field"><span>{{localize "DW.Fortune.trait"}}</span><input type="text" name="trait" value="{{trait}}" placeholder="{{localize 'DW.Fortune.traitHint'}}"></label>
+  <label class="dw-field dw-field--inline"><span>{{localize "DW.Fortune.dice"}}</span><input type="number" name="dice" value="{{dice}}" min="0" max="10"></label>
+  <p class="dw-hint">{{localize "DW.Fortune.hint"}}</p>
+  {{#if isGM}}<label class="dw-check-field"><input type="checkbox" name="secret"> {{localize "DW.Fortune.secret"}}</label>{{/if}}
+</div>

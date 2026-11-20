@@ -1,0 +1,70 @@
+{{#*inline "upgradeRow"}}
+<li data-tooltip="{{hint}}">
+  <span class="dw-upgrade__boxes">{{#each boxes}}<button type="button" class="dw-box{{#if on}} is-on{{/if}}" data-action="setUpgrade" data-group="{{../group}}" data-key="{{../key}}" data-n="{{n}}" {{#unless @root.editable}}disabled{{/unless}}></button>{{/each}}</span>
+  <span>{{label}}</span>
+</li>
+{{/inline}}
+<section class="tab dw-crew-upgrades {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <div class="dw-upgrades">
+    <div class="dw-block">
+      <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Upgrade.special"}}</span></h3>
+      <ul class="dw-upgrade-list">
+        {{#each special}}
+        <li data-tooltip="{{description}}">
+          <span class="dw-upgrade__boxes">{{#each boxes}}<button type="button" class="dw-box{{#if on}} is-on{{/if}}" data-action="setSpecial" data-index="{{../index}}" data-n="{{n}}" {{#unless @root.editable}}disabled{{/unless}}></button>{{/each}}</span>
+          <span>{{name}}</span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="dw-block">
+      <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Upgrade.lair"}}</span></h3>
+      <ul class="dw-upgrade-list">{{#each lair}}{{> upgradeRow}}{{/each}}</ul>
+    </div>
+    <div class="dw-block">
+      <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Upgrade.training"}}</span></h3>
+      <ul class="dw-upgrade-list">{{#each training}}{{> upgradeRow}}{{/each}}</ul>
+    </div>
+    <div class="dw-block">
+      <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Upgrade.quality"}}</span></h3>
+      <ul class="dw-upgrade-list">{{#each quality}}{{> upgradeRow}}{{/each}}</ul>
+      <p class="dw-hint">{{localize "DW.Upgrade.costs"}}</p>
+    </div>
+  </div>
+
+  <div class="dw-block dw-cohorts">
+    <h3 class="dw-bar"><span>{{localize "DW.Cohort.label"}}</span>
+      {{#if editable}}
+      <span class="dw-bar__btns">
+        <button type="button" class="dw-bar__btn" data-action="itemCreate" data-type="cohort" data-kind="gang"><i class="fa-solid fa-plus"></i> {{localize "DW.Cohort.gang"}}</button>
+        <button type="button" class="dw-bar__btn" data-action="itemCreate" data-type="cohort" data-kind="expert"><i class="fa-solid fa-plus"></i> {{localize "DW.Cohort.expert"}}</button>
+      </span>
+      {{/if}}
+    </h3>
+    {{#unless cohorts.length}}<p class="dw-hint">{{localize "DW.Cohort.none"}}</p>{{/unless}}
+    <div class="dw-cohort-grid">
+      {{#each cohorts}}
+      <div class="dw-cohort{{#if dead}} is-dead{{/if}}{{#if broken}} is-broken{{/if}}" data-item-id="{{id}}">
+        <header>
+          <img src="{{img}}" alt="">
+          <div>
+            <strong data-action="itemEdit">{{name}}</strong>
+            <small>{{kindLabel}}{{#if types}}: {{types}}{{/if}}{{#if elite}} · {{localize "DW.Cohort.elite"}}{{/if}}</small>
+          </div>
+          <button type="button" class="dw-btn dw-btn--small" data-action="cohortRoll" data-tooltip="{{localize 'DW.Cohort.rollHint'}}"><i class="fa-solid fa-dice-d6"></i> {{pool}}d</button>
+        </header>
+        <div class="dw-cohort__stats">
+          <span>{{localize "DW.Cohort.qualityLabel"}} <strong>{{quality}}</strong></span>
+          {{#if (eq kind "gang")}}<span>{{localize "DW.Cohort.scaleLabel"}} <strong>{{scale}}</strong></span>{{/if}}
+        </div>
+        <div class="dw-cohort__harm">
+          {{#each harm}}<button type="button" class="dw-check{{#if on}} is-on{{/if}}" data-action="cohortHarm" data-n="{{n}}" {{#unless @root.editable}}disabled{{/unless}}>{{label}}</button>{{/each}}
+          {{#if armor}}<button type="button" class="dw-check{{#if armorUsed}} is-on{{/if}}" data-action="cohortArmor" {{#unless @root.editable}}disabled{{/unless}}>{{localize "DW.Armor.armor"}}</button>{{/if}}
+        </div>
+        {{#if edges}}<p><strong>{{localize "DW.Cohort.edges"}}:</strong> {{edges}}</p>{{/if}}
+        {{#if flaws}}<p><strong>{{localize "DW.Cohort.flaws"}}:</strong> {{flaws}}</p>{{/if}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

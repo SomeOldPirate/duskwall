@@ -1,0 +1,55 @@
+<article class="dw-card dw-card--{{kind}}{{#if result}} dw-card--{{result}}{{/if}}{{#if position}} dw-pos--{{position}}{{/if}}">
+  <header class="dw-card__head">
+    {{#if img}}<img class="dw-card__img" src="{{img}}" alt="">{{/if}}
+    <div class="dw-card__titles">
+      {{#if kicker}}<span class="dw-card__kicker">{{kicker}}</span>{{/if}}
+      <h3 class="dw-card__title">{{title}}</h3>
+      {{#if subtitle}}<span class="dw-card__subtitle">{{subtitle}}</span>{{/if}}
+    </div>
+  </header>
+
+  {{#if stakes}}
+  <div class="dw-card__stakes">
+    {{#if positionLabel}}<span class="dw-stake dw-stake--{{position}}" data-tooltip="{{localize 'DW.Position.label'}}"><i class="fa-solid fa-person-falling-burst"></i> {{positionLabel}}</span>{{/if}}
+    {{#if effectLabel}}<span class="dw-stake dw-stake--effect-{{effect}}" data-tooltip="{{localize 'DW.Effect.label'}}"><i class="fa-solid fa-bullseye"></i> {{effectLabel}}</span>{{/if}}
+  </div>
+  {{/if}}
+
+  {{#if dice}}
+  <div class="dw-card__dice{{#if zero}} is-zero{{/if}}">
+    {{#each dice}}
+    <span class="dw-die dw-die--{{value}}{{#if kept}} is-kept{{/if}}" aria-label="{{value}}">
+      {{#each pips}}<i class="dw-dpip dw-dpip--{{this}}"></i>{{/each}}
+    </span>
+    {{/each}}
+    {{#if zero}}<span class="dw-card__zero">{{localize "DW.Roll.zeroNote"}}</span>{{/if}}
+  </div>
+  {{/if}}
+
+  {{#if resultLabel}}
+  <div class="dw-card__result">
+    <span class="dw-card__verdict">{{resultLabel}}</span>
+    {{#if outcome}}<p class="dw-card__outcome">{{{outcome}}}</p>{{/if}}
+  </div>
+  {{/if}}
+
+  {{#if lines.length}}
+  <ul class="dw-card__lines">
+    {{#each lines}}<li>{{{this}}}</li>{{/each}}
+  </ul>
+  {{/if}}
+
+  {{#if body}}<div class="dw-card__body">{{{body}}}</div>{{/if}}
+
+  <div class="dw-card__slot"></div>
+
+  {{#if buttons.length}}
+  <div class="dw-card__buttons">
+    {{#each buttons}}
+    <button type="button" data-dw-action="{{action}}" data-dw-who="{{who}}"{{#if key}} data-dw-key="{{key}}"{{/if}}{{#if target}} data-dw-target="{{target}}"{{/if}}{{#each data}} data-{{@key}}="{{this}}"{{/each}}>
+      {{#if icon}}<i class="{{icon}}"></i>{{/if}} {{label}}
+    </button>
+    {{/each}}
+  </div>
+  {{/if}}
+</article>

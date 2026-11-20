@@ -1,0 +1,68 @@
+<section class="tab dw-crew-score {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <div class="dw-phases">
+    <div class="dw-phase">
+      <h3 class="dw-bar"><span>1 · {{localize "DW.Score.free"}}</span></h3>
+      <p class="dw-hint">{{localize "DW.Score.freeHint"}}</p>
+      <label class="dw-field"><span>{{localize "DW.Score.target"}}</span><input type="text" name="system.score.target" value="{{system.score.target}}" {{#unless editable}}disabled{{/unless}}></label>
+      <div class="dw-row">
+        <label class="dw-field"><span>{{localize "DW.Score.targetTier"}}</span>
+          <select name="system.score.targetTier" data-dtype="Number" {{#unless editable}}disabled{{/unless}}>{{#each tierOptions}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+        </label>
+        <label class="dw-field dw-field--grow"><span>{{localize "DW.Score.type"}}</span><input type="text" name="system.score.type" value="{{system.score.type}}" {{#unless editable}}disabled{{/unless}}></label>
+      </div>
+      <label class="dw-field"><span>{{localize "DW.Score.location"}}</span><input type="text" name="system.score.location" value="{{system.score.location}}" {{#unless editable}}disabled{{/unless}}></label>
+    </div>
+    <div class="dw-phase">
+      <h3 class="dw-bar"><span>2 · {{localize "DW.Score.plan"}}</span></h3>
+      <div class="dw-row">
+        <label class="dw-field"><span>{{localize "DW.Plan.heading"}}</span>
+          <select name="system.score.plan" {{#unless editable}}disabled{{/unless}}><option value="">—</option>{{#each plans}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+        </label>
+        <label class="dw-field dw-field--grow"><span>{{localize "DW.Plan.detail"}}</span><input type="text" name="system.score.detail" value="{{system.score.detail}}" {{#unless editable}}disabled{{/unless}}></label>
+      </div>
+      <button type="button" class="dw-btn dw-btn--accent" data-action="engagement" {{#unless editable}}disabled{{/unless}}><i class="fa-solid fa-chess-knight"></i> {{localize "DW.Engagement.button"}}</button>
+      {{#if engagementLabel}}<p class="dw-engaged dw-pos--{{system.score.engagement}}">{{localize "DW.Engagement.started" position=engagementLabel}}</p>{{/if}}
+      {{#if bonus.engagement.length}}<p class="dw-hint">{{localize "DW.Engagement.claimPlans"}}: {{#each bonus.engagement}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</p>{{/if}}
+    </div>
+    <div class="dw-phase">
+      <h3 class="dw-bar"><span>3 · {{localize "DW.Score.after"}}</span></h3>
+      <p class="dw-hint">{{localize "DW.Score.afterHint"}}</p>
+      <div class="dw-stack">
+        <button type="button" class="dw-btn dw-btn--accent" data-action="payoff" {{#unless editable}}disabled{{/unless}}><i class="fa-solid fa-sack-dollar"></i> {{localize "DW.Payoff.button"}}</button>
+        {{#if isGM}}<button type="button" class="dw-btn" data-action="entanglements"><i class="fa-solid fa-spider"></i> {{localize "DW.Entanglement.button"}}</button>{{/if}}
+      </div>
+    </div>
+    <div class="dw-phase">
+      <h3 class="dw-bar"><span>4 · {{localize "DW.Downtime.label"}}</span></h3>
+      <p class="dw-hint">{{localize "DW.Downtime.crewHint"}}</p>
+      {{#if isGM}}
+      <div class="dw-stack">
+        <button type="button" class="dw-btn dw-btn--accent" data-action="beginDowntime"><i class="fa-solid fa-moon"></i> {{localize "DW.Downtime.begin"}}</button>
+        {{#if system.downtimeOpen}}<button type="button" class="dw-btn" data-action="endDowntime"><i class="fa-solid fa-sun"></i> {{localize "DW.Downtime.end"}}</button>{{/if}}
+      </div>
+      {{/if}}
+      {{#if members.length}}
+      <ul class="dw-members dw-members--downtime">
+        {{#each members}}<li data-actor-id="{{id}}" data-action="openActor"><img src="{{img}}" alt=""><span class="dw-members__name">{{name}}</span><span class="dw-members__stat">{{localize "DW.Downtime.left" n=downtime}}</span></li>{{/each}}
+      </ul>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="dw-block dw-log">
+    <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Score.log"}}</span></h3>
+    {{#unless log.length}}<p class="dw-hint">{{localize "DW.Score.logEmpty"}}</p>{{/unless}}
+    <table>
+      {{#if log.length}}<thead><tr><th>{{localize "DW.Score.when"}}</th><th>{{localize "DW.Score.target"}}</th><th>{{localize "DW.Score.type"}}</th><th>{{localize "DW.Coin.label"}}</th><th>{{localize "DW.Crew.rep"}}</th><th>{{localize "DW.Crew.heat"}}</th><th></th></tr></thead>{{/if}}
+      <tbody>
+        {{#each log}}
+        <tr>
+          <td>{{when}}</td><td>{{target}}</td><td>{{type}}</td><td>{{coin}}</td><td>{{rep}}</td><td>{{heat}}</td>
+          <td>{{#if @root.editable}}<a data-action="logRemove" data-index="{{index}}"><i class="fa-solid fa-xmark"></i></a>{{/if}}</td>
+        </tr>
+        <tr class="dw-log__notes"><td colspan="7"><input type="text" value="{{notes}}" data-list="log" data-index="{{index}}" data-prop="notes" placeholder="{{localize 'DW.Score.notes'}}" {{#unless @root.editable}}disabled{{/unless}}></td></tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>

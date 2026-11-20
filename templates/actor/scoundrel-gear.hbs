@@ -1,0 +1,51 @@
+{{#*inline "gearRow"}}
+<li class="dw-item{{#if used}} is-used{{/if}}{{#if weightless}} is-weightless{{/if}}" data-item-id="{{id}}">
+  <button type="button" class="dw-item__boxes" data-action="toggleGear" {{#unless @root.editable}}disabled{{/unless}} data-tooltip="{{localize 'DW.Gear.toggleHint'}}">
+    {{#each boxes}}<i class="dw-box{{#if ../used}} is-on{{/if}}"></i>{{/each}}
+  </button>
+  <span class="dw-item__name" data-action="itemPost" data-tooltip="{{localize 'DW.Sheet.postHint'}}">{{name}}</span>
+  {{#if hasUses}}
+  <span class="dw-item__uses">{{#each uses}}<button type="button" class="dw-ring dw-ring--small{{#if on}} is-on{{/if}}" data-action="setUses" data-n="{{n}}" {{#unless @root.editable}}disabled{{/unless}}></button>{{/each}}</span>
+  {{/if}}
+  <span class="dw-item__ctl">
+    <a data-action="itemEdit"><i class="fa-solid fa-ellipsis"></i></a>
+    {{#if @root.editable}}<a data-action="itemDelete"><i class="fa-solid fa-xmark"></i></a>{{/if}}
+  </span>
+</li>
+{{/inline}}
+<section class="tab dw-gear {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <div class="dw-load">
+    <h3 class="dw-bar"><span>{{localize "DW.Load.label"}}</span><span class="dw-bar__count">{{loadBar.carried}}{{#if loadBar.chosen}}/{{loadBar.limit}}{{/if}}</span></h3>
+    <p class="dw-hint">{{localize "DW.Load.instructions"}}</p>
+    <div class="dw-load__levels">
+      {{#each loads}}
+      <button type="button" class="dw-load__level{{#if on}} is-on{{/if}}" data-action="setLoad" data-key="{{key}}" data-tooltip="{{hint}}" {{#unless ../editable}}disabled{{/unless}}>
+        <strong>{{limit}}</strong> {{#if spiritLabel}}{{spiritLabel}}{{else}}{{label}}{{/if}}
+      </button>
+      {{/each}}
+    </div>
+    <div class="dw-load__meter{{#if loadBar.over}} is-over{{/if}}">
+      {{#each loadBar.boxes}}<i class="{{#if on}}is-on{{/if}}{{#if over}} is-over{{/if}}"></i>{{/each}}
+    </div>
+    {{#if loadBar.over}}<p class="dw-warn">{{localize "DW.Load.over"}}</p>{{/if}}
+  </div>
+
+  <div class="dw-gear__cols">
+    <div class="dw-gear__col">
+      <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Gear.playbook"}}</span></h3>
+      <p class="dw-hint">{{localize "DW.Gear.italicHint"}}</p>
+      <ul class="dw-items">
+        {{#each playbookGear}}{{> gearRow}}{{/each}}
+      </ul>
+    </div>
+    <div class="dw-gear__col">
+      <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Gear.standard"}}</span></h3>
+      <ul class="dw-items">
+        {{#each standardGear}}{{> gearRow}}{{/each}}
+      </ul>
+      {{#if editable}}
+      <button type="button" class="dw-btn dw-btn--small" data-action="itemCreate" data-type="gear"><i class="fa-solid fa-plus"></i> {{localize "DW.Gear.add"}}</button>
+      {{/if}}
+    </div>
+  </div>
+</section>

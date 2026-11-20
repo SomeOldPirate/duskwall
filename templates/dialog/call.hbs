@@ -1,0 +1,16 @@
+<div class="dw-form">
+  <label class="dw-field"><span>{{localize "DW.Roll.goal"}}</span><input type="text" name="goal" placeholder="{{localize 'DW.Call.goalHint'}}"></label>
+  <label class="dw-field"><span>{{localize "DW.Call.who"}}</span>
+    <select name="actors" multiple size="4">{{#each actors}}<option value="{{id}}">{{name}}</option>{{/each}}</select>
+  </label>
+  <label class="dw-field"><span>{{localize "DW.Roll.action"}}</span>
+    <select name="action"><option value="">{{localize "DW.Call.playerChoice"}}</option>{{#each actions}}<option value="{{key}}">{{label}}</option>{{/each}}</select>
+  </label>
+  <fieldset class="dw-radios"><legend>{{localize "DW.Position.label"}}</legend>
+    {{#each positions}}<label class="dw-radio dw-radio--{{key}}" data-tooltip="{{hint}}"><input type="radio" name="position" value="{{key}}" {{checked checked}}> {{label}}</label>{{/each}}
+  </fieldset>
+  <fieldset class="dw-radios"><legend>{{localize "DW.Effect.label"}}</legend>
+    {{#each effects}}<label class="dw-radio"><input type="radio" name="effect" value="{{key}}" {{checked checked}}> {{label}}</label>{{/each}}
+  </fieldset>
+  <label class="dw-field"><span>{{localize "DW.Call.consequence"}}</span><input type="text" name="consequence" placeholder="{{localize 'DW.Call.consequenceHint'}}"></label>
+</div>

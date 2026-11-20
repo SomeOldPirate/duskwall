@@ -1,0 +1,11 @@
+<nav class="dw-toolbar__bar{{#if collapsed}} is-collapsed{{/if}}" aria-label="Blades in the Dark">
+  <button type="button" class="dw-toolbar__brand" data-action="collapse" data-tooltip="{{localize 'DW.Toolbar.collapse'}}"><i class="fa-solid fa-mask"></i></button>
+  {{#unless collapsed}}
+  <button type="button" data-action="crew" data-tooltip="{{localize 'DW.Toolbar.crew'}}"><i class="fa-solid fa-people-group"></i></button>
+  <button type="button" data-action="clocks" data-tooltip="{{localize 'DW.Toolbar.clocks'}}"><i class="fa-solid fa-clock"></i></button>
+  <button type="button" data-action="factions" data-tooltip="{{localize 'DW.Toolbar.factions'}}"><i class="fa-solid fa-flag"></i></button>
+  <button type="button" data-action="fortune" data-tooltip="{{localize 'DW.Toolbar.fortune'}}"><i class="fa-solid fa-dice"></i></button>
+  {{#if isGM}}<button type="button" data-action="call" data-tooltip="{{localize 'DW.Toolbar.call'}}"><i class="fa-solid fa-bullhorn"></i></button>{{/if}}
+  <button type="button" data-action="rules" data-tooltip="{{localize 'DW.Toolbar.rules'}}"><i class="fa-solid fa-book"></i></button>
+  {{/unless}}
+</nav>

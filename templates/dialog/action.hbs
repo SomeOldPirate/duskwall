@@ -1,0 +1,39 @@
+<div class="dw-form">
+  <label class="dw-field"><span>{{localize "DW.Roll.goal"}}</span><input type="text" name="goal" value="{{goal}}" placeholder="{{localize 'DW.Roll.goalHint'}}"></label>
+  <label class="dw-field"><span>{{localize "DW.Roll.action"}}</span>
+    <select name="action">
+      {{#each groups}}<optgroup label="{{label}}">{{#each actions}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}} ({{rating}})</option>{{/each}}</optgroup>{{/each}}
+    </select>
+  </label>
+  <fieldset class="dw-radios{{#if locked}} is-locked{{/if}}">
+    <legend>{{localize "DW.Position.label"}}{{#if locked}} · {{localize "DW.Roll.setByGM"}}{{/if}}</legend>
+    {{#each positions}}<label class="dw-radio dw-radio--{{key}}" data-tooltip="{{hint}}"><input type="radio" name="position" value="{{key}}" {{checked checked}} {{#if ../locked}}disabled{{/if}}> {{label}}</label>{{/each}}
+  </fieldset>
+  <fieldset class="dw-radios{{#if locked}} is-locked{{/if}}">
+    <legend>{{localize "DW.Effect.label"}}</legend>
+    {{#each effects}}<label class="dw-radio"><input type="radio" name="effect" value="{{key}}" {{checked checked}} {{#if ../locked}}disabled{{/if}}> {{label}}</label>{{/each}}
+  </fieldset>
+
+  <fieldset class="dw-bonus-dice">
+    <legend>{{localize "DW.Roll.bonusDice"}}</legend>
+    {{#if teammates.length}}
+    <label class="dw-field dw-field--inline"><span>{{localize "DW.Roll.assistLabel"}}</span>
+      <select name="assist"><option value="">—</option>{{#each teammates}}<option value="{{id}}">{{name}}</option>{{/each}}</select>
+    </label>
+    {{/if}}
+    <div class="dw-radios dw-radios--stack">
+      <label class="dw-radio"><input type="radio" name="die" value="" checked> {{localize "DW.Roll.noBonusDie"}}</label>
+      <label class="dw-radio"><input type="radio" name="die" value="push"> {{localize "DW.Roll.pushDie" label=stressLabel}}</label>
+      {{#if canSpecialArmor}}<label class="dw-radio"><input type="radio" name="die" value="special"> {{localize "DW.Roll.specialDie"}}</label>{{/if}}
+      <label class="dw-radio"><input type="radio" name="die" value="bargain"> {{localize "DW.Roll.bargainDie"}}</label>
+    </div>
+    <input type="text" name="bargain" placeholder="{{localize 'DW.Roll.bargainHint'}}">
+    <label class="dw-check-field"><input type="checkbox" name="pushEffect"> {{localize "DW.Roll.pushEffect" label=stressLabel}}</label>
+    {{#if harm.needHelp}}<label class="dw-check-field"><input type="checkbox" name="pushHarm"> {{localize "DW.Roll.pushHarm" label=stressLabel}}</label>{{/if}}
+    <label class="dw-field dw-field--inline"><span>{{localize "DW.Roll.otherDice"}}</span><input type="number" name="bonus" value="0" min="-4" max="4" step="1"></label>
+  </fieldset>
+  {{#if canLead}}<label class="dw-check-field"><input type="checkbox" name="lead" {{checked group}}> {{localize "DW.Roll.leadGroup"}}</label>{{/if}}
+  {{#if harm.minusDie}}<p class="dw-hint">{{localize "DW.Harm.minusDieNote"}}</p>{{/if}}
+  {{#if harm.lessEffect}}<p class="dw-hint">{{localize "DW.Harm.lessEffectNote"}}</p>{{/if}}
+  <p class="dw-summary" data-summary></p>
+</div>

@@ -1,0 +1,36 @@
+# Push a tag like v0.9.0 and this builds duskwall.zip and publishes a release
+# with system.json and the zip attached, which is what the manifest URL expects.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the tag matches system.json
+        run: |
+          VERSION=$(jq -r .version system.json)
+          if [ "v$VERSION" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match system.json version $VERSION"
+            exit 1
+          fi
+
+      - name: Build duskwall.zip
+        run: bash tools/package.sh
+
+      - name: Publish the release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Duskwall ${{ github.ref_name }}
+          body_path: dist/release-notes.md
+          files: |
+            dist/system.json
+            dist/duskwall.zip

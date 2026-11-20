@@ -1,0 +1,17 @@
+<section class="dw-clocks">
+  {{#unless clocks.length}}<p class="dw-hint">{{localize "DW.Clock.noneHint"}}</p>{{/unless}}
+  {{#each clocks}}
+  <div class="dw-wallclock dw-wallclock--{{kind}}{{#if full}} is-full{{/if}}" data-actor-id="{{id}}">
+    <svg viewBox="0 0 100 100" class="dw-clock">
+      {{#each segments}}<path d="{{d}}" class="dw-clock__seg{{#if on}} is-on{{/if}}" {{#if ../owner}}data-action="tick" data-n="{{n}}"{{/if}}></path>{{/each}}
+      <circle cx="50" cy="50" r="44" class="dw-clock__rim"></circle>
+    </svg>
+    <div class="dw-wallclock__text">
+      <a class="dw-wallclock__name" data-action="open">{{name}}</a>
+      <small>{{kindLabel}} · {{value}}/{{size}}</small>
+    </div>
+    {{#if owner}}<a class="dw-wallclock__unpin" data-action="unpin" data-tooltip="{{localize 'DW.Clock.unpin'}}"><i class="fa-solid fa-thumbtack-slash"></i></a>{{/if}}
+  </div>
+  {{/each}}
+  {{#if canCreate}}<button type="button" class="dw-btn dw-btn--small" data-action="create"><i class="fa-solid fa-plus"></i> {{localize "DW.Clock.new"}}</button>{{/if}}
+</section>

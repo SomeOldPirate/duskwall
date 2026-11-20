@@ -1,0 +1,114 @@
+<section class="tab dw-crew-main {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+  <div class="dw-crew-tracks">
+    <div class="dw-block dw-rep">
+      <h3 class="dw-bar">
+        <span>{{localize "DW.Crew.rep"}} <small>{{system.rep}}/{{system.repMax}}</small></span>
+        <span class="dw-bar__right">{{localize "DW.Crew.turf"}} {{system.turf}}</span>
+      </h3>
+      <div class="dw-teeth dw-teeth--rep">
+        {{#each repTrack}}
+        <button type="button" class="dw-tooth{{#if on}} is-on{{/if}}{{#if turf}} is-turf{{/if}}" data-action="setTrack" data-path="rep" data-n="{{n}}" {{#if turf}}disabled data-tooltip="{{localize 'DW.Crew.turfBox'}}"{{else}}{{#unless ../editable}}disabled{{/unless}}{{/if}}></button>
+        {{/each}}
+      </div>
+      {{#if system.repFull}}
+      <button type="button" class="dw-btn dw-btn--accent" data-action="develop" {{#unless editable}}disabled{{/unless}}>
+        <i class="fa-solid fa-arrow-up-right-dots"></i>
+        {{#if holdStrong}}{{localize "DW.Develop.advance" n=system.advanceCost}}{{else}}{{localize "DW.Develop.strengthen"}}{{/if}}
+      </button>
+      {{/if}}
+    </div>
+
+    <div class="dw-block dw-standing">
+      <div class="dw-hold">
+        <span class="dw-label">{{localize "DW.Crew.hold"}}</span>
+        <button type="button" class="dw-toggle{{#unless holdStrong}} is-on{{/unless}}" data-action="setHold" {{#unless editable}}disabled{{/unless}}>{{localize "DW.Hold.weak"}}</button>
+        <button type="button" class="dw-toggle{{#if holdStrong}} is-on{{/if}}" data-action="setHold" {{#unless editable}}disabled{{/unless}}>{{localize "DW.Hold.strong"}}</button>
+        {{#if system.atWar}}<span class="dw-war" data-tooltip="{{localize 'DW.Crew.warHint'}}"><i class="fa-solid fa-skull-crossbones"></i> {{localize "DW.Status.war"}}</span>{{/if}}
+      </div>
+      <div class="dw-tier">
+        <a class="dw-label" data-action="tierRoll" data-tooltip="{{localize 'DW.Crew.tierRollHint'}}">{{localize "DW.Crew.tier"}} <strong>{{system.tierLabel}}</strong></a>
+        {{#each tiers}}<button type="button" class="dw-ring{{#if on}} is-on{{/if}}" data-action="setTier" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}}></button>{{/each}}
+      </div>
+    </div>
+
+    <div class="dw-block dw-heat">
+      <h3 class="dw-bar"><span>{{localize "DW.Crew.heat"}} <small>{{system.heat}}/9</small></span>
+        <span class="dw-wanted">
+          <span class="dw-label">{{localize "DW.Crew.wanted"}}</span>
+          {{#each wantedTrack}}<button type="button" class="dw-diamond{{#if on}} is-on{{/if}}" data-action="setTrack" data-path="wanted" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}}></button>{{/each}}
+        </span>
+      </h3>
+      <div class="dw-teeth dw-teeth--heat">
+        {{#each heatTrack}}<button type="button" class="dw-tooth{{#if on}} is-on{{/if}}" data-action="setTrack" data-path="heat" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}}></button>{{/each}}
+      </div>
+    </div>
+
+    <div class="dw-block dw-vault">
+      <h3 class="dw-bar"><span>{{localize "DW.Coin.label"}} <small>{{system.coin}}/{{system.vaultMax}}</small></span></h3>
+      <div class="dw-coins">
+        {{#each coinTrack}}<button type="button" class="dw-coin{{#if on}} is-on{{/if}}{{#if vault}} is-vault{{/if}}" data-action="setTrack" data-path="coin" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}}></button>{{/each}}
+      </div>
+      <p class="dw-hint">{{localize "DW.Crew.advanceStash"}}</p>
+    </div>
+  </div>
+
+  <div class="dw-crew-body">
+    <div class="dw-claims-wrap">
+      <div class="dw-claims-switch">
+        <button type="button" class="dw-toggle{{#unless isPrison}} is-on{{/unless}}" data-map-switch="claims"><i class="fa-solid fa-map"></i> {{localize "DW.Claims.label"}}</button>
+        <button type="button" class="dw-toggle{{#if isPrison}} is-on{{/if}}" data-map-switch="prison"><i class="fa-solid fa-dungeon"></i> {{localize "DW.Claims.prison"}}</button>
+      </div>
+      {{#unless claims.tiles.length}}<p class="dw-empty">{{localize "DW.CrewType.dropHint"}}</p>{{/unless}}
+      <div class="dw-claims{{#if isPrison}} dw-claims--prison{{/if}}" style="grid-template-columns: repeat({{claims.columns}}, minmax(0, 1fr) 14px); grid-template-rows: repeat({{claims.rows}}, auto 14px);">
+        {{#each claims.links}}
+        <span class="dw-claim-link{{#if horizontal}} is-h{{else}} is-v{{/if}}{{#if held}} is-held{{/if}}" style="grid-row: {{row}}; grid-column: {{col}};"></span>
+        {{/each}}
+        {{#each claims.tiles}}
+        <button type="button" class="dw-claim{{#if held}} is-held{{/if}}{{#if lair}} is-lair{{/if}}{{#if turf}} is-turf{{/if}}{{#if reachable}} is-reachable{{/if}}"
+          style="grid-row: {{row}}; grid-column: {{col}};" data-action="toggleClaim" data-map="{{../map}}" data-index="{{index}}"
+          {{#if description}}data-tooltip="{{description}}"{{/if}} {{#unless @root.editable}}disabled{{/unless}}>
+          {{#unless lair}}<i class="dw-claim__box"></i>{{/unless}}
+          <strong>{{name}}</strong>
+          {{#if effect}}{{#unless turf}}<span>{{effect}}</span>{{/unless}}{{/if}}
+        </button>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="dw-crew-side">
+      <div class="dw-block dw-abilities">
+        <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Ability.label"}}</span></h3>
+        <ol class="dw-ability-list">
+          {{#each abilities}}
+          <li class="dw-ability{{#if taken}} is-taken{{/if}}" data-item-id="{{id}}">
+            <span class="dw-ability__boxes">
+              {{#each boxes}}<button type="button" class="dw-ring{{#if on}} is-on{{/if}}" data-action="takeAbility" data-n="{{n}}" {{#unless ../../editable}}disabled{{/unless}}></button>{{/each}}
+            </span>
+            <div class="dw-ability__text"><strong class="dw-ability__name" data-action="itemPost">{{name}}:</strong> <span>{{rules}}</span></div>
+            <span class="dw-ability__ctl"><a data-action="itemEdit"><i class="fa-solid fa-ellipsis"></i></a></span>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+      <div class="dw-block">
+        <h3 class="dw-bar"><span>{{localize "DW.Crew.xp"}}</span>
+          <span class="dw-xp">{{#each xpTrack}}<button type="button" class="dw-xpbox{{#if on}} is-on{{/if}}" data-action="setTrack" data-path="xp" data-n="{{n}}" {{#unless ../editable}}disabled{{/unless}}></button>{{/each}}</span>
+        </h3>
+        <ul class="dw-diamonds">{{#each triggers}}<li>{{this}}</li>{{/each}}</ul>
+        {{#if editable}}<button type="button" class="dw-btn dw-btn--small" data-action="crewXp"><i class="fa-solid fa-star"></i> {{localize "DW.Xp.endSession"}}</button>{{/if}}
+      </div>
+      <div class="dw-block dw-members">
+        <h3 class="dw-bar dw-bar--grey"><span>{{localize "DW.Crew.members"}}</span></h3>
+        {{#unless members.length}}<p class="dw-hint">{{localize "DW.Crew.membersHint"}}</p>{{/unless}}
+        <ul>
+          {{#each members}}
+          <li data-actor-id="{{id}}" data-action="openActor">
+            <img src="{{img}}" alt=""><span class="dw-members__name">{{name}}<small>{{playbook}}</small></span>
+            <span class="dw-members__stat" data-tooltip="{{localize 'DW.Crew.memberStress'}}">{{stress}}/{{stressMax}}</span>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

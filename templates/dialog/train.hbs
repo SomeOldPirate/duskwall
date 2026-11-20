@@ -1,0 +1,6 @@
+<div class="dw-form">
+  <fieldset class="dw-radios dw-radios--stack">
+    <legend>{{localize "DW.Downtime.trainWhich"}}</legend>
+    {{#each tracks}}<label class="dw-radio{{#if disabled}} is-disabled{{/if}}"><input type="radio" name="track" value="{{key}}" {{#if disabled}}disabled{{/if}}> {{label}}{{#if bonus}} <em>({{localize "DW.Downtime.trainBonus"}})</em>{{/if}}{{#if disabled}} <em>({{localize "DW.Downtime.trainDone"}})</em>{{/if}}</label>{{/each}}
+  </fieldset>
+</div>

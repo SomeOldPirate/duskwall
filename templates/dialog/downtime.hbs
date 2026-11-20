@@ -1,0 +1,26 @@
+<div class="dw-form">
+  <label class="dw-field"><span>{{localize "DW.Downtime.what"}}</span><input type="text" name="what" placeholder="{{localize (concat 'DW.Downtime.' kind 'Hint')}}"></label>
+  {{#if useAction}}
+  <label class="dw-field"><span>{{localize "DW.Roll.action"}}</span>
+    <select name="action">{{#each groups}}<optgroup label="{{label}}">{{#each actions}}<option value="{{key}}" {{#if selected}}selected{{/if}}>{{label}} ({{rating}})</option>{{/each}}</optgroup>{{/each}}</select>
+  </label>
+  {{else}}
+  <p class="dw-hint">{{localize "DW.Downtime.acquireExplain" n=tier}}</p>
+  {{/if}}
+  {{#if (eq kind "project")}}
+  <label class="dw-field"><span>{{localize "DW.Downtime.projectClock"}}</span>
+    <select name="clock">
+      {{#each clocks}}<option value="{{id}}">{{name}} ({{value}}/{{size}})</option>{{/each}}
+      <option value="new" {{#unless clocks.length}}selected{{/unless}}>{{localize "DW.Downtime.newProject"}}…</option>
+    </select>
+  </label>
+  <div class="dw-row">
+    <label class="dw-field dw-field--grow"><span>{{localize "DW.Downtime.newName"}}</span><input type="text" name="clockName"></label>
+    <label class="dw-field"><span>{{localize "DW.Clock.size"}}</span><select name="clockSize"><option>4</option><option>6</option><option selected>8</option><option>10</option><option>12</option></select></label>
+  </div>
+  {{/if}}
+  <label class="dw-check-field"><input type="checkbox" name="help"> {{localize "DW.Downtime.help"}}</label>
+  {{#if claimBonus}}<label class="dw-check-field"><input type="checkbox" name="claim" checked> {{localize (concat "DW.Downtime." kind "Claim")}}</label>{{/if}}
+  <label class="dw-field dw-field--inline"><span>{{localize "DW.Roll.otherDice"}}</span><input type="number" name="bonus" value="0" min="-4" max="4"></label>
+  <p class="dw-hint">{{localize "DW.Downtime.bumpHint"}}</p>
+</div>

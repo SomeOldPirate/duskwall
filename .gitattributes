@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.woff2 binary
+*.png binary
+packs/*/** binary
+packs/_source/** text eol=lf
+.gitignore export-ignore
+.gitattributes export-ignore
+.github export-ignore
+tools export-ignore
+packs/_source export-ignore

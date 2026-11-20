@@ -1,0 +1,30 @@
+<header class="dw-head dw-head--crew">
+  <div class="dw-head__portrait">
+    <img src="{{actor.img}}" alt="{{actor.name}}" {{#if editable}}data-action="editImage" data-edit="img"{{/if}}>
+  </div>
+  <div class="dw-head__main">
+    <div class="dw-head__row">
+      <input class="dw-head__name" type="text" name="name" value="{{actor.name}}" placeholder="{{localize 'DW.Crew.name'}}" {{#unless editable}}disabled{{/unless}}>
+    </div>
+    <div class="dw-head__row">
+      <label class="dw-field">
+        <span>{{localize "DW.Crew.reputation"}}</span>
+        <input type="text" name="system.reputation" value="{{system.reputation}}" list="dw-reps-{{actor.id}}" {{#unless editable}}disabled{{/unless}}>
+        <datalist id="dw-reps-{{actor.id}}">{{#each reputations}}<option value="{{this}}"></option>{{/each}}</datalist>
+      </label>
+      <label class="dw-field dw-field--grow">
+        <span>{{localize "DW.Crew.lair"}}</span>
+        <input type="text" name="system.lair" value="{{system.lair}}" {{#unless editable}}disabled{{/unless}}>
+      </label>
+    </div>
+  </div>
+  <div class="dw-head__playbook">
+    {{#if crewType}}
+    <h1 class="dw-playbook-name" data-action="itemEdit" data-item-id="{{crewType.id}}">{{crewType.name}}</h1>
+    <span class="dw-playbook-tag">{{ct.tagline}}</span>
+    {{else}}
+    <button type="button" class="dw-choose-playbook" data-action="browse"><i class="fa-solid fa-chess-rook"></i> {{localize "DW.CrewType.choose"}}</button>
+    <span class="dw-playbook-tag">{{localize "DW.CrewType.dropHint"}}</span>
+    {{/if}}
+  </div>
+</header>

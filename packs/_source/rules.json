@@ -1,0 +1,260 @@
+[
+ {
+  "_id": "B8klgbzMxpWBgZ27",
+  "_key": "!journal!B8klgbzMxpWBgZ27",
+  "name": "Rules Reference",
+  "pages": [
+   {
+    "_id": "AsAwbdEB3bxsbnPK",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.AsAwbdEB3bxsbnPK",
+    "name": "The Action Roll",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p>When a scoundrel does something challenging, make an <strong>action roll</strong>.</p>\n<ol><li>The player states their goal for the action.</li><li>The player chooses the action rating that matches what their character is doing in the fiction.</li>\n<li>The GM sets the <strong>position</strong> for the roll.</li><li>The GM sets the <strong>effect level</strong> for the action.</li><li>Add bonus dice.</li><li>The player rolls the dice and we judge the result.</li></ol>\n<p>Roll 1d for each action rating dot. <strong>+1d</strong> if a teammate assists (they take 1 stress). <strong>+1d</strong> if you push yourself (take 2 stress) <em>or</em> accept a Devil’s Bargain. With zero dice, roll 2d and take the lowest.</p>\n<p>Read the single highest die. <strong>Critical</strong> (two or more 6s): you do it with increased effect. <strong>6</strong>: full success. <strong>4/5</strong>: partial success, with a consequence. <strong>1-3</strong>: bad outcome.</p>\n<h3>Controlled</h3><p>You act on your terms. You exploit a dominant advantage.</p>\n<p><strong>4/5:</strong> You hesitate. Withdraw and try a different approach, or else do it with a minor consequence: a minor complication occurs, you have reduced effect, you suffer lesser harm, you end up in a risky position. <strong>1-3:</strong> You falter. Press on by seizing a risky opportunity, or withdraw and try a different approach.</p>\n<h3>Risky</h3><p>You go head to head. You act under fire. You take a chance.</p>\n<p><strong>4/5:</strong> You do it, but there’s a consequence: you suffer harm, a complication occurs, you have reduced effect, you end up in a desperate position. <strong>1-3:</strong> Things go badly. You suffer harm, a complication occurs, you end up in a desperate position, you lose this opportunity.</p>\n<h3>Desperate</h3><p>You overreach your capabilities. You’re in serious trouble. Each time you roll a desperate action, mark xp in that action’s attribute.</p>\n<p><strong>4/5:</strong> You do it, but there’s a consequence: you suffer severe harm, a serious complication occurs, you have reduced effect. <strong>1-3:</strong> It’s the worst outcome. You suffer severe harm, a serious complication occurs, you lose this opportunity for action.</p>\n<p>The GM sets the consequences according to the situation. You may suffer one, some, or all of the listed consequences. You may attempt to avoid or reduce a consequence with a resistance roll.</p>"
+    },
+    "sort": 100000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "UOE7sNkeHsx5obAD",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.UOE7sNkeHsx5obAD",
+    "name": "Effect",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p><strong>Great</strong>: you achieve more than usual. <strong>Standard</strong>: you achieve what we’d expect. <strong>Limited</strong>: you achieve a partial or weak effect.</p>\n<p>The GM may assess three factors that modify effect: <strong>potency</strong> (a particular weakness or advantage), <strong>quality/Tier</strong> (the effectiveness of tools, weapons or resources; fine items count +1 quality), and <strong>scale</strong> (numbers, size, scope of influence). Each factor in your favour may increase effect a level; each against you may reduce it. If effect would drop below limited, the action is impossible as stated.</p>\n<p>You can trade position for effect, or vice versa, when it makes sense in the fiction.</p>"
+    },
+    "sort": 200000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "riIt2mcG0G8DMqYp",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.riIt2mcG0G8DMqYp",
+    "name": "Resistance & Armor",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<ol><li>The player chooses to resist a consequence.</li><li>The GM determines if the consequence will be reduced or negated, depending on the situation.</li>\n<li>The GM determines which attribute applies (Insight, Prowess, or Resolve).</li><li>The player rolls the dice for that attribute.</li>\n<li>The PC takes stress equal to 6 minus the highest die result, and the consequence is negated or reduced. On a critical, clear 1 stress instead.</li></ol>\n<p><strong>Armor:</strong> mark an armor box (armor, heavy, or special) to reduce or avoid a consequence without a roll. Armor uses are recovered in downtime.</p>\n<p><strong>Stress:</strong> when you mark your last stress box, you suffer a trauma: clear your stress, mark a trauma condition, and you’re out of action for this scene. When you mark your fourth trauma, your character must retire.</p>"
+    },
+    "sort": 300000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "u114TeVd7c1Itcio",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.u114TeVd7c1Itcio",
+    "name": "Harm & Healing",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p><strong>Level 1</strong> (lesser): less effect. <strong>Level 2</strong> (moderate): -1d. <strong>Level 3</strong> (severe): need help; you can’t act without assistance. <strong>Level 4</strong>: fatal or catastrophic.</p>\n<p>If you would take harm at a level that’s full, it moves up to the next level. Push yourself to act despite severe harm.</p>\n<p>In downtime, <strong>recover</strong> to tick your healing clock (a 4-clock). When it fills, each harm is reduced by one level.</p>"
+    },
+    "sort": 400000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "bIKTwRxEHoQeaXNR",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.bIKTwRxEHoQeaXNR",
+    "name": "Teamwork",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p><strong>Assist:</strong> take 1 stress to give another player +1d. You might also suffer consequences from the roll. Only one person may assist a roll.</p>\n<p><strong>Lead a group action:</strong> roll for each character who participates. The best single roll counts as the action result for everyone. The leader takes 1 stress for each participant who rolled 1-3.</p>\n<p><strong>Protect:</strong> face danger for a teammate. Step in to suffer a consequence in their place. You may roll to resist as normal.</p>\n<p><strong>Set up:</strong> set up another character with your action. If you achieve it, team members who follow up get +1 effect or improved position.</p>"
+    },
+    "sort": 500000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "GzLxzerc2lf6iOnh",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.GzLxzerc2lf6iOnh",
+    "name": "Fortune Rolls & Flashbacks",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p><strong>Fortune roll:</strong> the GM determines a dice pool (generally 1 to 4) from the trait that applies (morale, toughness, quality, Tier, magnitude…). Read the highest die: 1-3 poor, 4/5 limited, 6 full, critical exceptional.</p>\n<p><strong>Flashbacks:</strong> the player announces a flashback to an action performed in the past which impacts the current situation. The GM sets a stress cost: <strong>0</strong> for an ordinary action with easy opportunity; <strong>1</strong> for a complex action or unlikely opportunity; <strong>2 or more</strong> for an elaborate action involving special opportunities or contingencies. The PC takes the stress and attempts the flashback action, rolling if it’s challenging.</p>"
+    },
+    "sort": 600000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "NFxQlVXntvQlWbfR",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.NFxQlVXntvQlWbfR",
+    "name": "Planning & Engagement",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p>Choose a plan and provide the detail. Each player chooses their load for the operation.</p>\n<ul><li><strong>Assault:</strong> point of attack.</li><li><strong>Deception:</strong> method.</li><li><strong>Stealth:</strong> entry point.</li><li><strong>Occult:</strong> arcane power.</li><li><strong>Social:</strong> connection.</li><li><strong>Transport:</strong> route.</li></ul>\n<p><strong>Engagement roll:</strong> 1d for sheer luck. +1d for each major advantage, -1d for each major disadvantage (bold and daring plans, the target’s vulnerability, friends and contacts helping, crew abilities). <strong>Critical:</strong> you’ve already overcome the first obstacle and are in a controlled position. <strong>6:</strong> controlled. <strong>4/5:</strong> risky. <strong>1-3:</strong> desperate.</p>\n<p><strong>Load:</strong> light (3) — you look like a normal citizen; normal (5) — you look like a scoundrel ready for trouble; heavy (6) — you look like an operative on a dangerous mission. Items in italics have no load.</p>"
+    },
+    "sort": 700000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "0KUl0nPKgyP6LA45",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.0KUl0nPKgyP6LA45",
+    "name": "Payoff, Heat & Entanglements",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p>After the score, resolve Payoff, Heat, Entanglements, then Downtime—in that order.</p>\n<h3>Payoff</h3><p>The crew earns 2 rep per score, +1 per Tier the target is higher, -1 per Tier lower (minimum zero). Keep the job completely quiet and earn zero rep. Coin: 2 minor job; 4 small job; 6 standard score; 8 big score; 10+ major score. Subtract coin equal to Tier+1 if you pay a tithe.</p>\n<h3>Heat</h3><p>0 smooth & quiet; 2 contained; 4 loud & chaotic; 6 wild. +1 for a high-profile or well-connected target; +1 on hostile turf; +1 if at war; +2 if killing was involved. When heat reaches 9, wanted level rises by 1 and heat resets (carrying over the excess).</p>\n<h3>Entanglements</h3><p>Roll dice equal to your wanted level (0 dice: 2d, take the lowest) and read the result on the column for your heat.</p>\n<table><tr><th></th><th>Heat 0-3</th><th>Heat 4/5</th><th>Heat 6+</th></tr>\n<tr><td>1-3</td><td>Gang Trouble or The Usual Suspects</td><td>Gang Trouble or Questioning</td><td>Flipped or Interrogation</td></tr>\n<tr><td>4/5</td><td>Rivals or Unquiet Dead</td><td>Reprisals or Unquiet Dead</td><td>Demonic Notice or Show of Force</td></tr>\n<tr><td>6</td><td>Cooperation</td><td>Show of Force</td><td>Arrest</td></tr></table>"
+    },
+    "sort": 800000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "K3mlqVX3UahogOT2",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.K3mlqVX3UahogOT2",
+    "name": "Downtime",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p>Between scores, each PC may pursue two downtime activities, and recovers all armor uses. Additional activities cost 1 coin or 1 rep each. Add +1d if a friend or contact helps. After the roll, spend 1 coin per step to raise the result level.</p>\n<ul><li><strong>Acquire Asset:</strong> roll the crew’s Tier. 1-3 inferior (Tier-1), 4/5 standard (Tier), 6 fine (Tier+1), critical exceptional (Tier+2).</li>\n<li><strong>Long-Term Project:</strong> roll an action and tick the project clock: 1-3 one, 4/5 two, 6 three, critical five.</li>\n<li><strong>Recover:</strong> get treatment and tick your healing clock the same way.</li>\n<li><strong>Reduce Heat:</strong> say how, roll an action and reduce heat: 1-3 one, 4/5 two, 6 three, critical five.</li>\n<li><strong>Train:</strong> mark 1 xp in an attribute or your playbook (+1 with the matching crew training upgrade). Each track may be trained once per downtime.</li>\n<li><strong>Indulge Vice:</strong> roll dice equal to your lowest attribute and clear stress equal to the highest die. Clear more than you had and you <strong>overindulge</strong>: Attract Trouble, Brag (+2 heat), Lost, or Tapped. If you don’t indulge, take stress equal to your trauma.</li></ul>"
+    },
+    "sort": 900000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   },
+   {
+    "_id": "NSlOhKXhjbAxe0Yk",
+    "_key": "!journal.pages!B8klgbzMxpWBgZ27.NSlOhKXhjbAxe0Yk",
+    "name": "Factions & Advancement",
+    "type": "text",
+    "title": {
+     "show": true,
+     "level": 1
+    },
+    "text": {
+     "format": 1,
+     "content": "<p><strong>Status</strong> runs from -3 (war) to +3 (allies). While at war, the crew takes +1 heat from scores, temporarily loses 1 hold, and PCs get only one free downtime activity.</p>\n<p><strong>Development:</strong> fill the rep tracker (12, less 1 per turf held). If hold is weak, it becomes strong. If hold is strong, pay coin equal to your new Tier × 8 to advance Tier; hold becomes weak. Reset rep (keep turf).</p>\n<p><strong>PC xp:</strong> mark attribute xp for each desperate roll. At session end, mark 1 xp (or 2 if it happened a lot) for each trigger, on any track. Fill a track to take an advance: an action dot (attribute track) or a special ability (playbook track). Action ratings are capped at 3 until the crew unlocks Mastery.</p>\n<p><strong>Crew xp:</strong> at session end, mark 1 or 2 for each crew trigger. Fill the track for a new crew ability or two upgrade boxes. Each PC gets stash equal to Tier+2.</p>"
+    },
+    "sort": 1000000,
+    "flags": {},
+    "ownership": {
+     "default": -1
+    },
+    "_stats": {
+     "coreVersion": "14.367",
+     "systemId": "duskwall",
+     "systemVersion": "1.0.0"
+    }
+   }
+  ],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ }
+]

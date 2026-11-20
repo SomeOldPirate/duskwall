@@ -1,0 +1,2186 @@
+[
+ {
+  "_id": "vJ054banw7Ta5dnE",
+  "_key": "!folders!vJ054banw7Ta5dnE",
+  "name": "Crew Types",
+  "type": "Item",
+  "folder": null,
+  "sorting": "m",
+  "sort": 0,
+  "color": null,
+  "description": "",
+  "flags": {},
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "AMh37CJeWYAGRX4w",
+  "_key": "!items!AMh37CJeWYAGRX4w",
+  "name": "Assassins",
+  "type": "crewType",
+  "img": "systems/duskwall/assets/icons/crew.svg",
+  "system": {
+   "key": "assassins",
+   "tagline": "Killers for hire",
+   "description": "<p>You’re professional murderers—death is your business. In Duskwall, this means extra trouble from the spirit bells and vengeful ghosts. Be prepared! When you play Assassins, you earn xp when you execute a successful accident, disappearance, murder, or ransom operation. Do you have any scruples when it comes to who you kill? Is everyone fair game?</p>",
+   "xpTriggers": [
+    "Execute a successful accident, disappearance, murder, or ransom operation.",
+    "Contend with challenges above your current station.",
+    "Bolster your crew’s reputation or develop a new one.",
+    "Express the goals, drives, inner conflict, or essential nature of the crew."
+   ],
+   "huntingGroundsLabel": "Hunting Grounds",
+   "huntingGrounds": [
+    {
+     "name": "Accident",
+     "description": "A killing with no telltale signs of murder."
+    },
+    {
+     "name": "Disappearance",
+     "description": "The victim vanishes without a trace."
+    },
+    {
+     "name": "Murder",
+     "description": "An obvious killing that sends a message."
+    },
+    {
+     "name": "Ransom",
+     "description": "A kidnapping and demand for payment for their return."
+    }
+   ],
+   "contacts": [
+    {
+     "name": "Trev",
+     "role": "a gang boss"
+    },
+    {
+     "name": "Lydra",
+     "role": "a deal broker"
+    },
+    {
+     "name": "Irimina",
+     "role": "a vicious noble"
+    },
+    {
+     "name": "Karlos",
+     "role": "a bounty hunter"
+    },
+    {
+     "name": "Exeter",
+     "role": "a spirit warden"
+    },
+    {
+     "name": "Sevoy",
+     "role": "a merchant lord"
+    }
+   ],
+   "startingUpgrades": {
+    "training": {
+     "insight": 1,
+     "prowess": 1
+    },
+    "lair": {},
+    "cohort": null,
+    "text": "Training: Insight. Training: Prowess."
+   },
+   "claims": {
+    "tiles": [
+     {
+      "name": "Training Rooms",
+      "effect": "+1 scale for your Skulks cohorts.",
+      "description": "Your Skulks cohorts get +1 scale. Extra training enables them to fight like a larger gang.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Vice Den",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Fixer",
+      "effect": "+2 coin for lower-class targets.",
+      "description": "You get +2 coin in payoff for scores that involve lower-class clients. This well-respected agent will help arrange for a better payoff from poorer clients.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Informants",
+      "effect": "+1d gather info for scores.",
+      "description": "You get +1d to gather information for a score. Your eyes and ears on the streets are always on the lookout for new targets.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "gatherInfo": 1
+      }
+     },
+     {
+      "name": "Hagfish Farm",
+      "effect": "Body disposal, +1d to reduce heat after killing.",
+      "description": "When you use the reduce heat downtime activity after a score that involves killing, you get +1d to the roll and quiet, convenient disposal of any corpses you left on the job.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "reduceHeat": 1
+      }
+     },
+     {
+      "name": "Victim Trophies",
+      "effect": "+1 rep per score.",
+      "description": "You get +1 rep per score. Word of your grisly “collection” gets around, and your boldness boosts your rep in the underworld. 101",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "repPerScore": 1
+      }
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Lair",
+      "effect": "Your crew’s lair. Claims must connect to the lair or to another held claim.",
+      "description": "",
+      "held": true,
+      "turf": false,
+      "lair": true,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Cover Operation",
+      "effect": "-2 heat per score.",
+      "description": "You get -2 heat per score. The cover of a legitimate operation helps deflect some of the heat from law enforcement.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "heatPerScore": -2
+      }
+     },
+     {
+      "name": "Protection Racket",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. Some of the locals are terrified of you and will gladly pay for “protection.”",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Infirmary",
+      "effect": "+1d to healing rolls.",
+      "description": "You get +1d to healing treatment rolls. The infirmary also has beds for long-term convalescence.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "healing": 1
+      }
+     },
+     {
+      "name": "Envoy",
+      "effect": "+2 coin for high-class targets.",
+      "description": "You get +2 coin in payoff for scores that involve high-class clients. This well-connected liaison will help arrange for a better payoff from rich clients.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Cover Identities",
+      "effect": "+1d engagement for deception and social plans.",
+      "description": "You get +1d to the engagement roll for deception and social plans. False identities help confuse the opposition.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "engagement": [
+        "deception",
+        "social"
+       ]
+      }
+     },
+     {
+      "name": "City Records",
+      "effect": "+1d engagement for stealth plans.",
+      "description": "You get +1d to the engagement roll for stealth plans. You can use blueprints and other documents to determine a good approach for infiltrations.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "engagement": [
+        "stealth"
+       ]
+      }
+     }
+    ],
+    "links": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      9,
+      14
+     ]
+    ]
+   },
+   "upgrades": [
+    {
+     "name": "Assassin Rigging",
+     "boxes": 1,
+     "description": "You get 2 free load worth of weapon or gear items. For example, you could carry a pistol (a weapon) and burglary tools (gear) for zero load.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Ironhook Contacts",
+     "boxes": 1,
+     "description": "Your Tier is effectively +1 higher in prison. This counts for any Tier-related element in prison, including the incarceration roll (see page 148).",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Skulks",
+     "boxes": 1,
+     "description": "All of your cohorts with the Skulks type get +1d to quality rolls for Skulk-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Thugs",
+     "boxes": 1,
+     "description": "All of your cohorts with the Thugs type get +1d to quality rolls for Thug-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Hardened",
+     "boxes": 3,
+     "description": "Each PC gets +1 trauma box. This costs three upgrades to unlock, not just one. This may bring a PC with 4 trauma back into play if you wish.",
+     "value": 0,
+     "auto": {
+      "trauma": 1
+     }
+    }
+   ],
+   "abilities": [
+    "Deadly",
+    "Crow's Veil",
+    "Emberdeath",
+    "No Traces",
+    "Patron",
+    "Predators",
+    "Vipers",
+    "Veteran"
+   ],
+   "deity": false,
+   "vehicle": false
+  },
+  "effects": [],
+  "folder": "vJ054banw7Ta5dnE",
+  "sort": 0,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "XEPqEon5Cpu3HXpW",
+  "_key": "!items!XEPqEon5Cpu3HXpW",
+  "name": "Bravos",
+  "type": "crewType",
+  "img": "systems/duskwall/assets/icons/crew.svg",
+  "system": {
+   "key": "bravos",
+   "tagline": "Mercenaries and thugs",
+   "description": "<p>Some crews plot and scheme, some crews sneak around, some crews get entangled with the occult—you fight. The fist and the blade are all you need. When you play Bravos, you earn xp when you execute a successful battle, extortion, sabotage, or smash &amp; grab operation. Are you brutal thugs, savvy sell-swords, or ruthless gangsters?</p>",
+   "xpTriggers": [
+    "Execute a successful battle, extortion, sabotage, or smash & grab operation.",
+    "Contend with challenges above your current station.",
+    "Bolster your crew’s reputation or develop a new one.",
+    "Express the goals, drives, inner conflict, or essential nature of the crew."
+   ],
+   "huntingGroundsLabel": "Hunting Grounds",
+   "huntingGrounds": [
+    {
+     "name": "Battle",
+     "description": "Defeat an enemy with overwhelming force."
+    },
+    {
+     "name": "Extortion",
+     "description": "Threaten violence unless you’re paid off."
+    },
+    {
+     "name": "Sabotage",
+     "description": "Hurt an opponent by destroying something."
+    },
+    {
+     "name": "Smash & Grab",
+     "description": "A fast and violent armed robbery."
+    }
+   ],
+   "contacts": [
+    {
+     "name": "Meg",
+     "role": "a pit-fighter"
+    },
+    {
+     "name": "Conway",
+     "role": "a bluecoat"
+    },
+    {
+     "name": "Keller",
+     "role": "a blacksmith"
+    },
+    {
+     "name": "Tomas",
+     "role": "a physicker"
+    },
+    {
+     "name": "Walker",
+     "role": "a ward boss"
+    },
+    {
+     "name": "Lutes",
+     "role": "a tavern owner"
+    }
+   ],
+   "startingUpgrades": {
+    "training": {
+     "prowess": 1
+    },
+    "lair": {},
+    "cohort": {
+     "kind": "gang",
+     "type": "Thugs"
+    },
+    "text": "Training: Prowess. Cohort: a gang of Thugs."
+   },
+   "claims": {
+    "tiles": [
+     {
+      "name": "Barracks",
+      "effect": "+1 scale for your Thug cohorts.",
+      "description": "Your Thug cohorts get +1 scale. Extra room means more gang members.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Terrorized Citizens",
+      "effect": "+2 coin for battle or extortion.",
+      "description": "You get +2 coin in your payoff for scores that involve battle or extortion. The frightened locals offer you tribute whenever you lash out. They don’t want to be next.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Informants",
+      "effect": "+1d gather info for scores.",
+      "description": "You get +1d to gather information for a score. Your eyes and ears on the streets are always on the lookout for new targets.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "gatherInfo": 1
+      }
+     },
+     {
+      "name": "Protection Racket",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. Some of the locals are terrified of you and will gladly pay for “protection.”",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Fighting Pits",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "During downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. The locals love to gamble away their hard-won coin on the bloodsports you host.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Lair",
+      "effect": "Your crew’s lair. Claims must connect to the lair or to another held claim.",
+      "description": "",
+      "held": true,
+      "turf": false,
+      "lair": true,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Infirmary",
+      "effect": "+1d to healing rolls.",
+      "description": "You get +1d to healing treatment rolls. The infirmary also has beds for long-term convalescence.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "healing": 1
+      }
+     },
+     {
+      "name": "Bluecoat Intimidation",
+      "effect": "-2 heat per score.",
+      "description": "You get -2 heat per score. The law doesn’t want any trouble from you; they look the other way. Fighting Pits During downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. The locals love to gamble away their hard-won coin on the bloodsports you host.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "heatPerScore": -2
+      }
+     },
+     {
+      "name": "Street Fence",
+      "effect": "+2 coin for lower-class targets.",
+      "description": "You get +2 coin in your payoff for scores that involve lower-class targets. An expert can find the treasure amid the trash you loot from your poorer victims.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Warehouses",
+      "effect": "Stockpiles give you +1d to acquire assets.",
+      "description": "You get +1d to acquire asset rolls. You have space to hold all the various spoils you end up with after your battles. It can be useful on its own or for barter when you need it. 105",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "acquire": 1
+      }
+     },
+     {
+      "name": "Bluecoat Confederates",
+      "effect": "+1d engagement for assault plans.",
+      "description": "You get +1d to the engagement roll for assault plans. The street patrol around here helps you out now.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "engagement": [
+        "assault"
+       ]
+      }
+     }
+    ],
+    "links": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      12,
+      13
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      8,
+      13
+     ],
+     [
+      9,
+      14
+     ]
+    ]
+   },
+   "upgrades": [
+    {
+     "name": "Bravos Rigging",
+     "boxes": 1,
+     "description": "You get 2 free load worth of weapon or armor items. For example, you could carry a sword & pistol or wear normal armor for zero load.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Ironhook Contacts",
+     "boxes": 1,
+     "description": "Your Tier is effectively +1 higher in prison. This counts for any Tier-related element in prison, including the incarceration roll (see page 148).",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Rovers",
+     "boxes": 1,
+     "description": "All of your cohorts with the Rovers type get +1d to quality rolls for Rover-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Thugs",
+     "boxes": 1,
+     "description": "All of your cohorts with the Thugs type get +1d to quality rolls for Thug-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Hardened",
+     "boxes": 3,
+     "description": "Each PC gets +1 trauma box. This costs three upgrades to unlock, not just one. This may bring a PC with 4 trauma back into play if you wish.",
+     "value": 0,
+     "auto": {
+      "trauma": 1
+     }
+    }
+   ],
+   "abilities": [
+    "Dangerous",
+    "Blood Brothers",
+    "Door Kickers",
+    "Fiends",
+    "Forged in the Fire",
+    "Patron",
+    "War Dogs",
+    "Veteran"
+   ],
+   "deity": false,
+   "vehicle": false
+  },
+  "effects": [],
+  "folder": "vJ054banw7Ta5dnE",
+  "sort": 1,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "VkZ5DlrLKpeAXfpW",
+  "_key": "!items!VkZ5DlrLKpeAXfpW",
+  "name": "Cult",
+  "type": "crewType",
+  "img": "systems/duskwall/assets/icons/crew.svg",
+  "system": {
+   "key": "cult",
+   "tagline": "Acolytes of a forgotten god",
+   "description": "<p>You heard the secret voice calling in the darkness. You obeyed. You are its instrument—and the world shall bow before its glory, or burn. When you play a Cult, you earn xp when you advance the agenda of your deity or embody its precepts in action. Instead of hunting grounds, you have sacred sites that you use for your operations.</p>",
+   "xpTriggers": [
+    "Advance the agenda of your deity or embody its precepts in action.",
+    "Contend with challenges above your current station.",
+    "Bolster your crew’s reputation or develop a new one.",
+    "Express the goals, drives, inner conflict, or essential nature of the crew."
+   ],
+   "huntingGroundsLabel": "Hunting Grounds",
+   "huntingGrounds": [
+    {
+     "name": "Acquisition",
+     "description": "Procure an arcane artifact and attune it to your god."
+    },
+    {
+     "name": "Augury",
+     "description": "Do what you must to attract the god’s attention and counsel."
+    },
+    {
+     "name": "Consecration",
+     "description": "Anoint a place for your deity."
+    },
+    {
+     "name": "Sacrifice",
+     "description": "Destroy what is valuable or good in honor of your god."
+    }
+   ],
+   "contacts": [
+    {
+     "name": "Gagan",
+     "role": "an academic"
+    },
+    {
+     "name": "Adikin",
+     "role": "an occultist"
+    },
+    {
+     "name": "Hutchins",
+     "role": "an antiquarian"
+    },
+    {
+     "name": "Moriya",
+     "role": "a spirit trafficker"
+    },
+    {
+     "name": "Mateas Kline",
+     "role": "a noble"
+    },
+    {
+     "name": "Bennett",
+     "role": "an astronomer"
+    }
+   ],
+   "startingUpgrades": {
+    "training": {
+     "resolve": 1
+    },
+    "lair": {},
+    "cohort": {
+     "kind": "gang",
+     "type": "Adepts"
+    },
+    "text": "Training: Resolve. Cohort: a gang of Adepts."
+   },
+   "claims": {
+    "tiles": [
+     {
+      "name": "Cloister",
+      "effect": "+1 scale for your Adept cohorts.",
+      "description": "Your Adept cohorts get +1 scale. More room for hopeful novices desperate to pledge their service.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Vice Den",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. 109",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Offertory",
+      "effect": "+2 coin for occult operations.",
+      "description": "You get +2 coin in your payoff for scores that involve occult operations. The frightened locals offer you tribute when you perform your dark practices. They don’t want to be next.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Ancient Obelisk",
+      "effect": "-1 stress cost for all arcane powers and rituals.",
+      "description": "-1 stress cost for all arcane powers and rituals. This effect applies to all cultists, everywhere—so long as the deity is well-pleased. You don’t have to be on-site at the obelisk to benefit from its power.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Ancient Tower",
+      "effect": "+1d to Consort w/ arcane entities on site.",
+      "description": "You get +1d to Consort with arcane entities on-site. This tower was prepared by sorcery from the pre-cataclysm and acts as an arcane lens to focus eldritch energy across the black mirror into the void.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Lair",
+      "effect": "Your crew’s lair. Claims must connect to the lair or to another held claim.",
+      "description": "",
+      "held": true,
+      "turf": false,
+      "lair": true,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Spirit Well",
+      "effect": "+1d to Attune on site.",
+      "description": "You get +1d to Attune rolls on-site. A spirit well draws ghosts and other things to its power, which you harness to aid your arts.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Ancient Gate",
+      "effect": "Safe passage in the Deathlands.",
+      "description": "Safe passage in the deathlands. When you leave the city through this gate, the spirits of the deathlands will not molest you unless directly provoked.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Sanctuary",
+      "effect": "+1d to Command and Sway on site.",
+      "description": "+1d to Command and Sway rolls on-site. Your sanctuary maintains its effect as long as your deity is well-pleased with your service.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Sacred Nexus",
+      "effect": "+1d to healing rolls.",
+      "description": "You get +1d to healing treatment rolls. Ancient arcane energy seeps into the wounded here, speeding their recovery, and marking them consecrated by its power.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "healing": 1
+      }
+     },
+     {
+      "name": "Ancient Altar",
+      "effect": "+1d engagement for occult plans.",
+      "description": "You get +1d to the engagement roll for occult plans. Its blessing is with you.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "engagement": [
+        "occult"
+       ]
+      }
+     }
+    ],
+    "links": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      8,
+      13
+     ],
+     [
+      9,
+      14
+     ]
+    ]
+   },
+   "upgrades": [
+    {
+     "name": "Cult Rigging",
+     "boxes": 1,
+     "description": "You get 2 free load worth of document or implement items. For example, you could carry a profane book of curses and a demon’s hand for zero load.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Ritual Sanctum in Lair",
+     "boxes": 1,
+     "description": "This counts as a sacred and arcane workshop for occult practices and rituals.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Adepts",
+     "boxes": 1,
+     "description": "All of your cohorts with the Adepts type get +1d to quality rolls for Adept-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Thugs",
+     "boxes": 1,
+     "description": "All of your cohorts with the Thugs type get +1d to quality rolls for Thug-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Ordained",
+     "boxes": 3,
+     "description": "Each PC gets +1 trauma box. This costs three upgrades to unlock, not just one. This may bring a PC with 4 trauma back into play if you wish.",
+     "value": 0,
+     "auto": {
+      "trauma": 1
+     }
+    }
+   ],
+   "abilities": [
+    "Chosen",
+    "Anointed",
+    "Bound in Darkness",
+    "Conviction",
+    "Glory Incarnate",
+    "Sealed in Blood",
+    "Zealotry",
+    "Veteran"
+   ],
+   "deity": true,
+   "vehicle": false
+  },
+  "effects": [],
+  "folder": "vJ054banw7Ta5dnE",
+  "sort": 2,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "20gZRX1AD6OgYTLc",
+  "_key": "!items!20gZRX1AD6OgYTLc",
+  "name": "Hawkers",
+  "type": "crewType",
+  "img": "systems/duskwall/assets/icons/crew.svg",
+  "system": {
+   "key": "hawkers",
+   "tagline": "Vice dealers",
+   "description": "<p>All of Doskvol craves escape. They can’t go outside... but they can turn to you. When you play Hawkers, you earn xp when you acquire new product supply, execute clandestine or covert sales, or secure new sales territory. Instead of hunting grounds, you have a sales territory where you sell your product. What’s your product? Who’s your supplier? Where and how do you sell it?</p>",
+   "xpTriggers": [
+    "Acquire product supply, execute clandestine/covert sales, or secure new territory.",
+    "Contend with challenges above your current station.",
+    "Bolster your crew’s reputation or develop a new one.",
+    "Express the goals, drives, inner conflict, or essential nature of the crew."
+   ],
+   "huntingGroundsLabel": "Hunting Grounds",
+   "huntingGrounds": [
+    {
+     "name": "Sale",
+     "description": "A significant transaction with a special buyer of illicit product."
+    },
+    {
+     "name": "Supply",
+     "description": "A transaction to acquire new product or establish a new supplier."
+    },
+    {
+     "name": "Show of Force",
+     "description": "Make an example of an enemy to dominate territory."
+    },
+    {
+     "name": "Socialize",
+     "description": "Improve customer and/or supplier relations with a social event."
+    }
+   ],
+   "contacts": [
+    {
+     "name": "Rolan Wott",
+     "role": "a magistrate"
+    },
+    {
+     "name": "Laroze",
+     "role": "a bluecoat"
+    },
+    {
+     "name": "Lydra",
+     "role": "a deal broker"
+    },
+    {
+     "name": "Hoxley",
+     "role": "a smuggler"
+    },
+    {
+     "name": "Anya",
+     "role": "a dillettante"
+    },
+    {
+     "name": "Marlo",
+     "role": "a gang boss"
+    }
+   ],
+   "startingUpgrades": {
+    "training": {
+     "resolve": 1
+    },
+    "lair": {
+     "secure": 1
+    },
+    "cohort": null,
+    "text": "Training: Resolve. Lair: Secure."
+   },
+   "claims": {
+    "tiles": [
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Personal Clothier",
+      "effect": "+1d engagement roll for social plans.",
+      "description": "You get +1d to the engagement roll for social plans. You always arrive on the scene in the most current and alluring fashion.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "engagement": [
+        "social"
+       ]
+      }
+     },
+     {
+      "name": "Local Graft",
+      "effect": "+2 coin for show of force or socialize.",
+      "description": "You get +2 coin in payoff for scores that involve a show of force or socializing. A few city officials share bribe money with those who show that they’re players on the scene.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Lookouts",
+      "effect": "+1d to Survey or Hunt on your turf.",
+      "description": "You get +1d to Hunt or Survey on your turf.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Informants",
+      "effect": "+1d gather info for scores.",
+      "description": "You get +1d to gather information for a score. Your eyes and ears on the streets are always on the lookout for new clients.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "gatherInfo": 1
+      }
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Lair",
+      "effect": "Your crew’s lair. Claims must connect to the lair or to another held claim.",
+      "description": "",
+      "held": true,
+      "turf": false,
+      "lair": true,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Luxury Venue",
+      "effect": "+1d to Consort and Sway on site.",
+      "description": "+1d to Consort and Sway rolls on-site. Silks, paintings, and crystal impress the clientele.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Foreign Market",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. Some of your product makes its way out of the city.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Vice Den",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. Is this claim a den you’ve overtaken from another purveyor, or a new establishment replacing something else? 113",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Surplus Caches",
+      "effect": "+2 coin for product sale or supply.",
+      "description": "You get +2 coin in payoff for scores that involve product sale or supply. You have an abundance of product, which pads your pockets every now and then.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Cover Operation",
+      "effect": "-2 heat per score.",
+      "description": "You get -2 heat per score. The cover of a legitimate operation helps deflect some of the heat from law enforcement.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "heatPerScore": -2
+      }
+     },
+     {
+      "name": "Cover Identities",
+      "effect": "+1d engagement for deception and transport plans.",
+      "description": "You get +1d to the engagement roll for deception and social plans. False identities help confuse the opposition.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "engagement": [
+        "deception",
+        "transport"
+       ]
+      }
+     }
+    ],
+    "links": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      8,
+      13
+     ]
+    ]
+   },
+   "upgrades": [
+    {
+     "name": "Hawker Rigging",
+     "boxes": 1,
+     "description": "One carried item is concealed and has no load. For example, you could carry a load of drugs or a weapon, perfectly concealed, for zero load.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Ironhook Contacts",
+     "boxes": 1,
+     "description": "Your Tier is effectively +1 higher in prison. This counts for any Tier-related element in prison, including the incarceration roll (see page 148).",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Rooks",
+     "boxes": 1,
+     "description": "All of your cohorts with the Rooks type get +1d to quality rolls for Rook-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Thugs",
+     "boxes": 1,
+     "description": "All of your cohorts with the Thugs type get +1d to quality rolls for Thug-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Composed",
+     "boxes": 3,
+     "description": "Each PC gets +1 stress box. This costs three upgrades to unlock, not just one.",
+     "value": 0,
+     "auto": {
+      "stress": 1
+     }
+    }
+   ],
+   "abilities": [
+    "Accord",
+    "The Good Stuff",
+    "Ghost Market",
+    "Silver Tongues",
+    "High Society",
+    "Hooked",
+    "Patron",
+    "Veteran"
+   ],
+   "deity": false,
+   "vehicle": false
+  },
+  "effects": [],
+  "folder": "vJ054banw7Ta5dnE",
+  "sort": 3,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "fxXMK8rIMqf195vR",
+  "_key": "!items!fxXMK8rIMqf195vR",
+  "name": "Shadows",
+  "type": "crewType",
+  "img": "systems/duskwall/assets/icons/crew.svg",
+  "system": {
+   "key": "shadows",
+   "tagline": "Thieves and spies",
+   "description": "<p>Everyone wants something that they can’t have. That’s where you come in. When you play Shadows, you earn xp when you execute a burglary, espionage, robbery, or sabotage operation. Do you spy and steal primarily to serve your own interests, or do you sell your services to whoever will pay?</p>",
+   "xpTriggers": [
+    "Execute a successful espionage, sabotage, or theft operation.",
+    "Contend with challenges above your current station.",
+    "Bolster your crew’s reputation or develop a new one.",
+    "Express the goals, drives, inner conflict, or essential nature of the crew."
+   ],
+   "huntingGroundsLabel": "Hunting Grounds",
+   "huntingGrounds": [
+    {
+     "name": "Burglary",
+     "description": "Theft by breaking and entering."
+    },
+    {
+     "name": "Espionage",
+     "description": "Obtain secret information by covert or clandestine means."
+    },
+    {
+     "name": "Robbery",
+     "description": "Theft by force or threats."
+    },
+    {
+     "name": "Sabotage",
+     "description": "Hurt an opponent by destroying something."
+    }
+   ],
+   "contacts": [
+    {
+     "name": "Dowler",
+     "role": "an explorer"
+    },
+    {
+     "name": "Laroze",
+     "role": "a bluecoat"
+    },
+    {
+     "name": "Amancio",
+     "role": "a deal broker"
+    },
+    {
+     "name": "Fitz",
+     "role": "a collector"
+    },
+    {
+     "name": "Adelaide Phroaig",
+     "role": "a noble"
+    },
+    {
+     "name": "Rigney",
+     "role": "a tavern owner"
+    }
+   ],
+   "startingUpgrades": {
+    "training": {
+     "prowess": 1
+    },
+    "lair": {
+     "hidden": 1
+    },
+    "cohort": null,
+    "text": "Training: Prowess. Lair: Hidden."
+   },
+   "claims": {
+    "tiles": [
+     {
+      "name": "Interrogation Chamber",
+      "effect": "+1d to Command and Sway on site.",
+      "description": "You get +1d to Command and Sway on-site. Grisly business, but effective.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Loyal Fence",
+      "effect": "+2 coin for burglary or robbery.",
+      "description": "You get +2 coin in payoff for scores that involve burglary or robbery. It requires a skilled eye and good contacts to move stolen goods.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Gambling Den",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. Cards, dice, or something more unusual on offer?",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Tavern",
+      "effect": "+1d to Consort and Sway on site.",
+      "description": "You get +1d to Consort and Sway rolls on-site. Some booze and friendly conversation can go a long way. 117",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Drug Den",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. What’s the drug of choice?",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Informants",
+      "effect": "+1d gather info for scores.",
+      "description": "You get +1d to gather information for a score. Your eyes and ears on the streets are always on the lookout for new targets.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "gatherInfo": 1
+      }
+     },
+     {
+      "name": "Lair",
+      "effect": "Your crew’s lair. Claims must connect to the lair or to another held claim.",
+      "description": "",
+      "held": true,
+      "turf": false,
+      "lair": true,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Lookouts",
+      "effect": "+1d to Survey or Hunt on your turf.",
+      "description": "You get +1d to Hunt or Survey on your turf.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Hagfish Farm",
+      "effect": "Body disposal, +1d to reduce heat after killing.",
+      "description": "When you use the reduce heat downtime activity after a score that involves killing, you get +1d to the roll and quiet, convenient disposal of any corpses you left on the job.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "reduceHeat": 1
+      }
+     },
+     {
+      "name": "Infirmary",
+      "effect": "+1d to healing rolls.",
+      "description": "You get +1d to healing treatment rolls. The infirmary also has beds for long-term convalescence.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "healing": 1
+      }
+     },
+     {
+      "name": "Covert Drops",
+      "effect": "+2 coin for espionage or sabotage.",
+      "description": "You get +2 coin in payoff for scores that involve espionage or sabotage. The perfect hidden exchange point is worth the extra coin to discerning clientele.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Secret Pathways",
+      "effect": "+1d engagement for stealth plans.",
+      "description": "You get +1d to the engagement roll for stealth plans. You might have access to long-forgotten underground canals, rooftop walkways, or some other route of your choosing.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "engagement": [
+        "stealth"
+       ]
+      }
+     }
+    ],
+    "links": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      12,
+      13
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      9,
+      14
+     ]
+    ]
+   },
+   "upgrades": [
+    {
+     "name": "Thief Rigging",
+     "boxes": 1,
+     "description": "You get 2 free load worth of tool or gear items. For example, you could carry burglary gear and tinkering tools for zero load.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Underground Maps and Passkeys",
+     "boxes": 1,
+     "description": "You have easy passage through the underground canals, tunnels, and basements of the city.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Rooks",
+     "boxes": 1,
+     "description": "All of your cohorts with the Rooks type get +1d to quality rolls for Rook-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Skulks",
+     "boxes": 1,
+     "description": "All of your cohorts with the Skulks type get +1d to quality rolls for Skulk-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Steady",
+     "boxes": 3,
+     "description": "Each PC gets +1 stress box. This costs three upgrades to unlock, not just one.",
+     "value": 0,
+     "auto": {
+      "stress": 1
+     }
+    }
+   ],
+   "abilities": [
+    "Ghost Echoes",
+    "Pack Rats",
+    "Everyone Steals",
+    "Patron",
+    "Second Story",
+    "Slippery",
+    "Synchronized",
+    "Veteran"
+   ],
+   "deity": false,
+   "vehicle": false
+  },
+  "effects": [],
+  "folder": "vJ054banw7Ta5dnE",
+  "sort": 4,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ },
+ {
+  "_id": "jGWnWqy2BfnetRlC",
+  "_key": "!items!jGWnWqy2BfnetRlC",
+  "name": "Smugglers",
+  "type": "crewType",
+  "img": "systems/duskwall/assets/icons/crew.svg",
+  "system": {
+   "key": "smugglers",
+   "tagline": "Contraband transporters",
+   "description": "<p>Illicit goods are the life-blood of Duskwall—both for those who consume them and those who profit from their taxation and criminalization. Smugglers keep the city alive. When you play Smugglers, you earn xp when you execute a smuggling operation or acquire new clients or contraband sources. Instead of hunting grounds, you have cargo types that you use for your operations. What kind of contraband do you transport? Do you have any rules about what you will or won’t carry?</p>",
+   "xpTriggers": [
+    "Execute a successful smuggling or acquire new clients or contraband sources.",
+    "Contend with challenges above your current station.",
+    "Bolster your crew’s reputation or develop a new one.",
+    "Express the goals, drives, inner conflict, or essential nature of the crew."
+   ],
+   "huntingGroundsLabel": "Hunting Grounds",
+   "huntingGrounds": [
+    {
+     "name": "Arcane/Weird",
+     "description": "Spirit essences, ghosts, cult materials."
+    },
+    {
+     "name": "Arms",
+     "description": "Restricted military weapons, heavy ordnance, explosives."
+    },
+    {
+     "name": "Contraband",
+     "description": "High-tax luxuries, drugs, banned art, etc."
+    },
+    {
+     "name": "Passengers",
+     "description": "People or livestock traveling in secret."
+    }
+   ],
+   "contacts": [
+    {
+     "name": "Elynn",
+     "role": "a dock worker"
+    },
+    {
+     "name": "Rolan",
+     "role": "a drug dealer"
+    },
+    {
+     "name": "Sera",
+     "role": "an arms dealer"
+    },
+    {
+     "name": "Nyelle",
+     "role": "a spirit trafficker"
+    },
+    {
+     "name": "Decker",
+     "role": "an anarchist"
+    },
+    {
+     "name": "Esme",
+     "role": "a tavern owner"
+    }
+   ],
+   "startingUpgrades": {
+    "training": {
+     "prowess": 1
+    },
+    "lair": {
+     "vehicle": 1
+    },
+    "cohort": null,
+    "text": "Training: Prowess. Vehicle: a boat or carriage."
+   },
+   "claims": {
+    "tiles": [
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Side Business",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. What kind of legitimate business is this? How do you get paid in secret?",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Luxury Fence",
+      "effect": "+2 coin for high-class targets.",
+      "description": "You get +2 coin in payoff for scores that involve highclass targets. It requires a skilled eye and good contacts to move hot luxury goods.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Vice Den",
+      "effect": "(Tier roll) - Heat = coin in downtime.",
+      "description": "Any time during downtime, roll dice equal to your Tier. You earn coin equal to the highest result, minus your heat. Perhaps you sell some of the contraband you smuggle here? Or do you not mix your operations?",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "income": true
+      }
+     },
+     {
+      "name": "Tavern",
+      "effect": "+1d to Consort and Sway on site.",
+      "description": "You get +1d to Consort and Sway rolls on-site. Some booze and friendly conversation can go a long way.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Ancient Gate",
+      "effect": "Safe passage in the Deathlands.",
+      "description": "Safe passage in the deathlands. When you leave the city through this gate, spirits in the deathlands will not molest you unless directly provoked.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Lair",
+      "effect": "Your crew’s lair. Claims must connect to the lair or to another held claim.",
+      "description": "",
+      "held": true,
+      "turf": false,
+      "lair": true,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Turf",
+      "effect": "Counts as turf: -1 rep needed to develop your crew. Mark it on your rep track.",
+      "description": "",
+      "held": false,
+      "turf": true,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Secret Routes",
+      "effect": "+1d engagement for transport plans.",
+      "description": "You get +1d to the engagement roll for transport plans. You might have access to longforgotten underground canals, dark streets normally hidden behind debris, or some other route of your choosing.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "engagement": [
+        "transport"
+       ]
+      }
+     },
+     {
+      "name": "Informants",
+      "effect": "+1d gather info for scores.",
+      "description": "You get +1d to gather information for a score. Your eyes and ears on the streets are always on the lookout for new clients.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "gatherInfo": 1
+      }
+     },
+     {
+      "name": "Fleet",
+      "effect": "Your cohorts have their own vehicles.",
+      "description": "Your cohorts have their own vehicles. Each cohort has a common vehicle, with quality equal to your Tier.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {}
+     },
+     {
+      "name": "Cover Operation",
+      "effect": "-2 heat per score.",
+      "description": "You get -2 heat per score. What’s your cover? Who did you seize it from?",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "heatPerScore": -2
+      }
+     },
+     {
+      "name": "Warehouse",
+      "effect": "Stockpiles give you +1d to acquire assets.",
+      "description": "You get +1d to acquire asset rolls. You have space to hold all the various items and supplies you end up with from your smuggling runs. They can be useful on their own or for barter when you need it.",
+      "held": false,
+      "turf": false,
+      "lair": false,
+      "auto": {
+       "acquire": 1
+      }
+     }
+    ],
+    "links": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      11
+     ],
+     [
+      13,
+      14
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      4,
+      9
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      12
+     ],
+     [
+      8,
+      13
+     ],
+     [
+      9,
+      14
+     ]
+    ]
+   },
+   "upgrades": [
+    {
+     "name": "Smuggler Rigging",
+     "boxes": 1,
+     "description": "Two of your carried items are perfectly concealed. You could carry 1 load of contraband and a pistol, perfectly concealed, even against a pat down.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Camouflage",
+     "boxes": 1,
+     "description": "Your vehicles are perfectly concealed when at rest. They blend in as part of the environment, or as an uninteresting civilian vehicle (your choice).",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Elite Rovers",
+     "boxes": 1,
+     "description": "All of your cohorts with the Rovers type get +1d to quality rolls for Rover-related actions.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Barge",
+     "boxes": 1,
+     "description": "Add mobility to your lair. You can move it to a new location as a downtime activity.",
+     "value": 0,
+     "auto": {}
+    },
+    {
+     "name": "Steady",
+     "boxes": 3,
+     "description": "Each PC gets +1 stress box. This costs three upgrades to unlock, not just one.",
+     "value": 0,
+     "auto": {
+      "stress": 1
+     }
+    }
+   ],
+   "abilities": [
+    "Like Part of the Family",
+    "All Hands",
+    "Ghost Passage",
+    "Just Passing Through",
+    "Leverage",
+    "Reavers",
+    "Renegades",
+    "Veteran"
+   ],
+   "deity": false,
+   "vehicle": true
+  },
+  "effects": [],
+  "folder": "vJ054banw7Ta5dnE",
+  "sort": 5,
+  "flags": {},
+  "ownership": {
+   "default": 0
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "duskwall",
+   "systemVersion": "1.0.0"
+  }
+ }
+]

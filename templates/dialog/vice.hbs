@@ -1,0 +1,5 @@
+<div class="dw-form">
+  <p class="dw-lede">{{#if vice}}<strong>{{vice}}</strong>{{#if purveyor}} · {{purveyor}}{{/if}}{{else}}{{localize "DW.Vice.none"}}{{/if}}</p>
+  <p>{{localize "DW.Vice.explain" n=lowest stress=stress label=label}}</p>
+  <label class="dw-field dw-field--inline"><span>{{localize "DW.Roll.otherDice"}}</span><input type="number" name="bonus" value="0" min="-4" max="4"></label>
+</div>

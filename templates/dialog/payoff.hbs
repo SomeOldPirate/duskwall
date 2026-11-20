@@ -1,0 +1,39 @@
+<div class="dw-form dw-form--payoff">
+  <div class="dw-row">
+    <label class="dw-field dw-field--grow"><span>{{localize "DW.Score.target"}}</span><input type="text" name="target" value="{{target}}"></label>
+    <label class="dw-field"><span>{{localize "DW.Score.targetTier"}}</span>
+      <select name="targetTier" data-dtype="Number">{{#each tiers}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+    </label>
+    <label class="dw-field"><span>{{localize "DW.Score.type"}}</span><input type="text" name="type" value="{{type}}"></label>
+  </div>
+  <fieldset>
+    <legend>{{localize "DW.Payoff.coinLegend"}}</legend>
+    <div class="dw-radios dw-radios--stack">
+      {{#each coins}}<label class="dw-radio"><input type="radio" name="coinChoice" value="{{coin}}" {{checked checked}}> {{label}}</label>{{/each}}
+      <label class="dw-radio"><input type="radio" name="coinChoice" value="custom"> {{localize "DW.Payoff.custom"}} <input type="number" name="coinCustom" value="0" min="0" max="40"></label>
+    </div>
+    <div class="dw-row">
+      <label class="dw-field"><span>{{localize "DW.Payoff.coinBonus"}}</span><input type="number" name="coinBonus" value="0" min="0" max="10"></label>
+      <label class="dw-check-field"><input type="checkbox" name="tithe"> {{localize "DW.Payoff.tithe" n=tier}}</label>
+    </div>
+    <p class="dw-hint">{{localize "DW.Payoff.coinBonusHint"}}</p>
+  </fieldset>
+  <fieldset>
+    <legend>{{localize "DW.Payoff.repLegend"}}</legend>
+    <label class="dw-check-field"><input type="checkbox" name="quiet"> {{localize "DW.Payoff.quiet"}}{{#if noTraces}} ({{localize "DW.Payoff.noTraces"}}){{/if}}</label>
+    {{#if repFull}}<p class="dw-warn">{{localize "DW.Payoff.repFull"}}</p>{{/if}}
+  </fieldset>
+  <fieldset>
+    <legend>{{localize "DW.Heat.legend"}}</legend>
+    <div class="dw-radios dw-radios--stack">
+      {{#each heats}}<label class="dw-radio"><input type="radio" name="heatBase" value="{{heat}}" {{checked checked}}> {{label}}</label>{{/each}}
+    </div>
+    <label class="dw-check-field"><input type="checkbox" name="profile"> {{localize "DW.Heat.profile"}}</label>
+    <label class="dw-check-field"><input type="checkbox" name="hostile"> {{localize "DW.Heat.hostile"}}</label>
+    <label class="dw-check-field"><input type="checkbox" name="war" {{checked atWar}}> {{localize "DW.Heat.war"}}</label>
+    <label class="dw-check-field"><input type="checkbox" name="killing"> {{localize "DW.Heat.killing"}}{{#if crowsVeil}} ({{localize "DW.Heat.crowsVeilShort"}}){{/if}}</label>
+    <label class="dw-field dw-field--inline"><span>{{localize "DW.Heat.extra"}}</span><input type="number" name="heatExtra" value="0" min="-6" max="6"></label>
+    {{#if claimHeat}}<p class="dw-hint">{{localize "DW.Heat.claims" n=claimHeat}}</p>{{/if}}
+  </fieldset>
+  <p class="dw-summary" data-summary></p>
+</div>
