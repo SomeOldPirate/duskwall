@@ -1,10 +1,10 @@
-# Push a tag like v0.9.0 and this builds duskwall.zip and publishes a release
-# with system.json and the zip attached, which is what the manifest URL expects.
+# Publish a GitHub release tagged like v0.9.0 and this builds duskwall.zip and
+# attaches it, with system.json, to that release: what the manifest URL expects.
 name: Release
 
 on:
-  push:
-    tags: ["v*"]
+  release:
+    types: [published]
 
 permissions:
   contents: write
@@ -26,11 +26,9 @@ jobs:
       - name: Build duskwall.zip
         run: bash tools/package.sh
 
-      - name: Publish the release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: Duskwall ${{ github.ref_name }}
-          body_path: dist/release-notes.md
-          files: |
-            dist/system.json
-            dist/duskwall.zip
+      - name: Attach the files and notes to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "$GITHUB_REF_NAME" dist/system.json dist/duskwall.zip --clobber
+          if [ -s dist/release-notes.md ]; then gh release edit "$GITHUB_REF_NAME" --notes-file dist/release-notes.md; fi

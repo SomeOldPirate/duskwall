@@ -37,7 +37,7 @@ Playbooks (seven scoundrels plus Ghost, Hull and Vampire), special abilities wit
 
 ## Releasing
 
-Bump `version` in `system.json`, add a section to `CHANGELOG.md`, commit, then push a matching tag (`git tag v0.9.1 && git push --tags`). The GitHub workflow builds `duskwall.zip` and publishes the release. `bash tools/package.sh` builds the same zip locally in `dist/`. `tools/content.py` regenerates the sources from the text extracted from the rulebook.
+Bump `version` in `system.json`, add a section to `CHANGELOG.md` and push. Then on GitHub, draft a new release with a matching tag (`v0.9.1`) and publish it: the workflow builds `duskwall.zip` and attaches it and `system.json` to the release, with the changelog section as its notes. `bash tools/package.sh` builds the same zip locally in `dist/`. `tools/content.py` regenerates the sources from the text extracted from the rulebook.
 
 ## Licence
 
